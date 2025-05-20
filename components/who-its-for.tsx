@@ -7,25 +7,28 @@ import { User, Users, Dumbbell } from "lucide-react"
 export function WhoItsFor() {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.05,
   })
 
-  const containerVariants = {
+  const sectionVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        duration: 0.4,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 0.1,
       },
     },
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 15 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.4, ease: "easeOut" },
     },
   }
 
@@ -51,30 +54,32 @@ export function WhoItsFor() {
   ]
 
   return (
-    <section id="who-its-for" className="py-20 bg-white">
+    <section id="who-its-for" className="py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <span className="inline-block px-3 py-1 text-sm font-medium text-teal-600 bg-teal-100 rounded-full mb-4">
-            Who It's For
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins">Supporting Cancer Recovery</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            SCIENCEPEAKS is designed to support everyone involved in the cancer recovery journey.
-          </p>
-        </div>
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={sectionVariants}
+        >
+          <div className="text-center mb-16">
+            <motion.span variants={itemVariants} className="inline-block px-3 py-1 text-sm font-medium text-teal-600 bg-teal-100 rounded-full mb-4">
+              Who It&apos;s For
+            </motion.span>
+            <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins">Supporting Cancer Recovery</motion.h2>
+            <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
+              SCIENCEPEAKS is designed to support everyone involved in the cancer recovery journey.
+            </motion.p>
+          </div>
 
-        <div ref={ref}>
           <motion.div
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={containerVariants}
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {audiences.map((audience, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="bg-white/70 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl backdrop-blur-sm transition-shadow duration-300 transform hover:-translate-y-1"
               >
                 <div className="h-48 overflow-hidden">
                   <img
@@ -95,9 +100,7 @@ export function WhoItsFor() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+            variants={itemVariants}
             className="mt-16 text-center"
           >
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -105,7 +108,7 @@ export function WhoItsFor() {
               ecosystem that optimizes recovery and improves quality of life.
             </p>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

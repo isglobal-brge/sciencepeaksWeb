@@ -3,12 +3,13 @@
 import { Button } from "@/components/ui/button"
 import { Search, Phone } from "lucide-react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-blue-50 z-0"></div>
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-blue-50 z-0"></div> */}
 
       {/* Animated background elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -43,7 +44,7 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="flex flex-col space-y-6"
           >
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-800">
@@ -69,28 +70,19 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
+            className="relative aspect-[4/3]"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="/placeholder-ndwx7.png"
-                alt="SciencePeaks Technology"
-                className="w-full h-auto rounded-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6 text-white">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium">Real-time monitoring</span>
-                </div>
-                <h3 className="text-xl font-semibold">
-                  Personalized activity recommendations based on your unique profile
-                </h3>
-              </div>
-            </div>
+            <Image
+              src="/sciencepeaks-wearable-device.jpg"
+              alt="SciencePeaks Wearable Device"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-2xl shadow-2xl"
+              priority
+            />
           </motion.div>
         </div>
       </div>

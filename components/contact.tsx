@@ -93,14 +93,14 @@ export function Contact() {
                   <Mail className="w-6 h-6 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Email Us</h4>
-                    <p>info@sciencepeaks.com</p>
+                    <p>juanr.gonzalez@isglobal.org</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Call Us</h4>
-                    <p>+1 (555) 123-4567</p>
+                    <p>+0 000 000 000</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -108,11 +108,11 @@ export function Contact() {
                   <div>
                     <h4 className="font-semibold mb-1">Visit Us</h4>
                     <p>
-                      123 Innovation Way
+                      Carrer del Doctor Aiguader, 88,
                       <br />
-                      Health District
+                      Ciutat Vella,
                       <br />
-                      San Francisco, CA 94107
+                      08003 Barcelona
                     </p>
                   </div>
                 </div>

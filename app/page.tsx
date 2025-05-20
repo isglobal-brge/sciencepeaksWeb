@@ -4,6 +4,7 @@ import { About } from "@/components/about"
 import { HowItWorks } from "@/components/how-it-works"
 import { WhoItsFor } from "@/components/who-its-for"
 import { Benefits } from "@/components/benefits"
+import { TeamSection } from "@/components/team-section"
 import { RealTimeMonitoring } from "@/components/real-time-monitoring"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
@@ -17,6 +18,7 @@ export default function Home() {
       <HowItWorks />
       <WhoItsFor />
       <Benefits />
+      <TeamSection />
       <RealTimeMonitoring />
       <Contact />
       <Footer />

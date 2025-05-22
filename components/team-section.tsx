@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import { Linkedin, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
-import useEmblaCarousel, { type EmblaOptionsType } from 'embla-carousel-react';
+import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 interface TeamMember {
@@ -15,67 +15,76 @@ interface TeamMember {
   imageSrc: string;
   isGlobalProfile?: string;
   linkedinProfile?: string;
+  bio?: string;
 }
 
 const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: "Juan R González Ruiz, PhD",
-    role: "Project Lead",
+    role: "Project Leadership",
     imageSrc: "/pfp-juanr.jpg?height=300&width=400&text=Juan+R+González",
     linkedinProfile: "https://www.linkedin.com/in/juan-r-gonzalez-50a808171/",
+    bio: "-"
   },
   {
     id: 2,
     name: "David Sarrat González",
-    role: "Software Engineer",
+    role: "Business Development",
     imageSrc: "/pfp-david.jpeg?height=300&width=400&text=David+Sarrat+González",
     isGlobalProfile: "https://davidsarratgonzalez.github.io",
     linkedinProfile: "https://www.linkedin.com/in/davidsarratgonzalez",
+    bio: "-"
   },
   {
     id: 3,
     name: "Víctor Nàcher Castellet",
-    role: "Software Engineer", 
+    role: "Software Engineering",
     imageSrc: "/pfp-victor.jpeg?height=300&width=400&text=Víctor+Nàcher+Castellet",
     linkedinProfile: "https://www.linkedin.com/in/victornacher/",
+    bio: "-"
   },
   {
     id: 4,
     name: "Dídac Cayuela Dolcet",
-    role: "Software Engineer",
+    role: "Software Engineering",
     imageSrc: "/pfp-didac.jpg?height=300&width=400&text=Dídac+Cayuela+Dolcet",
     isGlobalProfile: "https://didicayu.github.io",
     linkedinProfile: "https://www.linkedin.com/in/didac-cayuela",
+    bio: "-"
   },
   {
     id: 5,
     name: "Lucie Rabattu",
-    role: "Innovation Manager", 
+    role: "Innovation Management",
     imageSrc: "/pfp-lucie.jpg?height=300&width=400&text=Lucie+Rabattu",
     linkedinProfile: "https://www.linkedin.com/in/lucierabattu/",
+    bio: "-"
   },
   {
     id: 6,
     name: "Óscar Casado Vilches",
-    role: "Innovation Manager",
-    imageSrc: "/pfp-oscar.jpeg?height=300&width=400&text=Óscar+Casado+Vilches", 
+    role: "Innovation Management",
+    imageSrc: "/pfp-oscar.jpeg?height=300&width=400&text=Óscar+Casado+Vilches",
     linkedinProfile: "https://www.linkedin.com/in/oscar-casado-vilches/",
+    bio: "-"
   },
 ];
 
-const OPTIONS: EmblaOptionsType = { loop: true };
+const OPTIONS = { loop: true };
 
 export function TeamSection() {
   const { ref: sectionRef, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.05,
   });
 
   const autoplay = useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false })
+    // @ts-ignore
+    Autoplay({ delay: 5000, stopOnInteraction: false, playOnInit: false })
   );
 
+  // @ts-ignore
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS, [autoplay.current]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
@@ -121,6 +130,14 @@ export function TeamSection() {
       }
     };
   }, [emblaApi]);
+
+  useEffect(() => {
+    if (inView) {
+      autoplay.current.play();
+    } else {
+      autoplay.current.stop();
+    }
+  }, [inView]);
 
   const sectionVariants = {
     hidden: { opacity: 0 },
@@ -183,7 +200,7 @@ export function TeamSection() {
                     className="flex-grow-0 flex-shrink-0 basis-full min-w-0 px-2 md:px-4"
                   >
                     <div
-                      className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center md:items-start p-6 md:p-8 space-y-4 md:space-y-0 md:space-x-6 h-full"
+                      className="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center p-6 md:p-8 space-y-4 md:space-y-0 md:space-x-6 h-full"
                     >
                       <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden flex-shrink-0 shadow-md">
                         <Image
@@ -196,9 +213,11 @@ export function TeamSection() {
                       <div className="flex-grow text-center md:text-left">
                         <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-1 font-poppins">{member.name}</h3>
                         <p className="text-sm md:text-base text-teal-600 font-medium mb-3">{member.role}</p>
-                        <p className="text-gray-600 text-sm mb-4 h-24 md:min-h-[6rem] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-                          {member.bio}
-                        </p>
+                        {member.bio && member.bio !== "-" && (
+                          <p className="text-gray-600 text-sm mb-4 h-24 md:min-h-[6rem] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                            {member.bio}
+                          </p>
+                        )}
                         <div className="flex space-x-3 pt-3 border-t border-gray-200/70 justify-center md:justify-start">
                           {member.isGlobalProfile && (
                             <a

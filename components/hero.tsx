@@ -40,17 +40,17 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 z-10 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="flex flex-col space-y-6"
+            className="order-2 lg:order-1 flex flex-col space-y-6 text-center lg:text-left"
           >
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-800">
               Revolutionizing Fatigue Management in Cancer Patients
             </h1>
-            <p className="text-xl text-gray-600 max-w-lg">
+            <p className="text-xl text-gray-600 max-w-lg mx-auto lg:mx-0">
               An intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate
               variability metrics.
             </p>
@@ -73,14 +73,14 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
-            className="relative aspect-[4/3]"
+            className="order-1 lg:order-2 relative aspect-[4/3] w-full max-w-[200px] sm:max-w-[240px] md:max-w-xs mx-auto lg:max-w-none lg:mx-0"
           >
             <Image
               src="/sciencepeaks-wearable-device.png"
               alt="SciencePeaks Wearable Device"
               layout="fill"
               objectFit="contain"
-              className="relative z-20 p-8 md:p-12 filter drop-shadow-2xl"
+              className="relative z-20 p-2 sm:p-4 md:p-6 filter drop-shadow-2xl"
               priority
             />
           </motion.div>

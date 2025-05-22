@@ -45,16 +45,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="order-2 lg:order-1 flex flex-col space-y-6 text-center lg:text-left"
+            className="order-2 lg:order-1 flex flex-col space-y-6"
           >
-            <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-800">
+            <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-800 text-center md:text-left">
               Revolutionizing Fatigue Management in Cancer Patients
             </h1>
-            <p className="text-xl text-gray-600 max-w-lg mx-auto lg:mx-0">
+            <p className="text-xl text-gray-600 mx-auto md:mx-0 text-center md:text-left">
               An intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate
               variability metrics.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 self-center md:self-start">
               <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center">
                 <Search size={18} />
                 Learn how SciencePeaks improves quality of life

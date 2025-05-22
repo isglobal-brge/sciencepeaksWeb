@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfigLocal = {
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -7,12 +7,11 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: true, // Keep this for GitHub Pages compatibility if you were using it
   },
   output: 'export',
-  // basePath: '/sciencepeaksWeb', // Removed for custom domain
-  // assetPrefix: '/sciencepeaksWeb/', // Removed for custom domain
+  // No basePath or assetPrefix here
   // No distDir here, defaults to out/
-}
+};
 
-export default nextConfig
+export default nextConfigLocal; 

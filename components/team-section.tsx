@@ -12,7 +12,6 @@ interface TeamMember {
   id: number;
   name: string;
   role: string;
-  bio: string;
   imageSrc: string;
   isGlobalProfile?: string;
   linkedinProfile?: string;
@@ -21,45 +20,47 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Juan R González, PhD",
-    role: "Lead Researcher",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageSrc: "/placeholder.svg?height=300&width=400&text=Dr.Eva",
-    isGlobalProfile: "#",
-    linkedinProfile: "#",
+    name: "Juan R González Ruiz, PhD",
+    role: "Project Lead",
+    imageSrc: "/pfp-juanr.jpg?height=300&width=400&text=Juan+R+González",
+    linkedinProfile: "https://www.linkedin.com/in/juan-r-gonzalez-50a808171/",
   },
   {
     id: 2,
-    name: "David Sarrat",
+    name: "David Sarrat González",
     role: "Software Engineer",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageSrc: "/placeholder.svg?height=300&width=400&text=Prof.Alex",
-    isGlobalProfile: "#",
+    imageSrc: "/pfp-david.jpeg?height=300&width=400&text=David+Sarrat+González",
+    isGlobalProfile: "https://davidsarratgonzalez.github.io",
+    linkedinProfile: "https://www.linkedin.com/in/davidsarratgonzalez",
   },
   {
     id: 3,
-    name: "Lucie Rabattu",
-    role: "Innovation Manager",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageSrc: "/placeholder.svg?height=300&width=400&text=Dr.Ben",
-    linkedinProfile: "#",
+    name: "Víctor Nàcher Castellet",
+    role: "Software Engineer", 
+    imageSrc: "/pfp-victor.jpeg?height=300&width=400&text=Víctor+Nàcher+Castellet",
+    linkedinProfile: "https://www.linkedin.com/in/victornacher/",
   },
   {
     id: 4,
-    name: "Óscar Casado",
-    role: "Innovation Manager",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageSrc: "/placeholder.svg?height=300&width=400&text=MariaT",
-    linkedinProfile: "#",
+    name: "Dídac Cayuela Dolcet",
+    role: "Software Engineer",
+    imageSrc: "/pfp-didac.jpg?height=300&width=400&text=Dídac+Cayuela+Dolcet",
+    isGlobalProfile: "https://didicayu.github.io",
+    linkedinProfile: "https://www.linkedin.com/in/didac-cayuela",
   },
   {
     id: 5,
-    name: "Víctor Nácher",
-    role: "Software Engineer",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageSrc: "/placeholder.svg?height=300&width=400&text=Dr.Sofia",
-    isGlobalProfile: "#",
-    linkedinProfile: "#",
+    name: "Lucie Rabattu",
+    role: "Innovation Manager", 
+    imageSrc: "/pfp-lucie.jpg?height=300&width=400&text=Lucie+Rabattu",
+    linkedinProfile: "https://www.linkedin.com/in/lucierabattu/",
+  },
+  {
+    id: 6,
+    name: "Óscar Casado Vilches",
+    role: "Innovation Manager",
+    imageSrc: "/pfp-oscar.jpeg?height=300&width=400&text=Óscar+Casado+Vilches", 
+    linkedinProfile: "https://www.linkedin.com/in/oscar-casado-vilches/",
   },
 ];
 

@@ -120,7 +120,7 @@ export function Contact() {
                 </div>
               </div>
 
-              <div className="mt-12">
+              <div className="mt-12 hidden">
                 <h4 className="font-semibold mb-4">Follow Us</h4>
                 <div className="flex gap-4">
                   <a

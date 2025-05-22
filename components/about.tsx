@@ -57,7 +57,7 @@ export function About() {
             <span
               className="inline-block px-3 py-1 text-sm font-medium text-teal-600 bg-teal-100 rounded-full mb-4"
             >
-              What is SCIENCEPEAKS?
+              What is SciencePeaks?
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins">
               Precision Health Platform for Cancer-Related Fatigue
@@ -71,13 +71,13 @@ export function About() {
             <div className="bg-white/70 rounded-xl p-8 shadow-lg backdrop-blur-sm flex flex-col justify-between">
               <div>
                 <p className="text-lg text-gray-700 mb-4">
-                  SCIENCEPEAKS is a precision health platform designed to address <strong className="font-semibold text-teal-600">cancer-related fatigue (CRF)</strong>—a common and debilitating side effect after chemotherapy.
+                  SciencePeaks is a precision health platform designed to address <strong className="font-semibold text-teal-600">cancer-related fatigue (CRF)</strong>—a common and debilitating side effect after chemotherapy.
                 </p>
                 <p className="text-lg text-gray-700 mb-6">
                   CRF affects up to <strong className="font-semibold text-teal-600">60% of patients</strong> and can significantly impact their quality of life.
                 </p>
                 <p className="text-lg text-gray-700">
-                  By combining physiological, genetic, and behavioral data, SCIENCEPEAKS delivers personalized exercise
+                  By combining physiological, genetic, and behavioral data, SciencePeaks delivers personalized exercise
                   prescriptions based on each patient&apos;s actual condition.
                 </p>
               </div>

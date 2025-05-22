@@ -57,7 +57,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-6 py-6 rounded-lg flex items-center gap-2">
                 <Search size={18} />
-                Learn how SCIENCEPEAKS improves quality of life
+                Learn how SciencePeaks improves quality of life
               </Button>
               <Button
                 variant="outline"

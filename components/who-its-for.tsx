@@ -68,7 +68,7 @@ export function WhoItsFor() {
             </motion.span>
             <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins">Supporting Cancer Recovery</motion.h2>
             <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
-              SCIENCEPEAKS is designed to support everyone involved in the cancer recovery journey.
+              SciencePeaks is designed to support everyone involved in the cancer recovery journey.
             </motion.p>
           </div>
 

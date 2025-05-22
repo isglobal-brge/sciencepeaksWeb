@@ -16,10 +16,9 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: "SciencePeaks - Revolutionizing Fatigue Management in Cancer Patients",
+  title: "SciencePeaks",
   description:
     "An intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

@@ -83,7 +83,7 @@ export function Benefits() {
             <motion.span variants={itemVariants} className="inline-block px-3 py-1 text-sm font-medium text-teal-600 bg-teal-100 rounded-full mb-4">
               Key Benefits
             </motion.span>
-            <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins">Why Choose SCIENCEPEAKS</motion.h2>
+            <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins">Why Choose SciencePeaks</motion.h2>
             <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our platform offers unique advantages for cancer patients and their care teams.
             </motion.p>
@@ -96,7 +96,7 @@ export function Benefits() {
             >
               <img
                 src="/placeholder.svg?height=600&width=600&query=cancer+patient+using+wearable+technology+with+doctor+reviewing+data"
-                alt="SCIENCEPEAKS Benefits"
+                alt="SciencePeaks Benefits"
                 className="w-full h-auto"
               />
             </motion.div>

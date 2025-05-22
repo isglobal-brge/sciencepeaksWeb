@@ -78,7 +78,7 @@ export function Contact() {
             </motion.span>
             <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins">Get in Touch</motion.h2>
             <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Want to learn how SCIENCEPEAKS can support your practice or treatment? Fill out the form to get a
+              Want to learn how SciencePeaks can support your practice or treatment? Fill out the form to get a
               personalized demo.
             </motion.p>
           </div>
@@ -223,7 +223,7 @@ export function Contact() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="I'm interested in learning more about SCIENCEPEAKS for my patients..."
+                    placeholder="I'm interested in learning more about SciencePeaks for my patients..."
                     rows={4}
                     required
                     className="w-full"

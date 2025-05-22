@@ -43,7 +43,7 @@ export function HowItWorks() {
       icon: <Database className="w-12 h-12 text-teal-500" />,
       title: "Multi-dimensional Analysis",
       description:
-        "SCIENCEPEAKS incorporates biomarkers (lactate, hemoglobin) and genetic predisposition to generate a comprehensive assessment of the patient's physical state.",
+        "SciencePeaks incorporates biomarkers (lactate, hemoglobin) and genetic predisposition to generate a comprehensive assessment of the patient's physical state.",
     },
     {
       icon: <Brain className="w-12 h-12 text-teal-500" />,
@@ -74,7 +74,7 @@ export function HowItWorks() {
             </motion.span>
             <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins">Our Innovative Approach</motion.h2>
             <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
-              SCIENCEPEAKS combines advanced technology with medical expertise to deliver personalized solutions for
+              SciencePeaks combines advanced technology with medical expertise to deliver personalized solutions for
               cancer-related fatigue.
             </motion.p>
           </div>

@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -31,13 +32,8 @@ export function Header() {
         <Link href="/#home" className="flex items-center gap-2" onClick={isMobileMenuOpen ? closeMobileMenu : undefined}>
           <div className="w-10 h-10 relative">
             {/* Replace with your actual logo */}
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 flex items-center justify-center">
-              <span className="text-white text-xl font-bold">SP</span>
-            </div>
+            <Image src="/logo.svg" alt="SciencePeaks Logo" width={40} height={40} className="rounded-full" />
           </div>
-          <span className="font-poppins font-bold text-2xl bg-gradient-to-r from-teal-500 to-blue-600 bg-clip-text text-transparent">
-            SciencePeaks
-          </span>
         </Link>
 
         {/* Desktop Navigation */}

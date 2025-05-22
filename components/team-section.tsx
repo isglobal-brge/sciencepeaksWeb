@@ -163,7 +163,7 @@ export function TeamSection() {
               variants={itemVariants}
               className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 font-poppins"
             >
-              Meet the Minds Behind SCIENCEPEAKS
+              Meet the Minds Behind SciencePeaks
             </motion.h2>
             <motion.p
               variants={itemVariants}

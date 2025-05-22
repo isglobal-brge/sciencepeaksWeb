@@ -45,22 +45,46 @@ export function Contact() {
     message: "",
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Form submission logic would go here
-    console.log("Form submitted:", formData)
-    alert("Thank you for your interest! We'll be in touch soon.")
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    })
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      // Reemplaza 'YOUR_FORM_ID' con tu ID real de Formspree
+      const response = await fetch('https://formspree.io/f/xbloezzn', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -233,10 +257,24 @@ export function Contact() {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 py-3 text-lg"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 py-3 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Submit Request
+                  {isSubmitting ? 'Sending...' : 'Submit Request'}
                 </Button>
+                
+                {/* Mensajes de estado */}
+                {submitStatus === 'success' && (
+                  <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                    ✅ Thank you! Your message has been sent successfully. We'll be in touch soon.
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                    ❌ Sorry, there was an error sending your message. Please try again or contact us directly.
+                  </div>
+                )}
               </form>
             </motion.div>
           </motion.div>

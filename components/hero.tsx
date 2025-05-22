@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Search, Phone } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Hero() {
   return (
@@ -55,17 +56,21 @@ export function Hero() {
               variability metrics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 self-center md:self-start">
-              <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center">
-                <Search size={18} />
-                Learn how SciencePeaks improves quality of life
-              </Button>
-              <Button
-                variant="outline"
-                className="border-teal-500 text-teal-600 hover:bg-teal-50 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center"
-              >
-                <Phone size={18} />
-                Request a demo / Contact us
-              </Button>
+              <Link href="#about">
+                <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center">
+                  <Search size={18} />
+                  Learn how SciencePeaks improves quality of life
+                </Button>
+              </Link>
+              <Link href="#contact">
+                <Button
+                  variant="outline"
+                  className="border-teal-500 text-teal-600 hover:bg-teal-50 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center"
+                >
+                  <Phone size={18} />
+                  Request a demo / Contact us
+                </Button>
+              </Link>
             </div>
           </motion.div>
 

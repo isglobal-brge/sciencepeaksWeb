@@ -59,9 +59,11 @@ export function Header() {
           <Link href="#contact" className="text-gray-700 hover:text-teal-500 transition-colors font-medium">
             Contact
           </Link>
-          <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700">
-            Request Demo
-          </Button>
+          <Link href="#contact">
+            <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700">
+              Request Demo
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -122,12 +124,14 @@ export function Header() {
               >
                 Contact
               </Link>
-              <Button 
-                onClick={closeMobileMenu} 
-                className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 w-full"
-              >
-                Request Demo
-              </Button>
+              <Link href="#contact">
+                <Button 
+                  onClick={closeMobileMenu} 
+                  className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 w-full"
+                >
+                  Request Demo
+                </Button>
+              </Link>
             </div>
           </motion.div>
         )}

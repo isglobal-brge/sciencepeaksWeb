@@ -112,7 +112,7 @@ export function RealTimeMonitoring() {
             >
               <div className="relative rounded-xl overflow-hidden shadow-xl">
                 <img 
-                  src="/medical-dashboard-hrv.png" 
+                  src="/medical-dashboard-radar.png" 
                   alt="Health Dashboard" 
                   className="w-full h-auto"
                 />

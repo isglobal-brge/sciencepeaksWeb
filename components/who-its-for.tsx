@@ -37,19 +37,19 @@ export function WhoItsFor() {
       icon: <User className="w-16 h-16 text-teal-500" />,
       title: "Breast cancer patients",
       description: "Seeking to manage fatigue and regain energy after treatment.",
-      image: "/placeholder.svg?height=300&width=300&query=woman+recovering+from+cancer+treatment+exercising+gently",
+      image: "/gentle-exercise-recovery.png?height=300&width=300&query=woman+recovering+from+cancer+treatment+exercising+gently",
     },
     {
       icon: <Users className="w-16 h-16 text-teal-500" />,
       title: "Oncologists and healthcare providers",
       description: "Who need objective tools to evaluate and guide physical activity.",
-      image: "/placeholder.svg?height=300&width=300&query=doctor+showing+patient+medical+data+on+tablet",
+      image: "/doctor-patient-tablet.png?height=300&width=300&query=doctor+showing+patient+medical+data+on+tablet",
     },
     {
       icon: <Dumbbell className="w-16 h-16 text-teal-500" />,
       title: "Exercise professionals",
       description: "Aiming to deliver evidence-based, personalized programs.",
-      image: "/placeholder.svg?height=300&width=300&query=personal+trainer+working+with+cancer+survivor",
+      image: "/personal-trainer-cancer-survivor.png?height=300&width=300&query=personal+trainer+working+with+cancer+survivor",
     },
   ]
 

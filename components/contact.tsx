@@ -93,14 +93,14 @@ export function Contact() {
                   <Mail className="w-6 h-6 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Email Us</h4>
-                    <p>juanr.gonzalez@isglobal.org</p>
+                    <p><a href="mailto:juanr.gonzalez@isglobal.org" className="hover:underline">juanr.gonzalez@isglobal.org</a></p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Call Us</h4>
-                    <p>+0 000 000 000</p>
+                    <p><a href="tel:+34932271806" className="hover:underline">+34 93 227 1806</a></p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -108,11 +108,13 @@ export function Contact() {
                   <div>
                     <h4 className="font-semibold mb-1">Visit Us</h4>
                     <p>
-                      Carrer del Doctor Aiguader, 88,
-                      <br />
-                      Ciutat Vella,
-                      <br />
-                      08003 Barcelona
+                      <a href="https://maps.app.goo.gl/ZRveGZ8dx9eYmuKS8" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        Carrer del Doctor Aiguader, 88,
+                        <br />
+                        Ciutat Vella,
+                        <br />
+                        08003 Barcelona
+                      </a>
                     </p>
                   </div>
                 </div>

@@ -95,7 +95,7 @@ export function Benefits() {
               className="rounded-2xl overflow-hidden shadow-xl"
             >
               <img
-                src="/placeholder.svg?height=600&width=600&query=cancer+patient+using+wearable+technology+with+doctor+reviewing+data"
+                src="/monitoring.png?height=600&width=600&query=cancer+patient+using+wearable+technology+with+doctor+reviewing+data"
                 alt="SciencePeaks Benefits"
                 className="w-full h-auto"
               />

@@ -10,10 +10,10 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  // Only use basePath and assetPrefix when deployed to GitHub Pages
-  ...(process.env.GITHUB_ACTIONS && {
+  distDir: 'docs',
+  ...(process.env.GITHUB_ACTIONS === 'true' && {
     basePath: '/sciencepeaksWeb',
-    assetPrefix: '/sciencepeaksWeb/',
+    assetPrefix: '/sciencepeaksWeb/', // Matches basePath for assets
   }),
 }
 

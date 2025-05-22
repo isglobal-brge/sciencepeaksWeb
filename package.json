@@ -1,16 +1,15 @@
 {
-  "name": "my-v0-project",
+  "name": "sciencepeaks-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://david.github.io/sciencepeaksWeb",
+  "homepage": "https://isglobal-brge.github.io/sciencepeaksWeb",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:gh": "GITHUB_ACTIONS=true next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build",
-    "predeploy": "GITHUB_ACTIONS=true npm run build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "deploy": "npm run build:gh && touch docs/.nojekyll && git add docs/ && git commit -m 'chores: deploy website' && git push"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",

@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
-import Image from "next/image"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -32,8 +32,11 @@ export function Header() {
         <Link href="/#home" className="flex items-center gap-2" onClick={isMobileMenuOpen ? closeMobileMenu : undefined}>
           <div className="w-10 h-10 relative">
             {/* Replace with your actual logo */}
-            <Image src="/logo.svg" alt="SciencePeaks Logo" width={40} height={40} className="rounded-full" />
+            <Image src="/logo.svg" alt="SciencePeaks Logo" width={40} height={40} />
           </div>
+          <span className="font-poppins font-bold text-2xl text-blue-600">
+            SciencePeaks
+          </span>
         </Link>
 
         {/* Desktop Navigation */}

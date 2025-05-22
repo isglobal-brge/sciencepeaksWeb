@@ -110,12 +110,13 @@ export function RealTimeMonitoring() {
               variants={imageVariant}
               className="order-1 lg:order-2"
             >
-              <div className="rounded-xl overflow-hidden shadow-xl">
+              <div className="relative rounded-xl overflow-hidden shadow-xl">
                 <img 
                   src="/medical-dashboard-hrv.png" 
                   alt="Health Dashboard" 
                   className="w-full h-auto"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               </div>
             </motion.div>
           </div>

@@ -55,13 +55,13 @@ export function Hero() {
               variability metrics.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-6 py-6 rounded-lg flex items-center gap-2">
+              <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center">
                 <Search size={18} />
                 Learn how SciencePeaks improves quality of life
               </Button>
               <Button
                 variant="outline"
-                className="border-teal-500 text-teal-600 hover:bg-teal-50 px-6 py-6 rounded-lg flex items-center gap-2"
+                className="border-teal-500 text-teal-600 hover:bg-teal-50 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center"
               >
                 <Phone size={18} />
                 Request a demo / Contact us
@@ -76,11 +76,11 @@ export function Hero() {
             className="relative aspect-[4/3]"
           >
             <Image
-              src="/sciencepeaks-wearable-device.jpg"
+              src="/sciencepeaks-wearable-device.png"
               alt="SciencePeaks Wearable Device"
               layout="fill"
-              objectFit="cover"
-              className="rounded-2xl shadow-2xl"
+              objectFit="contain"
+              className="relative z-20 p-8 md:p-12 filter drop-shadow-2xl"
               priority
             />
           </motion.div>

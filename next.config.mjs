@@ -10,7 +10,6 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  distDir: 'docs',
   ...(process.env.GITHUB_ACTIONS === 'true' && {
     basePath: '/sciencepeaksWeb',
     assetPrefix: '/sciencepeaksWeb/', // Matches basePath for assets

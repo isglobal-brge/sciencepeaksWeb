@@ -9,7 +9,7 @@
     "build:gh": "GITHUB_ACTIONS=true next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build:gh && touch docs/.nojekyll && git add docs/ && git commit -m 'chores: deploy website' && git push"
+    "deploy": "npm run build:gh && rm -rf docs && mv out docs && touch docs/.nojekyll && git add docs/ && git commit -m 'chores: deploy website' && git push"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",

@@ -51,7 +51,7 @@ export function Benefits() {
     {
       icon: <UserCog className="w-10 h-10 text-teal-500" />,
       title: "Personalized exercise recommendations",
-      description: "Tailored activity plans that adapt to your changing condition and recovery progress.",
+      description: "Based on your fitness track and heart rate variability from recent days, an AI-powered chatbot will recommend tailored activity plans that adapt to your changing condition and recovery progress.",
     },
     {
       icon: <UserCheck className="w-10 h-10 text-teal-500" />,
@@ -92,13 +92,18 @@ export function Benefits() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <motion.div
               variants={imageVariant}
-              className="rounded-2xl overflow-hidden shadow-xl"
+              className="space-y-4"
             >
-              <img
-                src="/monitoring.png?height=600&width=600&query=cancer+patient+using+wearable+technology+with+doctor+reviewing+data"
-                alt="SciencePeaks Benefits"
-                className="w-full h-auto"
-              />
+              <h3 className="text-xl font-bold text-gray-800 text-center lg:text-left">
+                Continuous HRV monitoring during exercise: control of intensity
+              </h3>
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="/monitoring.png?height=600&width=600&query=cancer+patient+using+wearable+technology+with+doctor+reviewing+data"
+                  alt="SciencePeaks Benefits"
+                  className="w-full h-auto"
+                />
+              </div>
             </motion.div>
 
             <motion.div

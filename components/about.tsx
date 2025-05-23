@@ -84,6 +84,18 @@ export function About() {
             </div>
             <div className="bg-white/70 rounded-xl p-8 shadow-lg backdrop-blur-sm flex flex-col justify-between">
               <div>
+                <div className="flex justify-end mb-4">
+                  <Image 
+                    src="/garmin-logo.png" 
+                    alt="Garmin" 
+                    width={60} 
+                    height={20} 
+                    className="opacity-70"
+                  />
+                </div>
+                <p className="text-lg text-gray-700 mb-4">
+                  SciencePeaks monitors HRV in the morning and before, during, and after physical activity. The platform is compatible with Garmin® devices to incorporate HRV data during sleep, providing comprehensive 24/7 monitoring.
+                </p>
                 <p className="text-lg text-gray-700 mb-6">
                   Powered by advanced technology and artificial intelligence, the platform enables healthcare professionals
                   and patients to make informed, data-driven decisions that improve adherence and therapeutic outcomes.
@@ -102,17 +114,15 @@ export function About() {
 
           <motion.div
             variants={majorBlockVariants}
-            className="relative rounded-2xl overflow-hidden shadow-xl"
+            className="text-center"
           >
-            <Image src="/medical-dashboard-hrv.png" alt="SciencePeaks Platform" width={1200} height={600} className="w-full h-auto" priority={false} />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
-              <div className="p-8 text-white max-w-2xl">
-                <h3 className="text-2xl font-bold mb-2">Data-Driven Approach</h3>
-                <p className="text-lg">
-                  Our platform analyzes multiple data points to create a comprehensive picture of each patient&apos;s condition
-                  and recovery journey.
-                </p>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl mx-auto max-w-4xl mb-3">
+              <Image src="/medical-dashboard-hrv.png" alt="SciencePeaks Platform" width={1200} height={600} className="w-full h-auto" priority={false} />
+            </div>
+            <div className="max-w-4xl mx-auto text-left">
+              <p className="text-sm text-gray-600">
+                <span className="font-medium">Data-Driven Approach:</span> Our platform analyzes multiple data points to create a comprehensive picture of each patient's condition and recovery journey.
+              </p>
             </div>
           </motion.div>
         </motion.div>

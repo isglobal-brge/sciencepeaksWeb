@@ -120,7 +120,7 @@ export function About() {
               <Image src="/medical-dashboard-hrv.png" alt="SciencePeaks Platform" width={1200} height={600} className="w-full h-auto" priority={false} />
             </div>
             <div className="max-w-4xl mx-auto text-left">
-              <p className="text-sm text-gray-600">
+              <p className="text-lg text-gray-600">
                 <span className="font-medium">Data-Driven Approach:</span> Our platform analyzes multiple data points to create a comprehensive picture of each patient's condition and recovery journey.
               </p>
             </div>

@@ -44,7 +44,7 @@ export function About() {
   }
 
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="pt-0 md:pt-20 pb-20">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}

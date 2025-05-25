@@ -63,7 +63,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 6,
     name: "Víctor Nàcher Castellet",
-    role: "Software Engineering",
+    role: "Data Science",
     imageSrc: "/pfp-victor.jpeg?height=300&width=400&text=Víctor+Nàcher+Castellet",
     linkedinProfile: "https://www.linkedin.com/in/victornacher/",
     bio: "-"

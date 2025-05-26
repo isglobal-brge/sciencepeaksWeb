@@ -3,6 +3,7 @@ import "./globals.css"
 import { Inter, Poppins } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { MovingGradientBackground } from "@/components/moving-gradient-background"
+import { CookieBanner } from "@/components/cookie-banner"
 import type { Metadata } from "next"
 
 const inter = Inter({
@@ -135,6 +136,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <MovingGradientBackground />
           {children}
+          <CookieBanner />
         </ThemeProvider>
       </body>
     </html>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Legal Notice & Conditions of Use | SciencePeaks',
@@ -87,6 +88,7 @@ export default function LegalNoticePage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 } 

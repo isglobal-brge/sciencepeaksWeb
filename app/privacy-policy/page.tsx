@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | SciencePeaks',
@@ -125,6 +126,7 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 } 

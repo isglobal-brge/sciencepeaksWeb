@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
   title: 'Cookies Policy | SciencePeaks',
@@ -246,6 +247,7 @@ export default function CookiesPolicyPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 } 

@@ -66,11 +66,11 @@ export default function Home() {
         <section id="benefits" aria-labelledby="benefits-heading">
           <Benefits />
         </section>
-        <section id="team" aria-labelledby="team-heading">
-          <TeamSection />
-        </section>
         <section id="monitoring" aria-labelledby="monitoring-heading">
           <RealTimeMonitoring />
+        </section>
+        <section id="team" aria-labelledby="team-heading">
+          <TeamSection />
         </section>
         <section id="contact" aria-labelledby="contact-heading">
           <Contact />

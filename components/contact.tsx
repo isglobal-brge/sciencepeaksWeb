@@ -191,7 +191,7 @@ export function Contact() {
                   <h4 className="font-semibold text-gray-800 mb-3">Data Protection Information</h4>
                   <div className="text-xs text-gray-600 space-y-2 leading-relaxed">
                     <p>
-                      Your personal data will only be used by the <strong>Fundación Privada Instituto de Salud Global Barcelona (ISGlobal)</strong>; 
+                      Your personal data will be used by the <strong>Fundación Privada Instituto de Salud Global Barcelona (ISGlobal)</strong>; 
                       CIF: G65341695; Postal address: C/ Rosselló, number 132, 7th floor, 08036 Barcelona; 
                       Email: <a href="mailto:lopd@isglobal.org" className="text-teal-600 hover:underline">lopd@isglobal.org</a>
                     </p>

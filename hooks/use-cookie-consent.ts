@@ -4,9 +4,13 @@ import { useState, useEffect } from 'react'
 
 export interface CookiePreferences {
   necessary: boolean
-  analytics: boolean
   functional: boolean
-  marketing: boolean
+  analytics: boolean
+  socialMedia: boolean
+  targetingFirstParty: boolean
+  targetingThirdParty: boolean
+  googleIabTcf: boolean
+  other: boolean
 }
 
 const COOKIE_CONSENT_KEY = 'sciencepeaks-cookie-consent'
@@ -14,9 +18,13 @@ const COOKIE_PREFERENCES_KEY = 'sciencepeaks-cookie-preferences'
 
 const defaultPreferences: CookiePreferences = {
   necessary: true,
-  analytics: false,
   functional: false,
-  marketing: false
+  analytics: false,
+  socialMedia: false,
+  targetingFirstParty: false,
+  targetingThirdParty: false,
+  googleIabTcf: false,
+  other: false
 }
 
 export function useCookieConsent() {
@@ -54,9 +62,13 @@ export function useCookieConsent() {
   const acceptAll = () => {
     const allAccepted: CookiePreferences = {
       necessary: true,
-      analytics: true,
       functional: true,
-      marketing: true
+      analytics: true,
+      socialMedia: true,
+      targetingFirstParty: true,
+      targetingThirdParty: true,
+      googleIabTcf: true,
+      other: true
     }
     updatePreferences(allAccepted)
   }
@@ -64,9 +76,13 @@ export function useCookieConsent() {
   const rejectAll = () => {
     const onlyNecessary: CookiePreferences = {
       necessary: true,
-      analytics: false,
       functional: false,
-      marketing: false
+      analytics: false,
+      socialMedia: false,
+      targetingFirstParty: false,
+      targetingThirdParty: false,
+      googleIabTcf: false,
+      other: false
     }
     updatePreferences(onlyNecessary)
   }
@@ -79,9 +95,13 @@ export function useCookieConsent() {
   }
 
   // Helper functions to check specific cookie types
-  const canUseAnalytics = () => preferences.analytics
   const canUseFunctional = () => preferences.functional
-  const canUseMarketing = () => preferences.marketing
+  const canUseAnalytics = () => preferences.analytics
+  const canUseSocialMedia = () => preferences.socialMedia
+  const canUseTargetingFirstParty = () => preferences.targetingFirstParty
+  const canUseTargetingThirdParty = () => preferences.targetingThirdParty
+  const canUseGoogleIabTcf = () => preferences.googleIabTcf
+  const canUseOther = () => preferences.other
 
   return {
     preferences,
@@ -91,8 +111,12 @@ export function useCookieConsent() {
     acceptAll,
     rejectAll,
     resetConsent,
-    canUseAnalytics,
     canUseFunctional,
-    canUseMarketing
+    canUseAnalytics,
+    canUseSocialMedia,
+    canUseTargetingFirstParty,
+    canUseTargetingThirdParty,
+    canUseGoogleIabTcf,
+    canUseOther
   }
 } 

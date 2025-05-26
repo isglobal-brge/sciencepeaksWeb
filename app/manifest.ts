@@ -1,0 +1,33 @@
+import { MetadataRoute } from 'next'
+
+export const dynamic = 'force-static'
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'SciencePeaks - AI-Powered Personalized Physical Activity',
+    short_name: 'SciencePeaks',
+    description: 'An intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#ffffff',
+    theme_color: '#667eea',
+    orientation: 'portrait-primary',
+    icons: [
+      {
+        src: '/logo.svg',
+        sizes: 'any',
+        type: 'image/svg+xml',
+        purpose: 'any',
+      },
+      {
+        src: '/logo.svg',
+        sizes: 'any',
+        type: 'image/svg+xml',
+        purpose: 'maskable',
+      },
+    ],
+    categories: ['health', 'fitness', 'medical', 'lifestyle'],
+    lang: 'en',
+    dir: 'ltr',
+  }
+} 

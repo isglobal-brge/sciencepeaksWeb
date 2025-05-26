@@ -302,14 +302,14 @@ export function Contact() {
                     
                     <p>
                       We collect and process your personal data for the sole purpose of responding to your inquiry. 
-                      Additionally, if you choose the option for receiving information, we will also use your data to 
-                      keep you informed about our activities by way of newsletters and other communications that may be of interest to you.
+                      {formData.newsletter && "Additionally, if you choose the option for receiving information, we will also use your data to keep you informed about our activities by way of newsletters and other communications that may be of interest to you."}
                     </p>
                     
                     <p>
-                      Your data will be used solely by the persons or teams in ISGlobal who require access to it to carry out 
-                      their work and it will never, under any circumstances, be made available to third parties or transferred 
-                      to third countries or international organisations.
+                      Your data will be processed by ISGlobal and transmitted through Formspree Inc. (a third-party service provider located in the United States) 
+                      solely for the purpose of delivering your inquiry to us. Formspree acts as a data processor under our instructions and is bound by 
+                      appropriate data protection agreements. Apart from this necessary technical processing, your data will never be made available to 
+                      other third parties or used for any other purposes.
                     </p>
                     
                     <p>

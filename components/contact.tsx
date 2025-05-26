@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Mail, Phone, MapPin } from "lucide-react"
 
 export function Contact() {
@@ -43,29 +44,45 @@ export function Contact() {
     email: "",
     phone: "",
     message: "",
+    newsletter: false,
   })
 
+  const [consentGiven, setConsentGiven] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
+    const { name, value, type } = e.target
+    const checked = (e.target as HTMLInputElement).checked
+    
+    setFormData((prev) => ({ 
+      ...prev, 
+      [name]: type === 'checkbox' ? checked : value 
+    }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    
+    if (!consentGiven) {
+      alert('Please accept the privacy policy to submit the form.')
+      return
+    }
+
     setIsSubmitting(true)
     setSubmitStatus('idle')
 
     try {
-      // Reemplaza 'YOUR_FORM_ID' con tu ID real de Formspree
       const response = await fetch('https://formspree.io/f/xbloezzn', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          consentGiven: consentGiven,
+          timestamp: new Date().toISOString(),
+        }),
       })
 
       if (response.ok) {
@@ -75,7 +92,9 @@ export function Contact() {
           email: "",
           phone: "",
           message: "",
+          newsletter: false,
         })
+        setConsentGiven(false)
       } else {
         setSubmitStatus('error')
       }
@@ -200,7 +219,7 @@ export function Contact() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Full Name
+                    Full Name *
                   </label>
                   <Input
                     id="name"
@@ -214,7 +233,7 @@ export function Contact() {
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email Address
+                    Email Address *
                   </label>
                   <Input
                     id="email"
@@ -242,7 +261,7 @@ export function Contact() {
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    How can we help you?
+                    How can we help you? *
                   </label>
                   <Textarea
                     id="message"
@@ -255,15 +274,88 @@ export function Contact() {
                     className="w-full"
                   />
                 </div>
+
+                {/* Optional newsletter subscription */}
+                <div className="flex items-start space-x-3">
+                  <Checkbox
+                    id="newsletter"
+                    name="newsletter"
+                    checked={formData.newsletter}
+                    onCheckedChange={(checked) => 
+                      setFormData(prev => ({ ...prev, newsletter: checked as boolean }))
+                    }
+                  />
+                  <label htmlFor="newsletter" className="text-sm text-gray-600 leading-relaxed">
+                    I would like to receive newsletters and other communications about ISGlobal activities
+                  </label>
+                </div>
+
+                {/* GDPR Legal Text */}
+                <div className="bg-gray-50 p-4 rounded-lg border">
+                  <h4 className="font-semibold text-gray-800 mb-3">Data Protection Information</h4>
+                  <div className="text-xs text-gray-600 space-y-2 leading-relaxed">
+                    <p>
+                      Your personal data will only be used by the <strong>Fundación Privada Instituto de Salud Global Barcelona (ISGlobal)</strong>; 
+                      CIF: G65341695; Postal address: C/ Rosselló, number 132, 7th floor, 08036 Barcelona; 
+                      Email: <a href="mailto:lopd@isglobal.org" className="text-teal-600 hover:underline">lopd@isglobal.org</a>
+                    </p>
+                    
+                    <p>
+                      We collect and process your personal data for the sole purpose of responding to your inquiry. 
+                      Additionally, if you choose the option for receiving information, we will also use your data to 
+                      keep you informed about our activities by way of newsletters and other communications that may be of interest to you.
+                    </p>
+                    
+                    <p>
+                      Your data will be used solely by the persons or teams in ISGlobal who require access to it to carry out 
+                      their work and it will never, under any circumstances, be made available to third parties or transferred 
+                      to third countries or international organisations.
+                    </p>
+                    
+                    <p>
+                      We can only process your personal data with your consent, and it will be retained only as long as you do not withdraw consent.
+                    </p>
+                    
+                    <p>
+                      You can exercise all your rights under current data protection regulations, including the right to access, 
+                      correction, objection, erasure, portability and restriction, by writing to the Data Protection Officer 
+                      (<a href="mailto:lopd@isglobal.org" className="text-teal-600 hover:underline">lopd@isglobal.org</a>), 
+                      attaching a copy of your national identity document or equivalent.
+                    </p>
+                    
+                    <p>
+                      You have the right to withdraw your consent at any time. Withdrawal of consent does not affect the 
+                      lawfulness of processing based on consent before its withdrawal. If you do not agree with the manner 
+                      in which ISGlobal handles your data or you consider that your rights have been infringed, you can file 
+                      a complaint at any time with the Spanish Data Protection Agency 
+                      (<a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">www.aepd.es</a> – C/ Jorge Juan, 6 de Madrid).
+                    </p>
+                  </div>
+                </div>
+
+                {/* Mandatory Consent Checkbox */}
+                <div className="flex items-start space-x-3">
+                  <Checkbox
+                    id="consent"
+                    checked={consentGiven}
+                    onCheckedChange={(checked) => setConsentGiven(checked as boolean)}
+                    required
+                  />
+                  <label htmlFor="consent" className="text-sm text-gray-700 leading-relaxed">
+                    <span className="text-red-600">*</span> By clicking the SEND button I acknowledge that I have been appropriately 
+                    informed and that I consent to the processing of my personal data for the stated purpose.
+                  </label>
+                </div>
+
                 <Button
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || !consentGiven}
                   className="w-full bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 py-3 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isSubmitting ? 'Sending...' : 'Submit Request'}
+                  {isSubmitting ? 'Sending...' : 'SEND'}
                 </Button>
                 
-                {/* Mensajes de estado */}
+                {/* Status Messages */}
                 {submitStatus === 'success' && (
                   <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
                     ✅ Thank you! Your message has been sent successfully. We'll be in touch soon.

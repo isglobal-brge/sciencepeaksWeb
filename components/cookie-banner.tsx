@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { Switch } from '@/components/ui/switch'
@@ -79,13 +80,13 @@ export function CookieBanner() {
                 <p className="text-sm text-gray-700 mt-2">
                   You can decide which optional cookies to accept by clicking on CONFIGURE, where 
                   you can also find more information about how your personal data is processed.{' '}
-                  <button 
+                  <Link 
+                    href="/privacy-policy"
                     className="text-teal-600 hover:text-teal-700 underline inline-flex items-center gap-1"
-                    onClick={() => {/* Add privacy policy link */}}
                   >
                     View our Privacy Policy
                     <ExternalLink className="h-3 w-3" />
-                  </button>
+                  </Link>
                 </p>
               </div>
             </div>

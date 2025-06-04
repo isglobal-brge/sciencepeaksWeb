@@ -37,6 +37,14 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 3,
+    name: "Gil Rodas Font",
+    role: "Scientific Advisor",
+    imageSrc: "/pfp-gil.jpeg?height=300&width=400&text=Gil+Rodas+Font",
+    linkedinProfile: "https://www.linkedin.com/in/gil-rodas-font-6b09982a/",
+    bio: "-"
+  },
+  {
+    id: 4,
     name: "Lucie Rabattu",
     role: "Innovation Management",
     imageSrc: "/pfp-lucie.jpg?height=300&width=400&text=Lucie+Rabattu",
@@ -44,7 +52,7 @@ const teamMembers: TeamMember[] = [
     bio: "-"
   },
   {
-    id: 4,
+    id: 5,
     name: "Óscar Casado Vilches",
     role: "Innovation Management",
     imageSrc: "/pfp-oscar.jpeg?height=300&width=400&text=Óscar+Casado+Vilches",
@@ -52,7 +60,7 @@ const teamMembers: TeamMember[] = [
     bio: "-"
   },
   {
-    id: 5,
+    id: 6,
     name: "David Sarrat González",
     role: "Business Development",
     imageSrc: "/pfp-david.jpeg?height=300&width=400&text=David+Sarrat+González",
@@ -61,7 +69,7 @@ const teamMembers: TeamMember[] = [
     bio: "-"
   },
   {
-    id: 6,
+    id: 7,
     name: "Víctor Nàcher Castellet",
     role: "Data Science",
     imageSrc: "/pfp-victor.jpeg?height=300&width=400&text=Víctor+Nàcher+Castellet",
@@ -69,7 +77,7 @@ const teamMembers: TeamMember[] = [
     bio: "-"
   },
   {
-    id: 7,
+    id: 8,
     name: "Dídac Cayuela Dolcet",
     role: "Software Engineering",
     imageSrc: "/pfp-didac.jpg?height=300&width=400&text=Dídac+Cayuela+Dolcet",

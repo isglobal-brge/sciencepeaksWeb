@@ -131,8 +131,8 @@ export function Benefits() {
           >
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Evidence-Based Results</h3>
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Our approach has been validated through clinical studies, showing significant improvements in fatigue
-              levels, quality of life, and overall well-being for cancer patients.
+              Literature shows significant improvements in fatigue levels, quality of life, and overall well-being 
+              for cancer patients using evidence-based exercise interventions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-6 bg-teal-50/70 rounded-xl backdrop-blur-sm">

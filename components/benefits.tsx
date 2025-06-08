@@ -99,7 +99,7 @@ export function Benefits() {
               </h3>
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/monitoring.png?height=600&width=600&query=cancer+patient+using+wearable+technology+with+doctor+reviewing+data"
+                  src="/monitoring-2.png?height=600&width=600&query=cancer+patient+using+wearable+technology+with+doctor+reviewing+data"
                   alt="SciencePeaks Benefits"
                   className="w-full h-auto"
                 />

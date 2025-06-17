@@ -19,7 +19,7 @@ Allow: /*.svg
 Allow: /*.ico
 
 # Sitemap location
-Sitemap: https://sciencepeaks.isglobal.org/sitemap.xml
+Sitemap: https://www.sciencepeaks.ai/sitemap.xml
 
 # Crawl-delay for politeness
 Crawl-delay: 1 

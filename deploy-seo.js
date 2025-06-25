@@ -206,7 +206,7 @@ const deploy = async () => {
     execSync('cp -r public/* docs/', { stdio: 'inherit' });
     
     console.log('\n5️⃣ Setting up GitHub Pages...');
-    fs.writeFileSync('docs/CNAME', 'sciencepeaks.isglobal.org');
+    fs.writeFileSync('docs/CNAME', 'www.sciencepeaks.ai');
     fs.writeFileSync('docs/.nojekyll', '');
     
     // SEO optimizations
@@ -223,7 +223,7 @@ const deploy = async () => {
     execSync('git push', { stdio: 'inherit' });
     
     console.log('\n🎉 Deployment completed successfully!');
-    console.log('📊 Your site should be available at: https://sciencepeaks.isglobal.org');
+    console.log('📊 Your site should be available at: https://www.sciencepeaks.ai');
     
   } catch (error) {
     console.error('❌ Deployment failed:', error.message);

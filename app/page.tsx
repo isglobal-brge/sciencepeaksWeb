@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "SciencePeaks - AI-Powered Personalized Physical Activity Ecosystem",
   description: "Transform your health with our intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics. Discover how technology meets wellness.",
   alternates: {
-    canonical: "https://sciencepeaks.isglobal.org",
+    canonical: "https://www.sciencepeaks.ai",
   },
 }
 
@@ -27,14 +27,14 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://sciencepeaks.isglobal.org",
-            url: "https://sciencepeaks.isglobal.org",
+            "@id": "https://www.sciencepeaks.ai",
+            url: "https://www.sciencepeaks.ai",
             name: "SciencePeaks - AI-Powered Personalized Physical Activity",
             description: "Transform your health with our intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.",
             isPartOf: {
               "@type": "WebSite",
-              "@id": "https://sciencepeaks.isglobal.org/#website",
-              url: "https://sciencepeaks.isglobal.org",
+              "@id": "https://www.sciencepeaks.ai/#website",
+              url: "https://www.sciencepeaks.ai",
               name: "SciencePeaks"
             },
             about: {

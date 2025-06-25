@@ -49,13 +49,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sciencepeaks.isglobal.org",
+    url: "https://www.sciencepeaks.ai",
     siteName: "SciencePeaks",
     title: "SciencePeaks - AI-Powered Personalized Physical Activity",
     description: "Transform your health with our intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.",
     images: [
       {
-        url: "https://sciencepeaks.isglobal.org/sciencepeaks-wearable-device.png",
+        url: "https://www.sciencepeaks.ai/sciencepeaks-wearable-device.png",
         width: 1200,
         height: 630,
         alt: "SciencePeaks Wearable Device Technology",
@@ -66,12 +66,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SciencePeaks - AI-Powered Personalized Physical Activity",
     description: "Transform your health with our intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.",
-    images: ["https://sciencepeaks.isglobal.org/sciencepeaks-wearable-device.png"],
+    images: ["https://www.sciencepeaks.ai/sciencepeaks-wearable-device.png"],
     creator: "@sciencepeaks",
   },
 
   alternates: {
-    canonical: "https://sciencepeaks.isglobal.org",
+    canonical: "https://www.sciencepeaks.ai",
   },
   icons: {
     icon: [
@@ -114,8 +114,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "SciencePeaks",
-              url: "https://sciencepeaks.isglobal.org",
-              logo: "https://sciencepeaks.isglobal.org/logo.svg",
+              url: "https://www.sciencepeaks.ai",
+              logo: "https://www.sciencepeaks.ai/logo.svg",
               description: "An intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.",
               foundingDate: "2024",
               industry: "Health Technology",
@@ -126,7 +126,7 @@ export default function RootLayout({
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "Customer Service",
-                url: "https://sciencepeaks.isglobal.org#contact"
+                url: "https://www.sciencepeaks.ai#contact"
               }
             })
           }}

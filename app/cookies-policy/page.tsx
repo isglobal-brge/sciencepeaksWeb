@@ -19,7 +19,7 @@ export default function CookiesPolicyPage() {
             
             <div className="prose prose-lg max-w-none">
               <p className="mb-6">
-                Our website <strong>sciencepeaks.isglobal.org</strong> (the "Website") uses cookies to collect information 
+                Our website <strong>www.sciencepeaks.ai</strong> (the "Website") uses cookies to collect information 
                 on how the Website is used.
               </p>
 

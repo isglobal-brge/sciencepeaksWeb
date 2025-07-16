@@ -45,22 +45,6 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 4,
-    name: "Lucie Rabattu",
-    role: "Innovation Management",
-    imageSrc: "/pfp-lucie.jpg?height=300&width=400&text=Lucie+Rabattu",
-    linkedinProfile: "https://www.linkedin.com/in/lucierabattu/",
-    bio: "-"
-  },
-  {
-    id: 5,
-    name: "Óscar Casado Vilches",
-    role: "Innovation Management",
-    imageSrc: "/pfp-oscar.jpeg?height=300&width=400&text=Óscar+Casado+Vilches",
-    linkedinProfile: "https://www.linkedin.com/in/oscar-casado-vilches/",
-    bio: "-"
-  },
-  {
-    id: 6,
     name: "David Sarrat González",
     role: "Business & Software Development",
     imageSrc: "/pfp-david.jpeg?height=300&width=400&text=David+Sarrat+González",
@@ -69,7 +53,7 @@ const teamMembers: TeamMember[] = [
     bio: "-"
   },
   {
-    id: 7,
+    id: 5,
     name: "Víctor Nàcher Castellet",
     role: "Data Science",
     imageSrc: "/pfp-victor.jpeg?height=300&width=400&text=Víctor+Nàcher+Castellet",
@@ -77,12 +61,28 @@ const teamMembers: TeamMember[] = [
     bio: "-"
   },
   {
-    id: 8,
+    id: 6,
     name: "Dídac Cayuela Dolcet",
     role: "Software Engineering",
     imageSrc: "/pfp-didac.jpg?height=300&width=400&text=Dídac+Cayuela+Dolcet",
     isGlobalProfile: "https://didicayu.github.io",
     linkedinProfile: "https://www.linkedin.com/in/didac-cayuela",
+    bio: "-"
+  },
+  {
+    id: 7,
+    name: "Lucie Rabattu",
+    role: "Innovation Management",
+    imageSrc: "/pfp-lucie.jpg?height=300&width=400&text=Lucie+Rabattu",
+    linkedinProfile: "https://www.linkedin.com/in/lucierabattu/",
+    bio: "-"
+  },
+  {
+    id: 8,
+    name: "Óscar Casado Vilches",
+    role: "Innovation Management",
+    imageSrc: "/pfp-oscar.jpeg?height=300&width=400&text=Óscar+Casado+Vilches",
+    linkedinProfile: "https://www.linkedin.com/in/oscar-casado-vilches/",
     bio: "-"
   }
 ];

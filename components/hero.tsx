@@ -55,21 +55,23 @@ export function Hero() {
               An intelligent ecosystem that personalizes physical activity using AI, genetics, biomarkers, and heart rate
               variability metrics.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 self-center sm:self-start">
-              <Link href="#about">
-                <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center">
-                <Search size={18} />
-                Learn how SciencePeaks improves quality of life
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 justify-center md:justify-start items-stretch w-full">
+              <Link href="#about" className="w-full sm:w-auto flex-1 sm:flex-none">
+                <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 rounded-lg flex items-center justify-center gap-2 text-center text-sm sm:text-base w-full sm:w-auto h-auto min-h-[48px] sm:min-h-[56px]">
+                  <Search size={16} className="sm:hidden flex-shrink-0" />
+                  <Search size={18} className="hidden sm:inline flex-shrink-0" />
+                  <span className="leading-tight">Learn how SciencePeaks improves quality of life</span>
+                </Button>
               </Link>
-              <Link href="#contact">
-              <Button
-                variant="outline"
-                  className="border-teal-500 text-teal-600 hover:bg-teal-50 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center"
-              >
-                <Phone size={18} />
-                Request a demo / Contact us
-              </Button>
+              <Link href="#contact" className="w-full sm:w-auto flex-1 sm:flex-none">
+                <Button
+                  variant="outline"
+                  className="border-teal-500 text-teal-600 hover:bg-teal-50 px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 rounded-lg flex items-center justify-center gap-2 text-center text-sm sm:text-base w-full sm:w-auto h-auto min-h-[48px] sm:min-h-[56px]"
+                >
+                  <Phone size={16} className="sm:hidden flex-shrink-0" />
+                  <Phone size={18} className="hidden sm:inline flex-shrink-0" />
+                  <span className="leading-tight">Request a demo / Contact us</span>
+                </Button>
               </Link>
             </div>
           </motion.div>

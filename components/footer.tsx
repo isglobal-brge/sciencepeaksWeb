@@ -25,6 +25,10 @@ export function Footer() {
               <Link href="/cookies-policy" className="hover:text-white transition-colors">
                 Cookies Policy
               </Link>
+              <span>|</span>
+              <Link href="/account-deletion" className="hover:text-white transition-colors">
+                Account Deletion
+              </Link>
             </div>
           </div>
         </div>

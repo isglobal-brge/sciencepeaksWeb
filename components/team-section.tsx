@@ -62,7 +62,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 6,
     name: "David Sarrat González",
-    role: "Business Development",
+    role: "Business & Software Development",
     imageSrc: "/pfp-david.jpeg?height=300&width=400&text=David+Sarrat+González",
     isGlobalProfile: "https://davidsarratgonzalez.github.io",
     linkedinProfile: "https://www.linkedin.com/in/davidsarratgonzalez",

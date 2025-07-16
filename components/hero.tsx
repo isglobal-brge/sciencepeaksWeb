@@ -55,7 +55,7 @@ export function Hero() {
               An intelligent ecosystem that personalizes physical activity using AI, genetics, biomarkers, and heart rate
               variability metrics.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 self-center md:self-start">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 self-center sm:self-start">
               <Link href="#about">
                 <Button className="bg-gradient-to-r from-teal-500 to-blue-600 text-white hover:from-teal-600 hover:to-blue-700 px-8 py-6 rounded-lg flex items-center justify-center gap-2 text-center">
                 <Search size={18} />

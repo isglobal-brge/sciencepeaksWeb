@@ -84,12 +84,12 @@ export function About() {
             </div>
             <div className="bg-white/70 rounded-xl p-8 shadow-lg backdrop-blur-sm flex flex-col justify-between">
               <div>
-                <div className="flex justify-end mb-4">
+                <div className="flex justify-start mb-4">
                   <Image 
                     src="/garmin-logo.png" 
                     alt="Garmin" 
-                    width={60} 
-                    height={20} 
+                    width={75} 
+                    height={25} 
                     className="opacity-70"
                   />
                 </div>

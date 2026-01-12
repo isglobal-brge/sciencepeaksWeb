@@ -8,27 +8,29 @@ export function Footer() {
     <footer className="bg-gray-900 text-white py-6">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+          {/* Logo centrado */}
+          <div className="flex justify-center mb-4">
+            <a
+              href="https://www.isglobal.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-110"
+            >
+              <Image
+                src="/isglobal_logo.png"
+                alt="ISGlobal"
+                width={120}
+                height={60}
+                className="h-10 w-auto"
+              />
+            </a>
+          </div>
+
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-4">
-              <div className="text-center md:text-left text-gray-400 text-sm">
-                <p>&copy; {currentYear} SciencePeaks. All rights reserved.</p>
-              </div>
-              <a
-                href="https://www.isglobal.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <Image
-                  src="/logo-isglobal.jpg"
-                  alt="ISGlobal"
-                  width={80}
-                  height={40}
-                  className="h-8 w-auto"
-                />
-              </a>
+            <div className="text-center md:text-left text-gray-400 text-sm">
+              <p>&copy; {currentYear} SciencePeaks. All rights reserved.</p>
             </div>
-            
+
             {/* Legal Links - Always Visible */}
             <div className="flex flex-wrap justify-center md:justify-end gap-4 text-xs text-gray-400">
               <Link href="/legal-notice" className="hover:text-white transition-colors">

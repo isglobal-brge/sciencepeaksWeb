@@ -71,10 +71,10 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 7,
-    name: "Lucie Rabattu",
+    name: "Clara Morella Teixidor",
     role: "Innovation Management",
-    imageSrc: "/pfp-lucie.jpg?height=300&width=400&text=Lucie+Rabattu",
-    linkedinProfile: "https://www.linkedin.com/in/lucierabattu/",
+    imageSrc: "/pfp-clara.jpg?height=300&width=400&text=Clara+Morella+Teixidor",
+    linkedinProfile: "https://www.linkedin.com/in/clara-morella-teixidor/",
     bio: "-"
   },
   {

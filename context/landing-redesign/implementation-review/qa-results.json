@@ -1,0 +1,291 @@
+{
+  "checked": "2026-10-08T23:18:30.204Z",
+  "checks": [
+    {
+      "name": "No scene or Three downloaded initially",
+      "passed": true
+    },
+    {
+      "name": "One descriptive h1",
+      "passed": true
+    },
+    {
+      "name": "Canonical chosen host",
+      "passed": true
+    },
+    {
+      "name": "Homepage indexable",
+      "passed": true
+    },
+    {
+      "name": "Structured data parses",
+      "passed": true
+    },
+    {
+      "name": "All internal anchors resolve",
+      "passed": true
+    },
+    {
+      "name": "No horizontal scroll 1440",
+      "passed": true
+    },
+    {
+      "name": "Readable h1 1440",
+      "passed": true
+    },
+    {
+      "name": "All product images decode 1440",
+      "passed": true
+    },
+    {
+      "name": "Sport visual fits between prose and list 1440",
+      "passed": true
+    },
+    {
+      "name": "No horizontal scroll 1280",
+      "passed": true
+    },
+    {
+      "name": "Readable h1 1280",
+      "passed": true
+    },
+    {
+      "name": "All product images decode 1280",
+      "passed": true
+    },
+    {
+      "name": "Sport visual fits between prose and list 1280",
+      "passed": true
+    },
+    {
+      "name": "No horizontal scroll 1024",
+      "passed": true
+    },
+    {
+      "name": "Readable h1 1024",
+      "passed": true
+    },
+    {
+      "name": "All product images decode 1024",
+      "passed": true
+    },
+    {
+      "name": "Sport visual fits between prose and list 1024",
+      "passed": true
+    },
+    {
+      "name": "No horizontal scroll 768",
+      "passed": true
+    },
+    {
+      "name": "Readable h1 768",
+      "passed": true
+    },
+    {
+      "name": "All product images decode 768",
+      "passed": true
+    },
+    {
+      "name": "Sport visual fits between prose and list 768",
+      "passed": true
+    },
+    {
+      "name": "No horizontal scroll 390",
+      "passed": true
+    },
+    {
+      "name": "Readable h1 390",
+      "passed": true
+    },
+    {
+      "name": "All product images decode 390",
+      "passed": true
+    },
+    {
+      "name": "Sport visual fits between prose and list 390",
+      "passed": true
+    },
+    {
+      "name": "No horizontal scroll 320",
+      "passed": true
+    },
+    {
+      "name": "Readable h1 320",
+      "passed": true
+    },
+    {
+      "name": "All product images decode 320",
+      "passed": true
+    },
+    {
+      "name": "Sport visual fits between prose and list 320",
+      "passed": true
+    },
+    {
+      "name": "Mobile menu exposes links and focuses first",
+      "passed": true
+    },
+    {
+      "name": "Escape closes menu and returns focus",
+      "passed": true
+    },
+    {
+      "name": "Mobile story tabs keep selected screenshot visible",
+      "passed": true
+    },
+    {
+      "name": "Professional workflow screenshot selectable",
+      "passed": true
+    },
+    {
+      "name": "Activity tabs support keyboard navigation",
+      "passed": true
+    },
+    {
+      "name": "Home returns first activity tab",
+      "passed": true
+    },
+    {
+      "name": "Initial volume arithmetic",
+      "passed": true
+    },
+    {
+      "name": "Net volume zero at 1 MET",
+      "passed": true
+    },
+    {
+      "name": "Maximum slider arithmetic",
+      "passed": true
+    },
+    {
+      "name": "Consent required before submission",
+      "passed": true
+    },
+    {
+      "name": "Failure shows accurate feedback and keeps input",
+      "passed": true
+    },
+    {
+      "name": "Submission has consent and context",
+      "passed": true
+    },
+    {
+      "name": "Success only after response and resets form",
+      "passed": true
+    },
+    {
+      "name": "Institution keyboard focus visible 1",
+      "passed": true
+    },
+    {
+      "name": "Institution keyboard focus visible 2",
+      "passed": true
+    },
+    {
+      "name": "Institution keyboard focus visible 3",
+      "passed": true
+    },
+    {
+      "name": "Institution keyboard focus visible 4",
+      "passed": true
+    },
+    {
+      "name": "Institution keyboard focus visible 5",
+      "passed": true
+    },
+    {
+      "name": "Institution keyboard focus visible 6",
+      "passed": true
+    },
+    {
+      "name": "Page motion control pauses marquee",
+      "passed": true
+    },
+    {
+      "name": "3D downloaded only on request",
+      "passed": true
+    },
+    {
+      "name": "Exactly one bounded canvas",
+      "passed": true
+    },
+    {
+      "name": "3D ready focuses local pause",
+      "passed": true
+    },
+    {
+      "name": "Local 3D pause freezes frames",
+      "passed": true
+    },
+    {
+      "name": "Paused modes cannot diverge from canvas",
+      "passed": true
+    },
+    {
+      "name": "Global pause also freezes 3D frames",
+      "passed": true
+    },
+    {
+      "name": "Offscreen canvas stops rendering",
+      "passed": true
+    },
+    {
+      "name": "Context loss restores product fallback",
+      "passed": true
+    },
+    {
+      "name": "Close removes canvas and restores focus",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion uses static logo list",
+      "passed": true
+    },
+    {
+      "name": "Reduced-motion 3D launch retains accessible focus",
+      "passed": true
+    },
+    {
+      "name": "No-JS proposition and navigation remain visible",
+      "passed": true
+    },
+    {
+      "name": "No-JS form has native submission path",
+      "passed": true
+    },
+    {
+      "name": "No-JS FAQ content server rendered",
+      "passed": true
+    },
+    {
+      "name": "Direct static route /privacy-policy/",
+      "passed": true
+    },
+    {
+      "name": "Direct static route /legal-notice/",
+      "passed": true
+    },
+    {
+      "name": "Direct static route /cookies-policy/",
+      "passed": true
+    },
+    {
+      "name": "Direct static route /account-deletion/",
+      "passed": true
+    },
+    {
+      "name": "Module failure leaves readable fallback",
+      "passed": true
+    },
+    {
+      "name": "Network recovery can retry failed module",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

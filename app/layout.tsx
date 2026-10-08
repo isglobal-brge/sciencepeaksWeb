@@ -1,38 +1,36 @@
-import type React from "react"
-import "./globals.css"
-import { Inter, Poppins } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import { MovingGradientBackground } from "@/components/moving-gradient-background"
-import { CookieBanner } from "@/components/cookie-banner"
-import type { Metadata } from "next"
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import localFont from "next/font/local";
+import { CookieBanner } from "@/components/cookie-banner";
+import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-})
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+const poppins = localFont({
+  src: [
+    {
+      path: "../public/landing/fonts/poppins-regular-latin.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/landing/fonts/poppins-bold-latin.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-poppins",
-})
+  display: "swap",
+});
+const description =
+  "Wearable activity, overnight physiology and personal context for fatigue and recovery follow-up in oncology care and professional sport.";
 
 export const metadata: Metadata = {
-  title: "SciencePeaks - AI-Powered Personalized Physical Activity Ecosystem",
-  description: "An intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics. Transform your health with data-driven insights.",
-  keywords: [
-    "AI health",
-    "personalized fitness",
-    "heart rate variability",
-    "biomarkers",
-    "physical activity",
-    "health technology",
-    "wearable devices",
-    "exercise prescription",
-    "health monitoring",
-    "fitness AI"
-  ],
-  authors: [{ name: "SciencePeaks Team" }],
+  metadataBase: new URL("https://www.sciencepeaks.ai"),
+  title: {
+    default: "SciencePeaks | Activity, fatigue and recovery",
+    template: "%s",
+  },
+  description,
+  authors: [{ name: "SciencePeaks" }],
   creator: "SciencePeaks",
   publisher: "SciencePeaks",
   robots: {
@@ -41,104 +39,77 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://www.sciencepeaks.ai",
+    locale: "en_GB",
     siteName: "SciencePeaks",
-    title: "SciencePeaks - AI-Powered Personalized Physical Activity",
-    description: "Transform your health with our intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.",
+    title: "SciencePeaks | A fuller picture of fatigue and recovery",
+    description,
     images: [
       {
-        url: "https://www.sciencepeaks.ai/sciencepeaks-wearable-device.png",
+        url: "/landing/social-preview.jpg",
         width: 1200,
         height: 630,
-        alt: "SciencePeaks Wearable Device Technology",
+        alt: "SciencePeaks: activity and physiology connected for professional follow-up.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SciencePeaks - AI-Powered Personalized Physical Activity",
-    description: "Transform your health with our intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.",
-    images: ["https://www.sciencepeaks.ai/sciencepeaks-wearable-device.png"],
-    creator: "@sciencepeaks",
-  },
-
-  alternates: {
-    canonical: "https://www.sciencepeaks.ai",
+    title: "SciencePeaks | Activity, fatigue and recovery",
+    description,
+    images: ["/landing/social-preview.jpg"],
   },
   icons: {
-    icon: [
-      {
-        url: "/logo.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    shortcut: "/logo.svg",
-    apple: [
-      {
-        url: "/logo.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/logo.svg",
-        color: "#1e3d83",
-      },
-    ],
+    icon: [{ url: "/logo.svg", type: "image/svg+xml" }],
+    apple: "/logo.svg",
   },
-}
+};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.sciencepeaks.ai/#organization",
+    name: "SciencePeaks",
+    url: "https://www.sciencepeaks.ai/",
+    logo: "https://www.sciencepeaks.ai/logo.svg",
+    description,
+  };
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "SciencePeaks",
-              url: "https://www.sciencepeaks.ai",
-              logo: "https://www.sciencepeaks.ai/logo.svg",
-              description: "An intelligent ecosystem that personalizes physical activity using AI, biomarkers, and heart rate variability metrics.",
-              foundingDate: "2024",
-              industry: "Health Technology",
-              sameAs: [
-                "https://twitter.com/sciencepeaks",
-                "https://linkedin.com/company/sciencepeaks"
-              ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "Customer Service",
-                url: "https://www.sciencepeaks.ai#contact"
-              }
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
         />
+        <noscript>
+          <style>{`
+            .sp-menu-button,.sp-motion-button,.sp-nav-cta,.sp-story-tabs,
+            .sp-explorer-tabs,.sp-wearable-button,.sp-volume-control input,
+            .sp-volume-range-ends{display:none!important}
+            .sp-header{position:relative!important;top:12px!important}
+            .sp-hero{padding-top:65px!important}
+            .sp-nav{height:auto!important;flex-wrap:wrap}
+            .sp-nav-links{display:flex!important;position:static!important;
+              flex-direction:row!important;flex-wrap:wrap;background:transparent!important;
+              border:0!important;padding:0!important}
+            .sp-logo-window{overflow:visible;mask-image:none}
+            .sp-logo-track{animation:none!important;width:auto!important}
+            .sp-logo-set{flex-wrap:wrap;justify-content:center}
+            .sp-logo-set[aria-hidden=true]{display:none}
+            .sp-hero-light{animation:none!important}
+          `}</style>
+        </noscript>
       </head>
-      <body className={`${inter.variable} ${poppins.variable} font-sans`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <MovingGradientBackground />
-          {children}
-          <CookieBanner />
-        </ThemeProvider>
+      <body className={poppins.variable}>
+        {children}
+        <CookieBanner />
       </body>
     </html>
-  )
+  );
 }

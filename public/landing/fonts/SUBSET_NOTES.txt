@@ -1,0 +1,1 @@
+Poppins Latin subsets for this English-language website, including Spanish and Catalan characters, punctuation and mathematical symbols. Generated from the unchanged bundled originals with fontTools; outlines and layout features retained. The copyright and SIL Open Font License in OFL.txt apply to these subsets.

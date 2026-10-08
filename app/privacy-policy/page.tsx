@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
               <p className="mb-4">
                 If you do not provide this required data, we will not be able to provide you with the 
                 services. The personal data you provide or that ISGlobal obtains as a result of your 
-                browsing, queries or requests via our webpage at <strong>sciencepeaks.isglobal.org</strong> (the "website") 
+                browsing, queries or requests via our webpage at <strong>www.sciencepeaks.ai</strong> (the "website")
                 will be included in a file owned by ISGlobal for managing, storing and tracking 
                 your requests for information and/or contracting of goods or services offered via 
                 the website.

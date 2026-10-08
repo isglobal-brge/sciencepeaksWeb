@@ -1,0 +1,100 @@
+{
+  "checked": "2026-10-09",
+  "environment": "Local static export; Lighthouse 13.5.0; fresh Chromium 148; simulated mobile and desktop preset; optional 3D not activated.",
+  "runs": {
+    "mobile": {
+      "fetch_time": "2026-10-08T23:12:20.409Z",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1057.7419,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2771.5483249999997,
+          "display": "2.8 s"
+        },
+        "total-blocking-time": {
+          "value": 4,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1057.7419,
+          "display": "1.1 s"
+        }
+      },
+      "total_transfer_bytes": 290335
+    },
+    "desktop": {
+      "fetch_time": "2026-10-08T23:13:41.358Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 285.8748,
+          "display": "0.3 s"
+        },
+        "largest-contentful-paint": {
+          "value": 670.6870000000001,
+          "display": "0.7 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 332.7418737713998,
+          "display": "0.3 s"
+        }
+      },
+      "total_transfer_bytes": 326926
+    },
+    "mobile_uncompressed": {
+      "fetch_time": "2026-10-08T23:15:05.779Z",
+      "scores": {
+        "performance": 77
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 2103.8415,
+          "display": "2.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 5908.683,
+          "display": "5.9 s"
+        },
+        "total-blocking-time": {
+          "value": 0.5,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 2103.8415,
+          "display": "2.1 s"
+        }
+      },
+      "total_transfer_bytes": 913529
+    }
+  },
+  "publication_requirement": "Compressed local results require verified gzip or Brotli text delivery at the production host. Identity-encoding mobile result is included for comparison; no production deployment or field Core Web Vitals assessment was performed."
+}

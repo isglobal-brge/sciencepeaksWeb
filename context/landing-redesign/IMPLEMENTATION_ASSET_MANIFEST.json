@@ -1,0 +1,233 @@
+{
+  "prepared": "2026-10-09",
+  "scope": "Reviewed assets for the SciencePeaks landing implementation. Context archives and internal reference captures are excluded from the static export.",
+  "product_examples": {
+    "activity-week.webp": "Founder-supplied anonymous technical record; acceleration is observed and activity intensity is estimated.",
+    "activity-rhythm.webp": "Founder-supplied anonymous technical record; ENMO wrist-movement heatmap.",
+    "night-profile.webp": "Anonymous nocturnal DFA alpha 1 technical profile; not an RMSSD curve.",
+    "oncology-check-in.webp": "Real native UI with deterministic inspection fixtures.",
+    "professional-plan.webp": "Real web UI with synthetic inspection data; minute-based plan.",
+    "assistant.webp": "Anonymous cropped, dated assistant demonstration; access is explained in walkthrough."
+  },
+  "institutions": "Official marks describe ISGlobal origin, institutional ecosystem and clinical research context; they are not a SciencePeaks customer list.",
+  "licenses": {
+    "fonts": "Poppins SIL Open Font License; public/landing/fonts/OFL.txt",
+    "three": "MIT; public/landing/vendor/THREE-LICENSE.txt",
+    "icons": "MIT; public/landing/PHOSPHOR-LICENSE.txt",
+    "institution_logos": "Copyright of respective institutions; official asset sources recorded in brand-reference-assets/SOURCE_MANIFEST.json. No endorsement implied."
+  },
+  "files": [
+    {
+      "path": "landing/PHOSPHOR-LICENSE.txt",
+      "bytes": 1092,
+      "sha256": "ddbe6082ec3cf979db47e5af549d2849c5d6182b3e005ef91ce1dbb9eb122f11"
+    },
+    {
+      "path": "landing/didac.jpg",
+      "bytes": 16267,
+      "sha256": "d753a952215c15925f5efe0d6e8b73d851155d8dcc2cb611cb3adec77c606976"
+    },
+    {
+      "path": "landing/fonts/OFL.txt",
+      "bytes": 4385,
+      "sha256": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573"
+    },
+    {
+      "path": "landing/fonts/SUBSET_NOTES.txt",
+      "bytes": 314,
+      "sha256": "468c06c34432e6a6ac24159fa7895f90ad1582b1191b446cb31ef42d74fb5b5c"
+    },
+    {
+      "path": "landing/fonts/poppins-bold-latin.woff2",
+      "bytes": 11044,
+      "sha256": "7160c5895136a8cd4fe7aaf2f237aa694b271862f0c48c2449d4c9a77817de99"
+    },
+    {
+      "path": "landing/fonts/poppins-bold.woff2",
+      "bytes": 50672,
+      "sha256": "bbaa54dd48766e1323480a444b63c016bc811eee30a25556ccbc2084316f61e4"
+    },
+    {
+      "path": "landing/fonts/poppins-regular-latin.woff2",
+      "bytes": 11256,
+      "sha256": "5c5b7e0192ccae5d7790ff02eca99efe91f5c06cfd33537c89bf479d48c59457"
+    },
+    {
+      "path": "landing/fonts/poppins-regular.woff2",
+      "bytes": 51116,
+      "sha256": "225eb6ea4acca45252ae2010ab57a2fc4b438fdd513dd3b4c608a67cee1ad2c1"
+    },
+    {
+      "path": "landing/institutions/barcelona-city-council.svg",
+      "bytes": 10796,
+      "sha256": "c67e044f8b138b84ad471da7f3565a74019601dc910181b5b17782e895bc4044"
+    },
+    {
+      "path": "landing/institutions/cerca.svg",
+      "bytes": 7524,
+      "sha256": "b9e08d036f996dffaf2b1f480cea0ae77589ab915a6fa11cee4e4cccad87db2f"
+    },
+    {
+      "path": "landing/institutions/hospital-clinic.svg",
+      "bytes": 6960,
+      "sha256": "a5ade2d1b1e8bfe0c57905d0835990e72c4522f7104a03efceb6afebf689a1ee"
+    },
+    {
+      "path": "landing/institutions/isglobal.svg",
+      "bytes": 10034,
+      "sha256": "ce7b640192d1f754831d4847ece731bec202767d52e7aba90bd3d32a864c8ef7"
+    },
+    {
+      "path": "landing/institutions/la-caixa-foundation.svg",
+      "bytes": 18196,
+      "sha256": "77b782b7d8cabfcd4c9e0d719d984018bdcfb25cf5588e4081f661e9273d18b1"
+    },
+    {
+      "path": "landing/institutions/severo-ochoa.svg",
+      "bytes": 4718,
+      "sha256": "7422a35208ab43411a6ee2b18b3ac3deb0e322c2173d83ca9727f04aa232d01f"
+    },
+    {
+      "path": "landing/juan-ramon.jpg",
+      "bytes": 10183,
+      "sha256": "75a892eb6c14fab110bfc3db061a3de0311cbee69316439878c6b27b5543faaf"
+    },
+    {
+      "path": "landing/product/activity-rhythm-320.webp",
+      "bytes": 3482,
+      "sha256": "560a1eab2d06ddc548639b68ed0168094525be2579f00f87abe36bca2dc65a00"
+    },
+    {
+      "path": "landing/product/activity-rhythm-640.webp",
+      "bytes": 14478,
+      "sha256": "680c3c80a28bbe6d65454653204101169f9e7bddf44cb66a6ad0e9bd4e975f24"
+    },
+    {
+      "path": "landing/product/activity-rhythm-960.webp",
+      "bytes": 32460,
+      "sha256": "d3a96fafbf9c46a077ca7b0ef1fcb94a0ccd2fa4ff48da0e0ef63bfa80e6f450"
+    },
+    {
+      "path": "landing/product/activity-rhythm.webp",
+      "bytes": 184154,
+      "sha256": "d914f4ee8664194df2aea913f76060fe0a9a27bfc5886ec247ba03d1355310ff"
+    },
+    {
+      "path": "landing/product/activity-week-320.webp",
+      "bytes": 4790,
+      "sha256": "84bd7d34a9c7d57ee2d206930f5ad70f08c95cf7bdc029aa80fd2d387e398bca"
+    },
+    {
+      "path": "landing/product/activity-week-640.webp",
+      "bytes": 14478,
+      "sha256": "c0dedd1af94b2c04308248b50cf29f038e23e98eee136a3587fb07f812be8b59"
+    },
+    {
+      "path": "landing/product/activity-week-960.webp",
+      "bytes": 28048,
+      "sha256": "9c9656b7c7202434b8ec0e3018b115647f8589422eb9a960c6034e77f41737d4"
+    },
+    {
+      "path": "landing/product/activity-week.webp",
+      "bytes": 118026,
+      "sha256": "634ddcfbd45a16e0e82ecc7edfda4f92fa3854cc7fbf30f00ee7dc19256e3668"
+    },
+    {
+      "path": "landing/product/assistant-320.webp",
+      "bytes": 3770,
+      "sha256": "cb3e6bcd7d8bd2540d647cc0e2c42ec572628941c4109e745bbfd08198199ea5"
+    },
+    {
+      "path": "landing/product/assistant-640.webp",
+      "bytes": 12268,
+      "sha256": "f2b2bdb5970a9e29a597d3f01388e83ff5fda53a933aa37049875b3d2fd80442"
+    },
+    {
+      "path": "landing/product/assistant-960.webp",
+      "bytes": 22774,
+      "sha256": "0d33aa52580b7009009ff59dad3f47920a9ba30dc15901cf0e1d1e70bb1e0f65"
+    },
+    {
+      "path": "landing/product/assistant.webp",
+      "bytes": 32810,
+      "sha256": "d72760f5456d0a874d3f4606895c64d5a0afadc55e4a02ce63e6b35d6a41b6b4"
+    },
+    {
+      "path": "landing/product/night-profile-320.webp",
+      "bytes": 3878,
+      "sha256": "3e102f9a9ee461ec3b58a08fdbb69c7ddbdc30bd8940a6136b4e6f40bade7073"
+    },
+    {
+      "path": "landing/product/night-profile-640.webp",
+      "bytes": 9262,
+      "sha256": "53f610942c9dda0a29be4e798a3f79ce06940d965fdcf38fa4ec447c025ef405"
+    },
+    {
+      "path": "landing/product/night-profile-960.webp",
+      "bytes": 16646,
+      "sha256": "7991097e968effb591cf13e175378dc04da90ab7bd6016b107ce4722ffc5ef8d"
+    },
+    {
+      "path": "landing/product/night-profile.webp",
+      "bytes": 16398,
+      "sha256": "0c7095e85b929b677a73cceb2451e11818657ca97e908cb1b84a130bcdfe666f"
+    },
+    {
+      "path": "landing/product/oncology-check-in-320.webp",
+      "bytes": 8832,
+      "sha256": "13e2286bc085f9a1a11fecec6a11a9edd1eb5aec0719c113e10d9638d7b48e09"
+    },
+    {
+      "path": "landing/product/oncology-check-in-640.webp",
+      "bytes": 20596,
+      "sha256": "23881e3f77c97edf04679b03dfa7347d80b4391d20e40b2174239385906d7515"
+    },
+    {
+      "path": "landing/product/oncology-check-in.webp",
+      "bytes": 28150,
+      "sha256": "1a35ee78fc6b31904964eff277705daf11baad16e9688b66e7c5ddd2d9a29c92"
+    },
+    {
+      "path": "landing/product/professional-plan-320.webp",
+      "bytes": 7074,
+      "sha256": "d30a7ea63569f6eba8964d53aaeca0504989a7da8742c0225fa4af99103ea924"
+    },
+    {
+      "path": "landing/product/professional-plan-640.webp",
+      "bytes": 19004,
+      "sha256": "6fb8934d7367878fb619ed6b6489d257d0f7dcba020fb6de9294056485bbbfc8"
+    },
+    {
+      "path": "landing/product/professional-plan-960.webp",
+      "bytes": 33818,
+      "sha256": "3e3c35168e39da35fa3eb70d56d160ae87d1f2e752426db86dfa8ecebc47314f"
+    },
+    {
+      "path": "landing/product/professional-plan.webp",
+      "bytes": 145160,
+      "sha256": "0abf76c82d992173f9745706b8818af0d004e6cdabb95b410ee006fd258e1f76"
+    },
+    {
+      "path": "landing/scene.js",
+      "bytes": 21443,
+      "sha256": "391ceafa881e5ae0b7f28427f10de9fdd1c0dcabe67424a60c3b7b1a088c3344"
+    },
+    {
+      "path": "landing/social-preview.jpg",
+      "bytes": 95176,
+      "sha256": "ff8a806a51a81c82d68959ba54331561c073e2c7a17244c87f8cddbb57a189f3"
+    },
+    {
+      "path": "landing/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "landing/vendor/three-0.186.1.min.js",
+      "bytes": 576384,
+      "sha256": "0daf6dec8311987304e93285baf007b225986dcf641caabad0db111c8e085bd9"
+    }
+  ],
+  "responsive_images": "Seventeen reviewed WebP derivatives at 320, 640 and 960 pixels, selected via native srcset/sizes. Six source originals remain unchanged.",
+  "fonts": "The served Poppins Latin subsets retain Latin, Spanish/Catalan characters, punctuation, symbols and layout features; unchanged full-font source copies and SIL OFL remain available."
+}

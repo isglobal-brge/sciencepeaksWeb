@@ -266,14 +266,14 @@ export function WearableScene() {
             <div className="sp-wearable-poster-record">
               <span>Overnight physiology</span>
               <img
-                src="/landing/product/night-profile.webp"
+                src="/landing/product/rmssd-night.webp"
                 {...responsiveProductImage(
-                  "/landing/product/night-profile.webp",
+                  "/landing/product/rmssd-night.webp",
                   "(max-width: 650px) 45vw, 420px",
                 )}
-                alt="SciencePeaks overnight DFA alpha 1 profile, showing its observed interval and variation across the night."
-                width={1179}
-                height={437}
+                alt="SciencePeaks overnight RMSSD profile, showing heart variability across the night in milliseconds."
+                width={1206}
+                height={590}
                 loading="lazy"
                 decoding="async"
               />

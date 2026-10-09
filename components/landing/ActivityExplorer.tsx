@@ -1,29 +1,46 @@
 "use client";
 
 import { useId, useRef, useState, type KeyboardEvent } from "react";
-import { responsiveProductImage } from "./productImages";
-import { CalendarDotsIcon, ClockIcon } from "@phosphor-icons/react";
+import { ProductScreenshot } from "./ProductScreenshot";
+import {
+  CalendarDotsIcon,
+  ClockIcon,
+  ChartBarIcon,
+} from "@phosphor-icons/react";
 
 const views = [
   {
     label: "Week & day",
     icon: CalendarDotsIcon,
-    image: "/landing/product/activity-week.webp",
-    width: 1440,
-    height: 741,
+    image: "/landing/product/movement-overview.webp",
+    preview: "/landing/product/movement-overview-full.webp",
+    width: 1600,
+    height: 1172,
     alt: "SciencePeaks activity view with estimated weekly movement, daily totals and the selected day's wrist-acceleration profile.",
     caption:
-      "From a weekly overview to the movement within a day. Product example with estimated activity intensity.",
+      "Bars show estimated moderate-or-higher activity minutes per day. In the app, selecting a day opens the wrist-movement trace beneath it. This example connects the weekly total to the hours when movement happened.",
   },
   {
     label: "Hourly rhythm",
     icon: ClockIcon,
-    image: "/landing/product/activity-rhythm.webp",
-    width: 1440,
-    height: 482,
+    image: "/landing/product/movement-rhythm.webp",
+    preview: "/landing/product/movement-rhythm-full.webp",
+    width: 1600,
+    height: 675,
     alt: "SciencePeaks hourly wrist-movement heatmap, showing how observed movement is distributed through the week.",
     caption:
-      "See when movement happened and how the week's rhythm changes. Colour represents observed wrist acceleration.",
+      "Each row is a day; each column is an hour. Brighter cells mean higher average wrist acceleration (ENMO). Read across a row to see a day's pattern, or down a column to compare the same hour.",
+  },
+  {
+    label: "Intensity & volume",
+    icon: ChartBarIcon,
+    image: "/landing/product/movement-intensity.webp",
+    preview: "/landing/product/movement-intensity-full.webp",
+    width: 1600,
+    height: 583,
+    alt: "SciencePeaks time spent in estimated activity intensity bands and an hourly active-movement volume profile.",
+    caption:
+      "On the left, minutes are grouped by estimated intensity. On the right, the hourly pattern combines intensity and time as active volume above the resting reference (MET-min per hour).",
   },
 ] as const;
 
@@ -85,23 +102,18 @@ export function ActivityExplorer() {
         aria-labelledby={`${id}-tab-${selected}`}
         tabIndex={0}
       >
-        <figure className="sp-explorer-frame">
-          <img
-            src={view.image}
-            {...responsiveProductImage(
-              view.image,
-              "(max-width: 650px) calc(100vw - 60px), calc(100vw - 136px)",
-            )}
-            alt={view.alt}
-            width={view.width}
-            height={view.height}
-            loading="lazy"
-            decoding="async"
-          />
-          <figcaption className="sp-explorer-caption">
-            {view.caption}
-          </figcaption>
-        </figure>
+        <ProductScreenshot
+          key={view.image}
+          className="sp-explorer-frame"
+          src={view.image}
+          previewSrc={view.preview}
+          title={view.label}
+          caption={view.caption}
+          alt={view.alt}
+          width={view.width}
+          height={view.height}
+          sizes="(max-width: 650px) calc(100vw - 60px), calc(100vw - 136px)"
+        />
       </div>
     </div>
   );

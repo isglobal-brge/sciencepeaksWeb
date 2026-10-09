@@ -24,6 +24,7 @@ import { ActivityExplorer } from "@/components/landing/ActivityExplorer";
 import { ActivityVolume } from "@/components/landing/ActivityVolume";
 import { WearableScene } from "@/components/landing/WearableScene";
 import { ContactRequest } from "@/components/landing/ContactRequest";
+import { ProductScreenshot } from "@/components/landing/ProductScreenshot";
 import { responsiveProductImage } from "@/components/landing/productImages";
 import "./landing.css";
 
@@ -143,9 +144,11 @@ export default function Home() {
               </h1>
               <p className="sp-hero-lead">
                 <strong>
-                  Wearable activity, overnight physiology and how you feel.
+                  Wearable activity, overnight heart patterns and how you feel.
                 </strong>{" "}
-                One AI-assisted platform for fatigue and recovery follow-up.
+                SciencePeaks connects the picture across days, with AI
+                explanations and a shared workspace for patients, athletes and
+                their professionals.
               </p>
               <div className="sp-actions">
                 <a className="sp-button" href="#contact">
@@ -168,13 +171,13 @@ export default function Home() {
                     <span className="sp-chrome-brand">SciencePeaks</span>
                   </div>
                   <img
-                    src="/landing/product/activity-week.webp"
+                    src="/landing/product/movement-week.webp"
                     {...responsiveProductImage(
-                      "/landing/product/activity-week.webp",
+                      "/landing/product/movement-week.webp",
                       "(max-width: 650px) calc(91vw - 33px), (max-width: 900px) 560px, 42vw",
                     )}
-                    width="1440"
-                    height="741"
+                    width="1600"
+                    height="751"
                     alt="SciencePeaks weekly activity and day-detail screen with estimated movement and acceleration."
                     fetchPriority="high"
                   />
@@ -190,14 +193,14 @@ export default function Home() {
                     <span>Overnight physiology</span>
                   </div>
                   <img
-                    src="/landing/product/night-profile.webp"
+                    src="/landing/product/rmssd-night.webp"
                     {...responsiveProductImage(
-                      "/landing/product/night-profile.webp",
+                      "/landing/product/rmssd-night.webp",
                       "(max-width: 650px) calc(69vw - 25px), (max-width: 900px) 434px, 33vw",
                     )}
-                    width="1179"
-                    height="437"
-                    alt="SciencePeaks example nocturnal DFA alpha 1 profile, a dimensionless physiological measure."
+                    width="1206"
+                    height="590"
+                    alt="SciencePeaks overnight RMSSD profile, showing heart rate variability across the night in milliseconds."
                     fetchPriority="low"
                   />
                 </div>
@@ -223,8 +226,8 @@ export default function Home() {
                 </div>
               </div>
               <figcaption className="sp-hero-caption">
-                Illustrative product views · activity estimates, overnight
-                physiology and a sample check-in.
+                Real product views · wearable activity, overnight HRV and a
+                sample symptom check-in.
               </figcaption>
             </figure>
           </div>
@@ -256,16 +259,16 @@ export default function Home() {
             <div className="sp-feature-grid">
               <article className="sp-feature sp-feature-movement sp-reveal">
                 <div className="sp-feature-visual sp-activity-visual">
-                  <img
-                    src="/landing/product/activity-week.webp"
-                    {...responsiveProductImage(
-                      "/landing/product/activity-week.webp",
-                      "(max-width: 650px) calc(100vw - 90px), 50vw",
-                    )}
-                    width="1440"
-                    height="741"
-                    loading="lazy"
-                    alt="Actual SciencePeaks view showing estimated daily movement and the detailed activity timeline."
+                  <ProductScreenshot
+                    src="/landing/product/movement-week.webp"
+                    previewSrc="/landing/product/movement-overview-full.webp"
+                    width={1600}
+                    height={751}
+                    title="Your week, then your day"
+                    alt="SciencePeaks weekly movement bars, with a full-size view of daily wrist movement."
+                    caption="Each bar shows estimated moderate-or-higher activity minutes. Open the full view to see wrist movement through the selected day."
+                    sizes="(max-width: 650px) calc(100vw - 90px), 50vw"
+                    compact
                   />
                 </div>
                 <div className="sp-feature-copy">
@@ -276,8 +279,9 @@ export default function Home() {
                     <strong>
                       how much, when and at what estimated intensity
                     </strong>{" "}
-                    you move. Turn an activity discussion into a review of the
-                    recorded week.
+                    you move. A Garmin watch records wrist movement;
+                    SciencePeaks turns it into an activity timeline you can
+                    review together.
                   </p>
                   <a className="sp-text-link" href="#physical-activity">
                     Explore physical activity{" "}
@@ -291,29 +295,25 @@ export default function Home() {
                     <MoonStars size={24} aria-hidden />
                     <span>Your overnight record</span>
                   </div>
-                  <img
-                    src="/landing/product/night-profile.webp"
-                    {...responsiveProductImage(
-                      "/landing/product/night-profile.webp",
-                      "(max-width: 650px) calc(100vw - 90px), 40vw",
-                    )}
-                    width="1179"
-                    height="437"
-                    loading="lazy"
-                    alt="An actual SciencePeaks nocturnal DFA alpha 1 profile showing how the physiological signal varies across a night."
+                  <ProductScreenshot
+                    src="/landing/product/rmssd-night.webp"
+                    width={1206}
+                    height={590}
+                    title="Heart variability across a night"
+                    alt="An actual SciencePeaks RMSSD overnight profile with 199 two-minute windows, range bars and the nightly mean."
+                    caption="RMSSD describes beat-to-beat variation in milliseconds. Here, bars summarize 12-minute ranges from two-minute windows; the dotted line is the nightly mean."
+                    sizes="(max-width: 650px) calc(100vw - 90px), 40vw"
+                    compact
                   />
                 </div>
                 <div className="sp-feature-copy">
                   <Heartbeat size={27} aria-hidden />
                   <h3>Recovery, in context.</h3>
                   <p>
-                    Explore{" "}
-                    <strong>
-                      nightly heart rate variability (HRV) and available
-                      overnight profiles
-                    </strong>{" "}
-                    alongside symptoms, treatment or training and your personal
-                    history.
+                    <strong>Heart rate variability (HRV)</strong> describes
+                    changes in the time between heartbeats. Explore nightly
+                    summaries and overnight patterns alongside your own history,
+                    symptoms, treatment or training.
                   </p>
                   <a className="sp-text-link" href="#follow-up">
                     See the connected workflow{" "}
@@ -369,41 +369,42 @@ export default function Home() {
                   <h3>Oncology care</h3>
                 </div>
                 <p>
-                  Bring daily life into the care conversation. Combine{" "}
-                  <strong>activity, symptoms and physiological trends</strong>{" "}
-                  with the context of treatment.
+                  A patient records{" "}
+                  <strong>fatigue, pain, nausea and sleep quality</strong> in a
+                  short check-in. Their professional reviews symptoms, activity
+                  and overnight trends around treatment dates to discuss whether
+                  the movement plan still fits how they feel.
                 </p>
                 <div className="sp-audience-art sp-care-art">
                   <div className="sp-care-screen">
-                    <img
-                      src="/landing/product/oncology-check-in.webp"
-                      {...responsiveProductImage(
-                        "/landing/product/oncology-check-in.webp",
-                        "(max-width: 650px) 40vw, 22vw",
-                      )}
-                      width="756"
-                      height="680"
-                      loading="lazy"
-                      alt="SciencePeaks inspection example of a short fatigue and symptom check-in."
+                    <ProductScreenshot
+                      src="/landing/product/oncology-check-in-native.webp"
+                      width={756}
+                      height={1560}
+                      title="Daily check-in"
+                      alt="Complete SciencePeaks mobile check-in with symptom responses, treatment context and a weekly history."
+                      caption="A real mobile screen with sample data: a short symptom question, the next recorded treatment and the week's check-in history."
+                      sizes="(max-width: 650px) 42vw, 200px"
+                      compact
                     />
                   </div>
                   <div className="sp-care-context">
                     <div>
                       <ClipboardText size={20} aria-hidden />
                       <span>
-                        <strong>How I feel</strong>A short check-in
+                        <strong>Symptoms today</strong>A short check-in
                       </span>
                     </div>
                     <div>
                       <ChartLineUp size={20} aria-hidden />
                       <span>
-                        <strong>How I move</strong>Activity over time
+                        <strong>Activity over time</strong>The recorded week
                       </span>
                     </div>
                     <div>
                       <Stethoscope size={20} aria-hidden />
                       <span>
-                        <strong>What happened</strong>Treatment context
+                        <strong>Treatment dates</strong>Context for the trend
                       </span>
                     </div>
                   </div>
@@ -444,36 +445,42 @@ export default function Home() {
                   <h3>Professional sport</h3>
                 </div>
                 <p>
-                  Understand an athlete’s response across a training week.
-                  Relate{" "}
-                  <strong>load, overnight HRV and perceived fatigue</strong> to
-                  individual history.
+                  Review{" "}
+                  <strong>
+                    training load, nightly HRV and perceived fatigue
+                  </strong>{" "}
+                  against the athlete’s own history. Explore how alternative
+                  training weeks relate to their modelled physiological
+                  response.
                 </p>
                 <div className="sp-audience-art sp-sport-art">
                   <div className="sp-sport-profile">
                     <div>
                       <MoonStars size={19} aria-hidden />
-                      <strong>The overnight picture</strong>
+                      <strong>Your trend, against your history</strong>
                     </div>
-                    <img
-                      src="/landing/product/night-profile.webp"
-                      {...responsiveProductImage(
-                        "/landing/product/night-profile.webp",
-                        "(max-width: 650px) calc(100vw - 90px), 40vw",
-                      )}
-                      width="1179"
-                      height="437"
-                      loading="lazy"
-                      alt="SciencePeaks technical example of a nocturnal physiological profile."
+                    <ProductScreenshot
+                      src="/landing/product/hrv-timeline.webp"
+                      previewSrc="/landing/product/hrv-timeline-full.webp"
+                      width={1600}
+                      height={427}
+                      title="Nightly HRV over time"
+                      alt="SciencePeaks RMSSD history in milliseconds with a personal reference band and selected daily value."
+                      caption="Each point is a nightly RMSSD summary. The shaded reference band helps compare the trend with this person's own history, alongside training and symptoms."
+                      sizes="(max-width: 650px) calc(100vw - 90px), 40vw"
+                      compact
                     />
                   </div>
                   <div className="sp-sport-equation">
                     <span>
                       Training load<strong>TSS</strong>
                     </span>
-                    <ArrowRight size={23} aria-hidden />
+                    <div className="sp-sport-delay">
+                      <ArrowRight size={23} aria-hidden />
+                      <small>Following days</small>
+                    </div>
                     <span>
-                      HRV response<strong>RMSSD</strong>
+                      Heart variability<strong>RMSSD</strong>
                     </span>
                   </div>
                 </div>
@@ -522,9 +529,10 @@ export default function Home() {
                 <span>Understand the person.</span>
               </h2>
               <p>
-                A connected workflow turns wearable observations and personal
-                context into a history that is easier to bring into professional
-                follow-up.
+                A clinician or coach organizes people in a{" "}
+                <strong>shared project</strong>. Review each person’s week,
+                connect changes with their context, and bring the record into
+                the next conversation.
               </p>
             </div>
             <FollowupStory />
@@ -544,10 +552,11 @@ export default function Home() {
                 <span>Now there’s more to review.</span>
               </h2>
               <p>
-                Garmin movement observations help estimate{" "}
-                <strong>physical activity intensity and timing</strong>. Explore
-                the week, a selected day and the hourly pattern in the actual
-                product.
+                A compatible Garmin watch records wrist movement. SciencePeaks
+                uses it to estimate{" "}
+                <strong>activity intensity and duration</strong>, giving
+                professionals a timeline to review alongside the person’s
+                account of their week.
               </p>
             </div>
             <div className="sp-reveal">
@@ -557,17 +566,25 @@ export default function Home() {
               <div>
                 <Watch size={25} aria-hidden />
                 <h3>Everyday movement</h3>
-                <p>An estimated activity record from the accelerometer.</p>
+                <p>
+                  Wrist movement is recorded; activity intensity is estimated.
+                </p>
               </div>
               <div>
                 <ChartLineUp size={25} aria-hidden />
                 <h3>Intensity and timing</h3>
-                <p>See the pattern, from a week down to an hour.</p>
+                <p>
+                  Compare daily totals, then explore the hours when movement
+                  happened.
+                </p>
               </div>
               <div>
                 <UsersThree size={25} aria-hidden />
                 <h3>A useful conversation</h3>
-                <p>Bring the recorded week into professional review.</p>
+                <p>
+                  Review progress against a movement plan with the patient or
+                  athlete.
+                </p>
               </div>
             </div>
           </div>
@@ -586,9 +603,13 @@ export default function Home() {
               </h2>
               <p>
                 METs (metabolic equivalents) express estimated intensity
-                relative to a resting reference. Multiply intensity by time to
-                describe activity volume.{" "}
-                <strong>Explore the relationship.</strong>
+                relative to a resting reference of 1 MET. Multiply intensity by
+                time:
+                <strong>
+                  {" "}
+                  30 minutes at 4 METs equals 2 MET·h of gross volume.
+                </strong>{" "}
+                Move the sliders to see why duration and intensity both matter.
               </p>
             </div>
             <ActivityVolume />
@@ -628,29 +649,20 @@ export default function Home() {
                   <ChatCircleText size={29} aria-hidden />
                   <h3>Data, in natural language.</h3>
                   <p>
-                    The assistant is designed to explain metrics and trends with{" "}
-                    <strong>
-                      the supporting evidence close to the answer.
-                    </strong>
+                    Ask, <strong>“What changed in my recovery data?”</strong>{" "}
+                    The assistant explains trends in plain language and shows
+                    the values and dates behind its answer.
                   </p>
                 </div>
-                <figure>
-                  <img
-                    src="/landing/product/assistant.webp"
-                    {...responsiveProductImage(
-                      "/landing/product/assistant.webp",
-                      "(max-width: 650px) calc(100vw - 90px), 45vw",
-                    )}
-                    width="1487"
-                    height="398"
-                    loading="lazy"
-                    alt="Actual SciencePeaks assistant demonstration showing an explanation with its supporting evidence panel."
-                  />
-                  <figcaption>
-                    Product demonstration. Explore assistant access and
-                    availability during your walkthrough.
-                  </figcaption>
-                </figure>
+                <ProductScreenshot
+                  src="/landing/product/assistant-answer-evidence.webp"
+                  width={1487}
+                  height={850}
+                  title="An answer with its evidence"
+                  alt="SciencePeaks assistant showing a complete question and answer, changes in metrics and supporting calculations and dates."
+                  caption="A product demonstration: the answer sits beside metric changes, the date window and supporting calculations. Explore available assistant tools during a walkthrough."
+                  sizes="(max-width: 650px) calc(100vw - 90px), 45vw"
+                />
               </article>
               <article className="sp-model sp-reveal">
                 <Flask size={29} aria-hidden />
@@ -660,9 +672,11 @@ export default function Home() {
                   with assumptions visible.
                 </h3>
                 <p>
-                  Distributed lag non-linear models (DLNM) explore how{" "}
-                  <strong>Training Stress Score (TSS)</strong> relates to later{" "}
-                  <strong>RMSSD</strong>, an HRV measure in milliseconds.
+                  <strong>Training Stress Score (TSS)</strong> summarizes
+                  training load;
+                  <strong> RMSSD</strong> summarizes beat-to-beat variability.
+                  Distributed lag non-linear models (DLNM) explore their
+                  relationship across load levels and the following days.
                 </p>
                 <div className="sp-model-diagram">
                   <span>
@@ -676,6 +690,10 @@ export default function Home() {
                     HRV response<strong>RMSSD</strong>
                   </span>
                 </div>
+                <p className="sp-model-use">
+                  Compare modelled RMSSD patterns for alternative weekly
+                  training plans, using the athlete’s recorded history.
+                </p>
                 <p className="sp-small">
                   Scenarios are conditional on data and model assumptions. The
                   relationship is not a causal conclusion or a stand-alone

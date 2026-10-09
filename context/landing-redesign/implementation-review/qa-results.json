@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-08T23:18:30.204Z",
+  "checked": "2026-10-09T08:52:16.103Z",
   "checks": [
     {
       "name": "No scene or Three downloaded initially",
@@ -146,6 +146,54 @@
       "passed": true
     },
     {
+      "name": "Large screenshot files are absent before opening",
+      "passed": true
+    },
+    {
+      "name": "Viewer opens as modal and focuses close",
+      "passed": true
+    },
+    {
+      "name": "Viewer freezes page scrolling",
+      "passed": true
+    },
+    {
+      "name": "Actual-size mode provides horizontal scrolling",
+      "passed": true
+    },
+    {
+      "name": "Full-size screenshot can be panned",
+      "passed": true
+    },
+    {
+      "name": "Fit mode resets pan and fits image",
+      "passed": true
+    },
+    {
+      "name": "Escape closes screenshot and restores trigger focus",
+      "passed": true
+    },
+    {
+      "name": "Third activity view uses complete intensity screen",
+      "passed": true
+    },
+    {
+      "name": "Screenshot modal has no inherited image rotation",
+      "passed": true
+    },
+    {
+      "name": "Backdrop dismisses screenshot",
+      "passed": true
+    },
+    {
+      "name": "Portrait screenshot fits mobile viewer",
+      "passed": true
+    },
+    {
+      "name": "Viewer keyboard focus remains in dialog",
+      "passed": true
+    },
+    {
       "name": "Initial volume arithmetic",
       "passed": true
     },
@@ -251,6 +299,10 @@
     },
     {
       "name": "No-JS form has native submission path",
+      "passed": true
+    },
+    {
+      "name": "No-JS screenshot keeps full-size link",
       "passed": true
     },
     {

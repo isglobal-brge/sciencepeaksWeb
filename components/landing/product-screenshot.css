@@ -1,0 +1,301 @@
+.sp-shot {
+  min-width: 0;
+  margin: 0;
+}
+.sp-shot .sp-shot-image-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: zoom-in;
+}
+.sp-shot .sp-shot-image-link img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.sp-shot .sp-shot-image-hint {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ffffffa6;
+  border-radius: 50%;
+  background: #f5fafbe8;
+  color: var(--sp-ink, #143445);
+  box-shadow: 0 4px 16px #0d192724;
+  transition: background 180ms;
+}
+.sp-shot-image-link:hover .sp-shot-image-hint {
+  background: #fff;
+}
+.sp-shot-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 8px;
+}
+.sp-shot-title {
+  color: var(--sp-ink, #143445);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.sp-shot .sp-shot-view {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 8px 0 8px 10px;
+  border: 0;
+  background: transparent;
+  color: #086674;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.sp-shot .sp-shot-view:hover {
+  color: var(--sp-ink, #143445);
+}
+.sp-shot .sp-shot-caption {
+  margin: 0;
+  color: var(--sp-muted, #426271);
+  font-size: 12px;
+  line-height: 1.75;
+}
+.sp-shot-compact .sp-shot-toolbar {
+  margin-top: 3px;
+}
+.sp-screen-dialog {
+  width: min(1400px, calc(100vw - 44px));
+  height: min(900px, calc(100dvh - 44px));
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #ffffffd9;
+  border-radius: 20px;
+  background: #f5fafb;
+  color: var(--sp-ink, #143445);
+  box-shadow: 0 24px 100px #0718235c;
+  font-family: var(--font-poppins, system-ui), sans-serif;
+}
+.sp-screen-dialog::backdrop {
+  background: #0d1927b3;
+  backdrop-filter: blur(8px);
+}
+.sp-screen-dialog-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+.sp-screen-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-shrink: 0;
+  padding: 23px 26px 18px;
+}
+.sp-screen-heading > div {
+  min-width: 0;
+}
+.sp-screen-dialog .sp-screen-dialog-title {
+  margin: 0;
+  color: var(--sp-ink, #143445);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.6px;
+}
+.sp-screen-dialog .sp-screen-dialog-caption {
+  max-width: 1050px;
+  margin: 8px 0 0;
+  color: var(--sp-muted, #426271);
+  font-size: 13px;
+  line-height: 1.75;
+}
+.sp-screen-dialog .sp-screen-close {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--sp-line, #bed6df);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--sp-ink, #143445);
+  cursor: pointer;
+}
+.sp-screen-close:hover {
+  background: #dceff1;
+}
+.sp-screen-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-shrink: 0;
+  padding: 0 26px 14px;
+}
+.sp-screen-zoom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.sp-screen-dialog .sp-screen-zoom button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 9px 14px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--sp-muted, #426271);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.sp-screen-dialog .sp-screen-zoom button[aria-pressed="true"] {
+  border-color: var(--sp-line, #bed6df);
+  background: #dceff1;
+  color: var(--sp-ink, #143445);
+}
+.sp-screen-scale {
+  color: var(--sp-muted, #426271);
+  font-size: 11px;
+}
+.sp-screen-canvas {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: auto;
+  border-block: 1px solid #bed6df;
+  background: #e4eef2;
+}
+.sp-screen-dialog .sp-screen-canvas .sp-screen-image {
+  position: static;
+  inset: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+  filter: none;
+}
+.sp-screen-canvas.is-fit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+.sp-screen-canvas.is-fit .sp-screen-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.sp-screen-canvas.is-detail {
+  padding: 0;
+}
+.sp-screen-canvas.is-detail .sp-screen-image {
+  display: block;
+  width: var(--sp-shot-natural-width);
+  max-width: none;
+  height: auto;
+}
+.sp-screen-dialog .sp-screen-helper {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 13px 26px;
+  color: var(--sp-muted, #426271);
+  font-size: 11px;
+  line-height: 1.65;
+}
+.sp-screen-error {
+  padding: 24px;
+  color: var(--sp-ink, #143445);
+  font-size: 14px;
+}
+.sp-screen-dialog :focus-visible,
+.sp-shot :focus-visible {
+  outline: 3px solid #3769a0;
+  outline-offset: 3px;
+}
+@media (max-width: 650px) {
+  .sp-screen-dialog {
+    width: calc(100vw - 20px);
+    height: calc(100dvh - 20px);
+    border-radius: 16px;
+  }
+  .sp-screen-heading {
+    gap: 12px;
+    padding: 17px 16px 13px;
+  }
+  .sp-screen-dialog .sp-screen-dialog-title {
+    font-size: 18px;
+    letter-spacing: -0.35px;
+  }
+  .sp-screen-dialog .sp-screen-dialog-caption {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+  .sp-screen-toolbar {
+    padding: 0 16px 12px;
+  }
+  .sp-screen-dialog .sp-screen-zoom button {
+    gap: 6px;
+    padding-inline: 10px;
+    font-size: 11px;
+  }
+  .sp-screen-canvas.is-fit {
+    padding: 10px;
+  }
+  .sp-screen-dialog .sp-screen-helper {
+    padding: 12px 16px;
+    font-size: 10px;
+  }
+}
+@media (max-height: 500px) {
+  .sp-screen-dialog {
+    height: calc(100dvh - 20px);
+  }
+  .sp-screen-heading {
+    gap: 12px;
+    padding: 12px 18px 10px;
+  }
+  .sp-screen-dialog .sp-screen-dialog-title {
+    font-size: 18px;
+  }
+  .sp-screen-dialog .sp-screen-dialog-caption {
+    margin-top: 5px;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .sp-screen-toolbar {
+    padding: 0 18px 10px;
+  }
+  .sp-screen-dialog .sp-screen-helper {
+    padding: 8px 18px;
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sp-shot-image-hint {
+    transition: none;
+  }
+}

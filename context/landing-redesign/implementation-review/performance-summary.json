@@ -13,15 +13,15 @@
       "metrics": {
         "first-contentful-paint": {
           "value": 1057.7419,
-          "display": "1.1 s"
+          "display": "1.1\u00a0s"
         },
         "largest-contentful-paint": {
           "value": 2771.5483249999997,
-          "display": "2.8 s"
+          "display": "2.8\u00a0s"
         },
         "total-blocking-time": {
           "value": 4,
-          "display": "0 ms"
+          "display": "0\u00a0ms"
         },
         "cumulative-layout-shift": {
           "value": 0,
@@ -29,7 +29,7 @@
         },
         "speed-index": {
           "value": 1057.7419,
-          "display": "1.1 s"
+          "display": "1.1\u00a0s"
         }
       },
       "total_transfer_bytes": 290335
@@ -45,15 +45,15 @@
       "metrics": {
         "first-contentful-paint": {
           "value": 285.8748,
-          "display": "0.3 s"
+          "display": "0.3\u00a0s"
         },
         "largest-contentful-paint": {
           "value": 670.6870000000001,
-          "display": "0.7 s"
+          "display": "0.7\u00a0s"
         },
         "total-blocking-time": {
           "value": 0,
-          "display": "0 ms"
+          "display": "0\u00a0ms"
         },
         "cumulative-layout-shift": {
           "value": 0,
@@ -61,7 +61,7 @@
         },
         "speed-index": {
           "value": 332.7418737713998,
-          "display": "0.3 s"
+          "display": "0.3\u00a0s"
         }
       },
       "total_transfer_bytes": 326926
@@ -74,15 +74,15 @@
       "metrics": {
         "first-contentful-paint": {
           "value": 2103.8415,
-          "display": "2.1 s"
+          "display": "2.1\u00a0s"
         },
         "largest-contentful-paint": {
           "value": 5908.683,
-          "display": "5.9 s"
+          "display": "5.9\u00a0s"
         },
         "total-blocking-time": {
           "value": 0.5,
-          "display": "0 ms"
+          "display": "0\u00a0ms"
         },
         "cumulative-layout-shift": {
           "value": 0,
@@ -90,11 +90,44 @@
         },
         "speed-index": {
           "value": 2103.8415,
-          "display": "2.1 s"
+          "display": "2.1\u00a0s"
         }
       },
       "total_transfer_bytes": 913529
+    },
+    "mobile_screenshot_refinement": {
+      "fetch_time": "2026-10-09T09:01:32.274Z",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1054.6158,
+          "display": "1.1\u00a0s"
+        },
+        "largest-contentful-paint": {
+          "value": 2842.9237000000003,
+          "display": "2.8\u00a0s"
+        },
+        "total-blocking-time": {
+          "value": 5.5,
+          "display": "10\u00a0ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1054.6158,
+          "display": "1.1\u00a0s"
+        }
+      },
+      "total_transfer_bytes": 320760
     }
   },
-  "publication_requirement": "Compressed local results require verified gzip or Brotli text delivery at the production host. Identity-encoding mobile result is included for comparison; no production deployment or field Core Web Vitals assessment was performed."
+  "publication_requirement": "Compressed local results require verified gzip or Brotli text delivery at the production host. Identity-encoding mobile result is included for comparison; no production deployment or field Core Web Vitals assessment was performed.",
+  "original_baseline": "The mobile, desktop and mobile_uncompressed runs predate the screenshot refinement."
 }

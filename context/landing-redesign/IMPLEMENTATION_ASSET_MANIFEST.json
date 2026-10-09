@@ -7,7 +7,18 @@
     "night-profile.webp": "Anonymous nocturnal DFA alpha 1 technical profile; not an RMSSD curve.",
     "oncology-check-in.webp": "Real native UI with deterministic inspection fixtures.",
     "professional-plan.webp": "Real web UI with synthetic inspection data; minute-based plan.",
-    "assistant.webp": "Anonymous cropped, dated assistant demonstration; access is explained in walkthrough."
+    "assistant.webp": "Anonymous cropped, dated assistant demonstration; access is explained in walkthrough.",
+    "movement-overview.webp": "Current live app; founder technical activity record, anonymous product-panel crop; Bars show estimated moderate-or-higher minutes. The line below shows wrist movement through the selected day.",
+    "movement-week.webp": "Current live app; founder technical activity record, anonymous weekly-panel crop; Estimated activity minutes by day.",
+    "movement-day.webp": "Current live app; founder technical activity record, anonymous day-detail crop; The ENMO trace shows wrist movement within the day, in milligrams.",
+    "hrv-timeline.webp": "Current live app; founder technical physiological record, anonymous RMSSD timeline crop; Each point is a nightly RMSSD summary. The shaded band shows the personal reference range.",
+    "movement-rhythm.webp": "Current live app; founder technical acceleration record, anonymous hourly-heatmap crop; Rows are days; columns are hours. Brighter cells mean greater average wrist movement.",
+    "movement-intensity.webp": "Current live app; founder technical activity record, anonymous intensity/pattern panels; Time in estimated intensity bands and the hourly pattern of active movement.",
+    "rmssd-night.webp": "Founder personal technical product record; anonymous complete RMSSD panel crop; Product example. RMSSD variation across the observed night, with valid-window count and recording interval.",
+    "oncology-check-in-native.webp": "Real native product UI, deterministic oncology demonstration records; Demonstration with synthetic data. A short symptom check-in sits alongside the next treatment and the week’s check-ins.",
+    "oncology-treatment-calendar.webp": "Real web product UI in explicit oncology DEMO, synthetic treatments and Alex Morgan inspection identity; Demonstration with synthetic data. The treatment calendar preserves scheduled dates and the selected day’s treatment status.",
+    "professional-group-overview.webp": "Real web professional cohort product UI using deterministic development inspection fixtures; nine synthetic participants; Demonstration with synthetic data. A professional review table connects each participant’s RMSSD trend, usable nights and model status.",
+    "assistant-answer-evidence.webp": "Dated restricted assistant product demonstration; anonymous visible output, underlying record origin not established; Product demonstration. A natural-language answer is accompanied by calculation, date-window, coverage and source details."
   },
   "institutions": "Official marks describe ISGlobal origin, institutional ecosystem and clinical research context; they are not a SciencePeaks customer list.",
   "licenses": {
@@ -148,9 +159,179 @@
       "sha256": "0d33aa52580b7009009ff59dad3f47920a9ba30dc15901cf0e1d1e70bb1e0f65"
     },
     {
+      "path": "landing/product/assistant-answer-evidence-320.webp",
+      "bytes": 7738,
+      "sha256": "6c7d22e34cee4a04791229fb7b4238133b64016fd9945ed520823c8158f211a0"
+    },
+    {
+      "path": "landing/product/assistant-answer-evidence-640.webp",
+      "bytes": 23874,
+      "sha256": "d555999a82e280f5a04faa92d8a717c9b64bbf4227963ccbf7cead62b3ef3652"
+    },
+    {
+      "path": "landing/product/assistant-answer-evidence-960.webp",
+      "bytes": 45898,
+      "sha256": "d92c719c22252b89364ab5dd8bcc195b253d34df5c8e47b7d040fc19ee263973"
+    },
+    {
+      "path": "landing/product/assistant-answer-evidence.webp",
+      "bytes": 90220,
+      "sha256": "85caefc7b8c2bfa50f3c6d0b7482615b94350a644d6e8dad6d9707737b6e6bb9"
+    },
+    {
       "path": "landing/product/assistant.webp",
       "bytes": 32810,
       "sha256": "d72760f5456d0a874d3f4606895c64d5a0afadc55e4a02ce63e6b35d6a41b6b4"
+    },
+    {
+      "path": "landing/product/hrv-timeline-320.webp",
+      "bytes": 2762,
+      "sha256": "d9553db41c8dac3938d750e3673502c93b74ed3e69a8e271d9243ba9ebb811e1"
+    },
+    {
+      "path": "landing/product/hrv-timeline-640.webp",
+      "bytes": 8600,
+      "sha256": "d498ca1362231992c654bed5c0fdd34b7761159afaca49cb32c78ad5516d88ee"
+    },
+    {
+      "path": "landing/product/hrv-timeline-960.webp",
+      "bytes": 15268,
+      "sha256": "8d7fed4f7036d4d64f69d5e8100657bbfaa18d475e498f356b15f0636e78c00f"
+    },
+    {
+      "path": "landing/product/hrv-timeline-full.webp",
+      "bytes": 43644,
+      "sha256": "532fdf72f95e582655f4b58dd4b4a17def25fba62f4a3178cdc4992a8b9ec0c3"
+    },
+    {
+      "path": "landing/product/hrv-timeline.webp",
+      "bytes": 30560,
+      "sha256": "feff42d5c5fd3742f04500eda93d4396055a6d46850e3db3e26d987531df7190"
+    },
+    {
+      "path": "landing/product/movement-day-320.webp",
+      "bytes": 5630,
+      "sha256": "a4c11d2648da1c88782477a75e213a6705dc91e25f217b6fa2a1daeffb742cb9"
+    },
+    {
+      "path": "landing/product/movement-day-640.webp",
+      "bytes": 15310,
+      "sha256": "c2de824dbb14c345337e75460d9ae5b2754565e3158b59565c3ed1a7c95f9fb8"
+    },
+    {
+      "path": "landing/product/movement-day-960.webp",
+      "bytes": 26962,
+      "sha256": "30ae325206fe05845755c5a2e5e0494d9e663c5472069ccdaf277862d70873ab"
+    },
+    {
+      "path": "landing/product/movement-day-full.webp",
+      "bytes": 62434,
+      "sha256": "ba85d8a0e4827881765e51a02c27a9e17852e9b289bc5fb7fe8021f369555f48"
+    },
+    {
+      "path": "landing/product/movement-day.webp",
+      "bytes": 57132,
+      "sha256": "0b0023e07dfd9b4f56a5b41ec073f3cbf9d054f3e15c2980ea2cf08b43916c56"
+    },
+    {
+      "path": "landing/product/movement-intensity-320.webp",
+      "bytes": 4082,
+      "sha256": "081893c4a9be8f6dcd1cbed46b42d275a40532761839c1eddfb191dbd6956431"
+    },
+    {
+      "path": "landing/product/movement-intensity-640.webp",
+      "bytes": 10978,
+      "sha256": "701c3a0bb0e70146126ceb7e15466d2101716e89e8714e4173828ce8b49a8fa1"
+    },
+    {
+      "path": "landing/product/movement-intensity-960.webp",
+      "bytes": 19550,
+      "sha256": "0b175b97072f898d271d72b893ea05da04e5adc015127c8d8ec20a8374d8329e"
+    },
+    {
+      "path": "landing/product/movement-intensity-full.webp",
+      "bytes": 78998,
+      "sha256": "c96ac70b588dc23528cc93a63abd904772481b12933eea4c75f83c65744d99f4"
+    },
+    {
+      "path": "landing/product/movement-intensity.webp",
+      "bytes": 44448,
+      "sha256": "c9e82239889e9f4a16cc420948fe05c5cae86c8e61fcce13cf789afac79c148e"
+    },
+    {
+      "path": "landing/product/movement-overview-320.webp",
+      "bytes": 7414,
+      "sha256": "8ac2931bf358850b253980c67a232060dee7e5ad665eaa26d339e379fc54aa5a"
+    },
+    {
+      "path": "landing/product/movement-overview-640.webp",
+      "bytes": 21984,
+      "sha256": "d1fcd30786a4d1a48b7b9d24b476c9ede920adf0ca845732c306b05c92456f9a"
+    },
+    {
+      "path": "landing/product/movement-overview-960.webp",
+      "bytes": 39962,
+      "sha256": "4300bf58c037964fcf34ec2e6a67e8b3d9b39d7d4fb5c94529dece289faa9760"
+    },
+    {
+      "path": "landing/product/movement-overview-full.webp",
+      "bytes": 157928,
+      "sha256": "74cd17706eb73373a12376c2f2b9e6707342b48e1c1817e280f3f3e2c891be18"
+    },
+    {
+      "path": "landing/product/movement-overview.webp",
+      "bytes": 92912,
+      "sha256": "1772c72556ce0ae99a11714244b45991e2d282d5c8d6e7b81c1967c39a73509c"
+    },
+    {
+      "path": "landing/product/movement-rhythm-320.webp",
+      "bytes": 5304,
+      "sha256": "ab94575cfe1a2d67b84c306fa9a2c2d7082783897240b8ebed285c6ff34b6b55"
+    },
+    {
+      "path": "landing/product/movement-rhythm-640.webp",
+      "bytes": 25646,
+      "sha256": "19b66a66695d2067183c2cbab93be1abb01f49fc3dfdf806195566279633a329"
+    },
+    {
+      "path": "landing/product/movement-rhythm-960.webp",
+      "bytes": 52076,
+      "sha256": "08caeebe1d1f65187972e1596d48d089be529cc058c7f5f10b8fb6ca736bad71"
+    },
+    {
+      "path": "landing/product/movement-rhythm-full.webp",
+      "bytes": 196880,
+      "sha256": "08c76d60778ca4273ee8a4b0fc36564340402c39226f460655ef66ef0cf87cf2"
+    },
+    {
+      "path": "landing/product/movement-rhythm.webp",
+      "bytes": 132046,
+      "sha256": "3cc8229a4e1e9be5a392b1e683d7810c68814134f9f98434ab167dbb7bdc8fee"
+    },
+    {
+      "path": "landing/product/movement-week-320.webp",
+      "bytes": 3900,
+      "sha256": "c497fbbe869fbb355dfc8cb469b4a1186b2b418f07ec2cd2717099e7c5bc71f3"
+    },
+    {
+      "path": "landing/product/movement-week-640.webp",
+      "bytes": 10550,
+      "sha256": "1058ef3e181c2fd76c65b032fc8a31456ad73f8152ee8bc7e08dfdbf04622431"
+    },
+    {
+      "path": "landing/product/movement-week-960.webp",
+      "bytes": 17758,
+      "sha256": "213a0116a9c1bf43c02649c22306074b361c488dc4b8e56d21266faed360b59d"
+    },
+    {
+      "path": "landing/product/movement-week-full.webp",
+      "bytes": 40510,
+      "sha256": "cda5c3bee5f00bf5e80fb61ea1d5d72926261c2a78a3aaed65645540e985e6e0"
+    },
+    {
+      "path": "landing/product/movement-week.webp",
+      "bytes": 38794,
+      "sha256": "dc4f05fcf7b7deee2572d3f2c1866c26c7a6941600428535fdac341162e858d1"
     },
     {
       "path": "landing/product/night-profile-320.webp",
@@ -183,9 +364,64 @@
       "sha256": "23881e3f77c97edf04679b03dfa7347d80b4391d20e40b2174239385906d7515"
     },
     {
+      "path": "landing/product/oncology-check-in-native-320.webp",
+      "bytes": 21264,
+      "sha256": "de3e87816722cfa019264f83c77903ed9fbf962c4eb95b0877af05a04c467edd"
+    },
+    {
+      "path": "landing/product/oncology-check-in-native-640.webp",
+      "bytes": 49242,
+      "sha256": "a71860c3b6a731c7faccc53a5035949aca78e6a3b99e4b78613456857b475be7"
+    },
+    {
+      "path": "landing/product/oncology-check-in-native.webp",
+      "bytes": 66900,
+      "sha256": "6df1b4c87b79381f1c5565182a2f46c46e7a189530a7cc80467ac91771f18324"
+    },
+    {
       "path": "landing/product/oncology-check-in.webp",
       "bytes": 28150,
       "sha256": "1a35ee78fc6b31904964eff277705daf11baad16e9688b66e7c5ddd2d9a29c92"
+    },
+    {
+      "path": "landing/product/oncology-treatment-calendar-320.webp",
+      "bytes": 7740,
+      "sha256": "22bf601a0484424f4c5154da4780f4e2375db885ad978cd1cb98da15f42a62bc"
+    },
+    {
+      "path": "landing/product/oncology-treatment-calendar-640.webp",
+      "bytes": 18874,
+      "sha256": "96e7d8036c561521bf53788c1f4353bfa294279e77d4b9700f291d255806d537"
+    },
+    {
+      "path": "landing/product/oncology-treatment-calendar-960.webp",
+      "bytes": 33192,
+      "sha256": "cecff06b36aed2414d753e636564ac647cf4b6830207e656dec9dc3470b78069"
+    },
+    {
+      "path": "landing/product/oncology-treatment-calendar.webp",
+      "bytes": 45828,
+      "sha256": "bed1760d32610409dee465c6c173b997e142369f210d326066fbf2fbccc1da99"
+    },
+    {
+      "path": "landing/product/professional-group-overview-320.webp",
+      "bytes": 5794,
+      "sha256": "4cba1e737771fafeeabb63fcc0ee14cd7ece70b2baf7c36020cfa9923cb46239"
+    },
+    {
+      "path": "landing/product/professional-group-overview-640.webp",
+      "bytes": 15766,
+      "sha256": "01c3a700b68db7fba9683cd2cfe8f0b25f751491cc9173c229fccd37fd5d3888"
+    },
+    {
+      "path": "landing/product/professional-group-overview-960.webp",
+      "bytes": 28404,
+      "sha256": "18679d80199f90be5fa8a266ba5bee1681e4be6df00a3c0bf117fb9947f99fe3"
+    },
+    {
+      "path": "landing/product/professional-group-overview.webp",
+      "bytes": 41076,
+      "sha256": "7f09cae437fcc94cfcf357d7cbb608b0a80dd4551f3bc390b0ad6819556d4c06"
     },
     {
       "path": "landing/product/professional-plan-320.webp",
@@ -206,6 +442,26 @@
       "path": "landing/product/professional-plan.webp",
       "bytes": 145160,
       "sha256": "0abf76c82d992173f9745706b8818af0d004e6cdabb95b410ee006fd258e1f76"
+    },
+    {
+      "path": "landing/product/rmssd-night-320.webp",
+      "bytes": 6306,
+      "sha256": "a18b184e85189a623ecda44676c6de782c3ff1081aeb479bcc23fb23bcbe8aee"
+    },
+    {
+      "path": "landing/product/rmssd-night-640.webp",
+      "bytes": 15812,
+      "sha256": "d98efc26e25ad04adfd95f193dea45233eb3defd013269eb1b3e7698a6080652"
+    },
+    {
+      "path": "landing/product/rmssd-night-960.webp",
+      "bytes": 26766,
+      "sha256": "becd5f9b701fdf0e72a3f5c713ab2a48977cd88e326946404e85dbd54a4fd03e"
+    },
+    {
+      "path": "landing/product/rmssd-night.webp",
+      "bytes": 40366,
+      "sha256": "b75afe44078fe6d427832a299a49f6a191141ddddb902f05a8c28229f526e4bf"
     },
     {
       "path": "landing/scene.js",
@@ -229,5 +485,6 @@
     }
   ],
   "responsive_images": "Seventeen reviewed WebP derivatives at 320, 640 and 960 pixels, selected via native srcset/sizes. Six source originals remain unchanged.",
-  "fonts": "The served Poppins Latin subsets retain Latin, Spanish/Catalan characters, punctuation, symbols and layout features; unchanged full-font source copies and SIL OFL remain available."
+  "fonts": "The served Poppins Latin subsets retain Latin, Spanish/Catalan characters, punctuation, symbols and layout features; unchanged full-font source copies and SIL OFL remain available.",
+  "screenshot_refinement": "SCREENSHOT_REFINEMENT_MANIFEST.json records crops, sources, capture dates and dimensions for the eleven replacement views. Large live-app variants are fetched only on viewer activation."
 }

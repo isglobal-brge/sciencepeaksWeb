@@ -1,0 +1,481 @@
+{
+  "prepared": "2026-10-09",
+  "scope": "Better real product views: live own-account technical captures plus verified archived native/web demonstrations. Only reviewed anonymous crops and synthetic examples are copied into public; uncropped sources and authenticated browser state are excluded.",
+  "authentication": "Used only within an ephemeral browser process. No credential file, saved browser state, HAR or trace was created. Browser closed after capture.",
+  "transform": "Rectangular crop, Lanczos downsample, WebP quality94 originals and quality91 responsive sizes. UI text, values and layout not altered.",
+  "assets": [
+    {
+      "id": "movement-overview",
+      "source": "/tmp/sciencepeaks-landing-refinement/live-activity-focused.png",
+      "source_dimensions": [
+        3200,
+        2200
+      ],
+      "source_sha256": "23b765cc2506ccb00f87bc71dea18cd2551c87330f3694729024d79a53e44d44",
+      "crop": [
+        496,
+        254,
+        3152,
+        2200
+      ],
+      "evidence_class": "Current live app; founder technical activity record, anonymous product-panel crop",
+      "caption": "Bars show estimated moderate-or-higher minutes. The line below shows wrist movement through the selected day.",
+      "source_url": "https://app.sciencepeaks.ai/tabs/trends",
+      "capture_date": "2026-10-09",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-overview.webp",
+          "dimensions": [
+            1600,
+            1172
+          ],
+          "bytes": 92912,
+          "sha256": "1772c72556ce0ae99a11714244b45991e2d282d5c8d6e7b81c1967c39a73509c",
+          "public_path": "landing/product/movement-overview.webp"
+        },
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-overview-full.webp",
+          "dimensions": [
+            2656,
+            1946
+          ],
+          "bytes": 157928,
+          "sha256": "74cd17706eb73373a12376c2f2b9e6707342b48e1c1817e280f3f3e2c891be18",
+          "public_path": "landing/product/movement-overview-full.webp"
+        }
+      ],
+      "approved_for_landing": "Visually reviewed anonymous technical panel; own account with user-authorized capture. No identities, credentials or treatment records included."
+    },
+    {
+      "id": "movement-week",
+      "source": "/tmp/sciencepeaks-landing-refinement/live-activity-focused.png",
+      "source_dimensions": [
+        3200,
+        2200
+      ],
+      "source_sha256": "23b765cc2506ccb00f87bc71dea18cd2551c87330f3694729024d79a53e44d44",
+      "crop": [
+        1340,
+        254,
+        3152,
+        1104
+      ],
+      "evidence_class": "Current live app; founder technical activity record, anonymous weekly-panel crop",
+      "caption": "Estimated activity minutes by day.",
+      "source_url": "https://app.sciencepeaks.ai/tabs/trends",
+      "capture_date": "2026-10-09",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-week.webp",
+          "dimensions": [
+            1600,
+            751
+          ],
+          "bytes": 38794,
+          "sha256": "dc4f05fcf7b7deee2572d3f2c1866c26c7a6941600428535fdac341162e858d1",
+          "public_path": "landing/product/movement-week.webp"
+        },
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-week-full.webp",
+          "dimensions": [
+            1812,
+            850
+          ],
+          "bytes": 40510,
+          "sha256": "cda5c3bee5f00bf5e80fb61ea1d5d72926261c2a78a3aaed65645540e985e6e0",
+          "public_path": "landing/product/movement-week-full.webp"
+        }
+      ],
+      "approved_for_landing": "Visually reviewed anonymous technical panel; own account with user-authorized capture. No identities, credentials or treatment records included."
+    },
+    {
+      "id": "movement-day",
+      "source": "/tmp/sciencepeaks-landing-refinement/live-activity-focused.png",
+      "source_dimensions": [
+        3200,
+        2200
+      ],
+      "source_sha256": "23b765cc2506ccb00f87bc71dea18cd2551c87330f3694729024d79a53e44d44",
+      "crop": [
+        1340,
+        1136,
+        3152,
+        1916
+      ],
+      "evidence_class": "Current live app; founder technical activity record, anonymous day-detail crop",
+      "caption": "The ENMO trace shows wrist movement within the day, in milligrams.",
+      "source_url": "https://app.sciencepeaks.ai/tabs/trends",
+      "capture_date": "2026-10-09",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-day.webp",
+          "dimensions": [
+            1600,
+            689
+          ],
+          "bytes": 57132,
+          "sha256": "0b0023e07dfd9b4f56a5b41ec073f3cbf9d054f3e15c2980ea2cf08b43916c56",
+          "public_path": "landing/product/movement-day.webp"
+        },
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-day-full.webp",
+          "dimensions": [
+            1812,
+            780
+          ],
+          "bytes": 62434,
+          "sha256": "ba85d8a0e4827881765e51a02c27a9e17852e9b289bc5fb7fe8021f369555f48",
+          "public_path": "landing/product/movement-day-full.webp"
+        }
+      ],
+      "approved_for_landing": "Visually reviewed anonymous technical panel; own account with user-authorized capture. No identities, credentials or treatment records included."
+    },
+    {
+      "id": "hrv-timeline",
+      "source": "/tmp/sciencepeaks-landing-refinement/live-hrv-trends-focused.png",
+      "source_dimensions": [
+        3200,
+        2200
+      ],
+      "source_sha256": "d8838ec4ed4f57535680f6cf65377539ed433d590d771da1cf8c27162788e9ce",
+      "crop": [
+        498,
+        710,
+        2620,
+        1276
+      ],
+      "evidence_class": "Current live app; founder technical physiological record, anonymous RMSSD timeline crop",
+      "caption": "Each point is a nightly RMSSD summary. The shaded band shows the personal reference range.",
+      "source_url": "https://app.sciencepeaks.ai/tabs/trends",
+      "capture_date": "2026-10-09",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/hrv-timeline.webp",
+          "dimensions": [
+            1600,
+            427
+          ],
+          "bytes": 30560,
+          "sha256": "feff42d5c5fd3742f04500eda93d4396055a6d46850e3db3e26d987531df7190",
+          "public_path": "landing/product/hrv-timeline.webp"
+        },
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/hrv-timeline-full.webp",
+          "dimensions": [
+            2122,
+            566
+          ],
+          "bytes": 43644,
+          "sha256": "532fdf72f95e582655f4b58dd4b4a17def25fba62f4a3178cdc4992a8b9ec0c3",
+          "public_path": "landing/product/hrv-timeline-full.webp"
+        }
+      ],
+      "approved_for_landing": "Visually reviewed anonymous technical panel; own account with user-authorized capture. No identities, credentials or treatment records included."
+    },
+    {
+      "id": "movement-rhythm",
+      "source": "/tmp/sciencepeaks-landing-refinement/live-patterns-focused.png",
+      "source_dimensions": [
+        3200,
+        2200
+      ],
+      "source_sha256": "6d61b542443948472a7a3f609ac57174ea551bfb998702ad92f0c2ea0e6102d8",
+      "crop": [
+        496,
+        594,
+        3152,
+        1714
+      ],
+      "evidence_class": "Current live app; founder technical acceleration record, anonymous hourly-heatmap crop",
+      "caption": "Rows are days; columns are hours. Brighter cells mean greater average wrist movement.",
+      "source_url": "https://app.sciencepeaks.ai/tabs/trends",
+      "capture_date": "2026-10-09",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-rhythm.webp",
+          "dimensions": [
+            1600,
+            675
+          ],
+          "bytes": 132046,
+          "sha256": "3cc8229a4e1e9be5a392b1e683d7810c68814134f9f98434ab167dbb7bdc8fee",
+          "public_path": "landing/product/movement-rhythm.webp"
+        },
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-rhythm-full.webp",
+          "dimensions": [
+            2656,
+            1120
+          ],
+          "bytes": 196880,
+          "sha256": "08c76d60778ca4273ee8a4b0fc36564340402c39226f460655ef66ef0cf87cf2",
+          "public_path": "landing/product/movement-rhythm-full.webp"
+        }
+      ],
+      "approved_for_landing": "Visually reviewed anonymous technical panel; own account with user-authorized capture. No identities, credentials or treatment records included."
+    },
+    {
+      "id": "movement-intensity",
+      "source": "/tmp/sciencepeaks-landing-refinement/live-intensity-focused.png",
+      "source_dimensions": [
+        3200,
+        2200
+      ],
+      "source_sha256": "21a554ec9558e598e5cb762c7809216e65418791ee2d37c63fa2a332f9b0b7fe",
+      "crop": [
+        496,
+        980,
+        3152,
+        1948
+      ],
+      "evidence_class": "Current live app; founder technical activity record, anonymous intensity/pattern panels",
+      "caption": "Time in estimated intensity bands and the hourly pattern of active movement.",
+      "source_url": "https://app.sciencepeaks.ai/tabs/trends",
+      "capture_date": "2026-10-09",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-intensity-full.webp",
+          "dimensions": [
+            2656,
+            968
+          ],
+          "bytes": 78998,
+          "sha256": "c96ac70b588dc23528cc93a63abd904772481b12933eea4c75f83c65744d99f4",
+          "public_path": "landing/product/movement-intensity-full.webp"
+        },
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/prepared/movement-intensity.webp",
+          "dimensions": [
+            1600,
+            583
+          ],
+          "bytes": 44448,
+          "sha256": "c9e82239889e9f4a16cc420948fe05c5cae86c8e61fcce13cf789afac79c148e",
+          "public_path": "landing/product/movement-intensity.webp"
+        }
+      ],
+      "approved_for_landing": "Visually reviewed anonymous technical panel; own account with user-authorized capture. No identities, credentials or treatment records included."
+    },
+    {
+      "id": "rmssd-night",
+      "source": "/Users/dcayuela/Desktop/Didac/didac-cayuela-portfolio/public/presentations/sciencepeaks-oncology-clinic/screenshots/home-dashboard-development.png",
+      "crop": [
+        704,
+        0,
+        1910,
+        590
+      ],
+      "evidence_class": "Founder personal technical product record; anonymous complete RMSSD panel crop",
+      "caption": "Product example. RMSSD variation across the observed night, with valid-window count and recording interval.",
+      "publication_status": "root_review_required",
+      "limitations": [
+        "Original full screenshot identifies Dídac Cayuela and includes experimental oncology/recovery score cards; publish the anonymous panel crop only.",
+        "Bars show 12-minute low-to-high ranges drawn from valid two-minute windows; this is not a directly measured fatigue endpoint.",
+        "AVG 48.4 ms is this example night average, not a median or an outcome."
+      ],
+      "source_dimensions": [
+        1920,
+        993
+      ],
+      "source_sha256": "f8e3e7517a70fe6576c2722eb8436b166b936b169b05c17ada1dacd5fd485b42",
+      "source_mtime": "2026-07-28T23:38:46+02:00",
+      "source_mtime_limit": "Archive file modification time; not proof of screenshot capture time.",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/candidates/rmssd-night.webp",
+          "dimensions": [
+            1206,
+            590
+          ],
+          "bytes": 40366,
+          "sha256": "b75afe44078fe6d427832a299a49f6a191141ddddb902f05a8c28229f526e4bf",
+          "public_path": "landing/product/rmssd-night.webp"
+        }
+      ],
+      "preferred_lightbox_file": "/tmp/sciencepeaks-landing-refinement/candidates/rmssd-night-full.webp",
+      "source_original_is_provenance_reference": true,
+      "source_original_public_copy_allowed": false,
+      "approved_for_landing": "Visually reviewed. Anonymous panel or verified synthetic demonstration. Snapshot identifiers in the assistant example are technical references, not account names or credentials."
+    },
+    {
+      "id": "oncology-check-in-native",
+      "source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts/ui-inspection/presentation-update/ios/iphone-16-pro-oncology-check-in.png",
+      "crop": [
+        24,
+        158,
+        780,
+        1718
+      ],
+      "evidence_class": "Real native product UI, deterministic oncology demonstration records",
+      "caption": "Demonstration with synthetic data. A short symptom check-in sits alongside the next treatment and the week’s check-ins.",
+      "publication_status": "root_review_required",
+      "limitations": [
+        "About 30 seconds is the designed completion target, not a measured guarantee.",
+        "Example paclitaxel schedule is synthetic; it is not a clinical recommendation.",
+        "Source screenshot status bar overlaps its heading; crop removes the entire obstructed header, retaining tabs, complete question and treatment confirmation."
+      ],
+      "source_dimensions": [
+        804,
+        1748
+      ],
+      "source_sha256": "a89b601e7a399da2db13f260cb9bddeddea3a39540728fdac41612ff5cedaf4b",
+      "source_mtime": "2026-08-25T11:36:00+02:00",
+      "source_mtime_limit": "Archive file modification time; not proof of screenshot capture time.",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/candidates/oncology-check-in-native.webp",
+          "dimensions": [
+            756,
+            1560
+          ],
+          "bytes": 66900,
+          "sha256": "6df1b4c87b79381f1c5565182a2f46c46e7a189530a7cc80467ac91771f18324",
+          "public_path": "landing/product/oncology-check-in-native.webp"
+        }
+      ],
+      "preferred_lightbox_file": "/tmp/sciencepeaks-landing-refinement/candidates/oncology-check-in-native-full.webp",
+      "source_original_is_provenance_reference": true,
+      "provenance_sources": [
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/docs/native-ui-inspection.md",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/features/oncology/demoData.ts",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/utils/uiInspectionFixtures.ts"
+      ],
+      "approved_for_landing": "Visually reviewed. Anonymous panel or verified synthetic demonstration. Snapshot identifiers in the assistant example are technical references, not account names or credentials."
+    },
+    {
+      "id": "oncology-treatment-calendar",
+      "source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts/ui-inspection/presentation-update/web/oncology-plan-web.png",
+      "crop": [
+        248,
+        20,
+        1420,
+        866
+      ],
+      "evidence_class": "Real web product UI in explicit oncology DEMO, synthetic treatments and Alex Morgan inspection identity",
+      "caption": "Demonstration with synthetic data. The treatment calendar preserves scheduled dates and the selected day’s treatment status.",
+      "publication_status": "root_review_required",
+      "limitations": [
+        "The unmodified original includes synthetic Alex Morgan account identity; no real participant identity is shown.",
+        "Example paclitaxel and pembrolizumab records are illustrative, not treatment guidance."
+      ],
+      "source_dimensions": [
+        1440,
+        900
+      ],
+      "source_sha256": "e02f87be88322bdfc85df59637f86534b958f0864711eb8a2b0d271ae522080f",
+      "source_mtime": "2026-08-25T12:14:41+02:00",
+      "source_mtime_limit": "Archive file modification time; not proof of screenshot capture time.",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/candidates/oncology-treatment-calendar.webp",
+          "dimensions": [
+            1172,
+            846
+          ],
+          "bytes": 45828,
+          "sha256": "bed1760d32610409dee465c6c173b997e142369f210d326066fbf2fbccc1da99",
+          "public_path": "landing/product/oncology-treatment-calendar.webp"
+        }
+      ],
+      "preferred_lightbox_file": "/tmp/sciencepeaks-landing-refinement/candidates/oncology-treatment-calendar-full.webp",
+      "source_original_is_provenance_reference": true,
+      "provenance_sources": [
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/docs/native-ui-inspection.md",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/features/oncology/demoData.ts",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/utils/uiInspectionFixtures.ts"
+      ],
+      "approved_for_landing": "Visually reviewed. Anonymous panel or verified synthetic demonstration. Snapshot identifiers in the assistant example are technical references, not account names or credentials."
+    },
+    {
+      "id": "professional-group-overview",
+      "source": "/Users/dcayuela/orca/workspaces/sciencepeaks-frontend/Improve-Project-Supervisor-UI/artifacts/cohort-unification/review-1440.png",
+      "crop": [
+        240,
+        0,
+        1424,
+        626
+      ],
+      "evidence_class": "Real web professional cohort product UI using deterministic development inspection fixtures; nine synthetic participants",
+      "caption": "Demonstration with synthetic data. A professional review table connects each participant’s RMSSD trend, usable nights and model status.",
+      "publication_status": "root_review_required",
+      "limitations": [
+        "Display crop retains cohort count, search/filter controls, units, trend-scale note and two complete participant rows; it excludes the sidebar account and deliberately long-name test fixture below.",
+        "Aisha Okafor and Émile Dubois and their fixture handles are synthetic identities hardcoded in inspection source, not real patient or athlete records.",
+        "Ready, failed-fit and review labels demonstrate interface states; they do not establish clinical model validity.",
+        "The byte-identical original for lightbox includes additional synthetic acceptance cases, including a deliberately long participant name and missing-data states."
+      ],
+      "provenance_sources": [
+        "/Users/dcayuela/orca/workspaces/sciencepeaks-frontend/Improve-Project-Supervisor-UI/artifacts/cohort-unification/verification.json",
+        "/Users/dcayuela/orca/workspaces/sciencepeaks-frontend/Improve-Project-Supervisor-UI/scripts/cohort-workspace-web-e2e.cjs",
+        "/Users/dcayuela/orca/workspaces/sciencepeaks-frontend/Improve-Project-Supervisor-UI/utils/uiInspectionFixtures.ts",
+        "/Users/dcayuela/orca/workspaces/sciencepeaks-frontend/Improve-Project-Supervisor-UI/docs/cohort-workspace-implementation.md"
+      ],
+      "source_dimensions": [
+        1440,
+        900
+      ],
+      "source_sha256": "def47fa695639ed1ae3bb151fbad327653cb924acf3cd4d691ea0c85bf632dac",
+      "source_mtime": "2026-09-15T10:33:55+02:00",
+      "source_mtime_limit": "Archive file modification time; not proof of screenshot capture time.",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/candidates/professional-group-overview.webp",
+          "dimensions": [
+            1184,
+            626
+          ],
+          "bytes": 41076,
+          "sha256": "7f09cae437fcc94cfcf357d7cbb608b0a80dd4551f3bc390b0ad6819556d4c06",
+          "public_path": "landing/product/professional-group-overview.webp"
+        }
+      ],
+      "preferred_lightbox_file": "/tmp/sciencepeaks-landing-refinement/candidates/professional-group-overview-full.webp",
+      "source_original_is_provenance_reference": true,
+      "approved_for_landing": "Visually reviewed. Anonymous panel or verified synthetic demonstration. Snapshot identifiers in the assistant example are technical references, not account names or credentials."
+    },
+    {
+      "id": "assistant-answer-evidence",
+      "source": "/Users/dcayuela/Desktop/Didac/didac-cayuela-portfolio/public/presentations/sciencepeaks-oncology-clinic/screenshots/assistant-evidence-focus.png",
+      "crop": [
+        0,
+        0,
+        1487,
+        850
+      ],
+      "evidence_class": "Dated restricted assistant product demonstration; anonymous visible output, underlying record origin not established",
+      "caption": "Product demonstration. A natural-language answer is accompanied by calculation, date-window, coverage and source details.",
+      "publication_status": "root_review_required_technical_snapshot_ids_visible",
+      "limitations": [
+        "Snapshot UUIDs are visible in evidence-card footers; no account or participant name is visible. Root must review before public reuse.",
+        "Full image is the same source as the previous cropped landing asset; it improves framing, not the underlying content.",
+        "Internal confidence labels and claimed changes are product output, not independently established clinical certainty.",
+        "This is a dated demonstration, not proof of general availability or universally correct answers."
+      ],
+      "source_dimensions": [
+        1487,
+        850
+      ],
+      "source_sha256": "bfcbf27f836379b8ffb2c8bbe5cbfafac484b3c9f49a64cbeec370d5dd5bfe84",
+      "source_mtime": "2026-07-28T23:38:46+02:00",
+      "source_mtime_limit": "Archive file modification time; not proof of screenshot capture time.",
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-landing-refinement/candidates/assistant-answer-evidence.webp",
+          "dimensions": [
+            1487,
+            850
+          ],
+          "bytes": 90220,
+          "sha256": "85caefc7b8c2bfa50f3c6d0b7482615b94350a644d6e8dad6d9707737b6e6bb9",
+          "public_path": "landing/product/assistant-answer-evidence.webp"
+        }
+      ],
+      "preferred_lightbox_file": "/tmp/sciencepeaks-landing-refinement/candidates/assistant-answer-evidence-full.webp",
+      "source_original_is_provenance_reference": true,
+      "provenance_sources": [
+        "/Users/dcayuela/orca/projects/sciencepeaksWeb/context/landing-redesign/ucam-hitech-bootcamp/deck/capturas-producto.txt"
+      ],
+      "approved_for_landing": "Visually reviewed. Anonymous panel or verified synthetic demonstration. Snapshot identifiers in the assistant example are technical references, not account names or credentials."
+    }
+  ]
+}

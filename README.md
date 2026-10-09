@@ -4,7 +4,7 @@ The public landing page explains SciencePeaks’ wearable-based activity, physio
 
 The implementation uses Next.js 15.5.27 static export, React 18 and locally hosted Poppins. Landing styles use native CSS; IntersectionObserver controls scroll effects. An optional, user-activated 3D illustration loads locally hosted Three.js 0.186.1, with a product view available before activation. Motion controls and reduced-motion preferences are supported.
 
-The internal reference bundle stays outside the deployment output. Six optimized product WebP images and six official institution logos have provenance recorded under [`context/landing-redesign/`](context/landing-redesign/). The logo strip describes ISGlobal’s institutional ecosystem; it does not represent a customer list. Existing legal pages, account deletion and the Formspree contact endpoint are preserved.
+The internal reference bundle stays outside the deployment output. Eleven refined product views, responsive WebP derivatives and six official institution logos have provenance recorded under [`context/landing-redesign/`](context/landing-redesign/). The screenshots combine current anonymous app captures with real native and professional screens using sample data. An accessible image viewer loads larger images on demand, with fit and actual-size modes. The logo strip describes ISGlobal’s institutional ecosystem; it does not represent a customer list. Existing legal pages, account deletion and the Formspree contact endpoint are preserved.
 
 ## Local development and validation
 

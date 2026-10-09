@@ -1,0 +1,9 @@
+{
+  "checked": "2026-10-09T09:02:37.430Z",
+  "checks": [
+    "Inline bold phrases keep word spacing",
+    "Viewer reports image failure",
+    "Viewer retries a failed image"
+  ],
+  "errors": []
+}

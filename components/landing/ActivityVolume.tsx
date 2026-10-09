@@ -22,6 +22,9 @@ export function ActivityVolume() {
     <div className="sp-volume">
       <div className="sp-volume-controls">
         <p className="sp-volume-kicker">Try an activity example</p>
+        <p className="sp-volume-guide">
+          Height is intensity. Width is time. The area is activity volume.
+        </p>
         <div className="sp-volume-control">
           <label className="sp-volume-label" htmlFor={`${id}-mets`}>
             <span>
@@ -91,7 +94,7 @@ export function ActivityVolume() {
             >
               {format(gross)} <span>MET·h</span>
             </output>
-            <small>Intensity × time</small>
+            <small>Includes the resting reference</small>
           </div>
           <div className="sp-volume-result-net">
             <span id={`${id}-net-label`}>Net active volume</span>
@@ -101,7 +104,7 @@ export function ActivityVolume() {
             >
               {format(net)} <span>MET·h</span>
             </output>
-            <small>Above the 1 MET reference</small>
+            <small>Counts volume above 1 MET</small>
           </div>
         </div>
         <p className="sp-volume-note">

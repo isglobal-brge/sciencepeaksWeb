@@ -91,6 +91,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <style>{`
             .sp-menu-button,.sp-motion-button,.sp-nav-cta,.sp-story-tabs,
             .sp-explorer-tabs,.sp-wearable-button,.sp-volume-control input,
+            .sp-shot-view,.sp-shot-image-hint,
             .sp-volume-range-ends{display:none!important}
             .sp-header{position:relative!important;top:12px!important}
             .sp-hero{padding-top:65px!important}

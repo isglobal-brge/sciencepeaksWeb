@@ -1,0 +1,68 @@
+{
+  "checked": "2026-10-09T09:00:45.491Z",
+  "checks": [
+    {
+      "width": 1920,
+      "physBottom": 708.4622192382812,
+      "captionTop": 764.40625,
+      "gap": 55.94403076171875,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "physBottom": 683.295166015625,
+      "captionTop": 710.40625,
+      "gap": 27.111083984375,
+      "passed": true
+    },
+    {
+      "width": 1280,
+      "physBottom": 653.718505859375,
+      "captionTop": 710.40625,
+      "gap": 56.687744140625,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "physBottom": 589.5297241210938,
+      "captionTop": 621.40625,
+      "gap": 31.87652587890625,
+      "passed": true
+    },
+    {
+      "width": 900,
+      "physBottom": 1072.92578125,
+      "captionTop": 1090.09375,
+      "gap": 17.16796875,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "physBottom": 1072.92578125,
+      "captionTop": 1090.09375,
+      "gap": 17.16796875,
+      "passed": true
+    },
+    {
+      "width": 650,
+      "physBottom": 932.4498291015625,
+      "captionTop": 950.109375,
+      "gap": 17.6595458984375,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "physBottom": 798.0238647460938,
+      "captionTop": 838.578125,
+      "gap": 40.55426025390625,
+      "passed": true
+    },
+    {
+      "width": 320,
+      "physBottom": 807.211669921875,
+      "captionTop": 858.53125,
+      "gap": 51.319580078125,
+      "passed": true
+    }
+  ]
+}

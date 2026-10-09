@@ -1,31 +1,46 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { responsiveProductImage } from "./productImages";
+import { ProductScreenshot } from "./ProductScreenshot";
 import { Watch, ClipboardText, UsersThree, Check } from "@phosphor-icons/react";
 
 const chapters = [
   {
     title: "See the activity behind the week.",
-    text: "A walk, an active afternoon, a quieter day. Review estimated intensity and timing from Garmin movement data, rather than relying only on what someone remembers.",
-    src: "/landing/product/activity-week.webp",
-    alt: "SciencePeaks physical activity view with daily totals and the acceleration profile across a day.",
+    text: "Start with the week's activity, then open a day to see when movement happened. The wrist-movement trace helps place a walk, an active afternoon or a quieter day in time.",
+    src: "/landing/product/movement-day.webp",
+    previewSrc: "/landing/product/movement-day-full.webp",
+    width: 1600,
+    height: 689,
+    alt: "SciencePeaks selected-day activity view with whole-day and six-hour controls and an ENMO wrist-movement trace.",
+    caption:
+      "A real recorded day. The line shows wrist movement (ENMO) over time; this is used to estimate activity intensity.",
     label: "Physical activity",
     Icon: Watch,
   },
   {
     title: "Give the person a voice in the data.",
-    text: "A short symptom check-in adds how the person feels. Treatment dates, training and personal notes put the physiological record into the context of daily life.",
-    src: "/landing/product/oncology-check-in.webp",
-    alt: "SciencePeaks symptom check-in asking about fatigue with selectable responses.",
+    text: "A short check-in records how the person feels. Add treatment dates and personal notes, then review changes in symptoms, activity and physiology around those events.",
+    src: "/landing/product/oncology-treatment-calendar.webp",
+    previewSrc: undefined,
+    width: 1172,
+    height: 846,
+    alt: "SciencePeaks sample oncology treatment calendar with dated planned treatments and their context.",
+    caption:
+      "Real product UI with sample data. Treatment dates give the longitudinal record context; they do not establish what caused a change.",
     label: "Symptoms and context",
     Icon: ClipboardText,
   },
   {
     title: "Bring it into professional follow-up.",
-    text: "A medical professional or coach can follow a group in a shared project, review individual histories and discuss a weekly activity plan with the person.",
-    src: "/landing/product/professional-plan.webp",
-    alt: "SciencePeaks professional plan controls for target minutes and a documented clinical review.",
+    text: "A clinician or coach follows participants in a shared project. Open a person's history, review their week, set or revise a movement plan, and export a report for the next follow-up.",
+    src: "/landing/product/professional-group-overview.webp",
+    previewSrc: undefined,
+    width: 1184,
+    height: 626,
+    alt: "SciencePeaks professional project overview with sample participants, individual HRV trends and follow-up controls.",
+    caption:
+      "A real professional workspace with sample participants. Review the group, then open an individual record for the detail.",
     label: "Professional review",
     Icon: UsersThree,
   },
@@ -69,17 +84,16 @@ export function FollowupStory() {
           <span>SciencePeaks</span>
         </div>
         <div className={`sp-story-image sp-story-image-${active}`}>
-          <img
-            key={chapter.src}
+          <ProductScreenshot
             src={chapter.src}
-            {...responsiveProductImage(
-              chapter.src,
-              "(max-width: 650px) calc(100vw - 64px), 50vw",
-            )}
-            width="1440"
-            height="1020"
-            loading="lazy"
+            previewSrc={chapter.previewSrc}
+            width={chapter.width}
+            height={chapter.height}
             alt={chapter.alt}
+            title={chapter.label}
+            caption={chapter.caption}
+            sizes="(max-width: 650px) calc(100vw - 64px), 50vw"
+            compact
           />
         </div>
         <div
@@ -110,8 +124,8 @@ export function FollowupStory() {
           ))}
         </div>
         <figcaption>
-          Product examples. The activity view uses a technical record; check-in
-          and plan controls use inspection fixtures.
+          Real product screens. Treatment and professional examples use sample
+          data.
         </figcaption>
       </figure>
       <div className="sp-story-chapters">

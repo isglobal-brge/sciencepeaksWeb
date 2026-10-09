@@ -1,67 +1,67 @@
 {
-  "checked": "2026-10-09T09:00:45.491Z",
+  "checked": "2026-10-09T10:35:17.200Z",
   "checks": [
     {
       "width": 1920,
-      "physBottom": 708.4622192382812,
+      "physBottom": 699.109619140625,
       "captionTop": 764.40625,
-      "gap": 55.94403076171875,
+      "gap": 65.296630859375,
       "passed": true
     },
     {
       "width": 1440,
-      "physBottom": 683.295166015625,
+      "physBottom": 674.0066528320312,
       "captionTop": 710.40625,
-      "gap": 27.111083984375,
+      "gap": 36.39959716796875,
       "passed": true
     },
     {
       "width": 1280,
-      "physBottom": 653.718505859375,
+      "physBottom": 645.5990600585938,
       "captionTop": 710.40625,
-      "gap": 56.687744140625,
+      "gap": 64.80718994140625,
       "passed": true
     },
     {
       "width": 1024,
-      "physBottom": 589.5297241210938,
+      "physBottom": 582.9957275390625,
       "captionTop": 621.40625,
-      "gap": 31.87652587890625,
+      "gap": 38.4105224609375,
       "passed": true
     },
     {
       "width": 900,
-      "physBottom": 1072.92578125,
-      "captionTop": 1090.09375,
-      "gap": 17.16796875,
+      "physBottom": 1084.66845703125,
+      "captionTop": 1110.484375,
+      "gap": 25.81591796875,
       "passed": true
     },
     {
       "width": 768,
-      "physBottom": 1072.92578125,
-      "captionTop": 1090.09375,
-      "gap": 17.16796875,
+      "physBottom": 1084.66845703125,
+      "captionTop": 1110.484375,
+      "gap": 25.81591796875,
       "passed": true
     },
     {
       "width": 650,
-      "physBottom": 932.4498291015625,
-      "captionTop": 950.109375,
-      "gap": 17.6595458984375,
+      "physBottom": 970.1632080078125,
+      "captionTop": 996.390625,
+      "gap": 26.2274169921875,
       "passed": true
     },
     {
       "width": 390,
-      "physBottom": 798.0238647460938,
-      "captionTop": 838.578125,
-      "gap": 40.55426025390625,
+      "physBottom": 813.209716796875,
+      "captionTop": 858.96875,
+      "gap": 45.759033203125,
       "passed": true
     },
     {
       "width": 320,
-      "physBottom": 807.211669921875,
-      "captionTop": 858.53125,
-      "gap": 51.319580078125,
+      "physBottom": 849.2490844726562,
+      "captionTop": 904.8125,
+      "gap": 55.56341552734375,
       "passed": true
     }
   ]

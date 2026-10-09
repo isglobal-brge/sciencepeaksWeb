@@ -6,29 +6,29 @@ import { Watch, ClipboardText, UsersThree, Check } from "@phosphor-icons/react";
 
 const chapters = [
   {
-    title: "See the activity behind the week.",
-    text: "Start with the week's activity, then open a day to see when movement happened. The wrist-movement trace helps place a walk, an active afternoon or a quieter day in time.",
-    src: "/landing/product/movement-day.webp",
-    previewSrc: "/landing/product/movement-day-full.webp",
+    title: "A project that keeps the person in view.",
+    text: "A personal project dashboard brings recent HRV trends, the daily symptom check-in, treatment context and recorded measurements together. The participant and professional have a shared starting point for follow-up.",
+    src: "/landing/product/project-participant-dashboard.webp",
+    previewSrc: "/landing/product/project-participant-dashboard-full.webp",
     width: 1600,
-    height: 689,
-    alt: "SciencePeaks selected-day activity view with whole-day and six-hour controls and an ENMO wrist-movement trace.",
+    height: 759,
+    alt: "SciencePeaks participant project dashboard with recent HRV trends, a personal reference, a daily check-in prompt, treatment context and measurement history.",
     caption:
-      "A real recorded day. The line shows wrist movement (ENMO) over time; this is used to estimate activity intensity.",
-    label: "Physical activity",
+      "A complete participant dashboard: personal trends on the left; treatment context and received measurements on the right.",
+    label: "Your project dashboard",
     Icon: Watch,
   },
   {
-    title: "Give the person a voice in the data.",
-    text: "A short check-in records how the person feels. Add treatment dates and personal notes, then review changes in symptoms, activity and physiology around those events.",
-    src: "/landing/product/oncology-treatment-calendar.webp",
+    title: "See change alongside what happened.",
+    text: "Explore months of physiology with treatment dates on the same timeline. A professional can review changes around chemotherapy, radiotherapy or immunotherapy alongside symptoms and activity, then discuss the next step with the person.",
+    src: "/landing/product/hrv-treatment-history.webp",
     previewSrc: undefined,
-    width: 1172,
-    height: 846,
-    alt: "SciencePeaks sample oncology treatment calendar with dated planned treatments and their context.",
+    width: 1593,
+    height: 623,
+    alt: "SciencePeaks six-month RMSSD history with dated chemotherapy, radiotherapy and immunotherapy annotations beneath the curve.",
     caption:
-      "Real product UI with sample data. Treatment dates give the longitudinal record context; they do not establish what caused a change.",
-    label: "Symptoms and context",
+      "A founder-provided product example of HRV history and treatment annotations. Dates provide context; they do not establish what caused a change.",
+    label: "Treatment and trends",
     Icon: ClipboardText,
   },
   {
@@ -124,8 +124,8 @@ export function FollowupStory() {
           ))}
         </div>
         <figcaption>
-          Real product screens. Treatment and professional examples use sample
-          data.
+          Actual product views. The group workspace uses demonstration
+          participants.
         </figcaption>
       </figure>
       <div className="sp-story-chapters">
@@ -147,9 +147,9 @@ export function FollowupStory() {
               <Check size={17} aria-hidden />
               <span>
                 {index === 0
-                  ? "Activity is estimated from observed movement."
+                  ? "One shared record for the next conversation."
                   : index === 1
-                    ? "Personal experience sits alongside physiology."
+                    ? "Physiology and context, on the same timeline."
                     : "Current activity plans use minutes."}
               </span>
             </div>

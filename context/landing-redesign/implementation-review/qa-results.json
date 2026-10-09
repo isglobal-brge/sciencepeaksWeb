@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-09T08:52:16.103Z",
+  "checked": "2026-10-09T10:35:54.606Z",
   "checks": [
     {
       "name": "No scene or Three downloaded initially",
@@ -174,7 +174,7 @@
       "passed": true
     },
     {
-      "name": "Third activity view uses complete intensity screen",
+      "name": "Intensity view includes both complete screens",
       "passed": true
     },
     {
@@ -191,6 +191,70 @@
     },
     {
       "name": "Viewer keyboard focus remains in dialog",
+      "passed": true
+    },
+    {
+      "name": "Mobile showcase advertises three actual platforms",
+      "passed": true
+    },
+    {
+      "name": "Four real mobile views are selectable",
+      "passed": true
+    },
+    {
+      "name": "Mobile arrow key selects actual Android trends",
+      "passed": true
+    },
+    {
+      "name": "Mobile End selects treatment calendar",
+      "passed": true
+    },
+    {
+      "name": "Mobile Home restores daily picture",
+      "passed": true
+    },
+    {
+      "name": "Complete portrait contained 0",
+      "passed": true
+    },
+    {
+      "name": "Complete portrait contained 1",
+      "passed": true
+    },
+    {
+      "name": "Complete portrait contained 2",
+      "passed": true
+    },
+    {
+      "name": "Complete portrait contained 3",
+      "passed": true
+    },
+    {
+      "name": "Horizontal swipe changes mobile view",
+      "passed": true
+    },
+    {
+      "name": "Vertical gesture preserves app view",
+      "passed": true
+    },
+    {
+      "name": "Mobile screen opens intact full-size viewer",
+      "passed": true
+    },
+    {
+      "name": "Mobile viewer restores selected trigger focus",
+      "passed": true
+    },
+    {
+      "name": "Investor contact option present",
+      "passed": true
+    },
+    {
+      "name": "Methods are explicit in hero",
+      "passed": true
+    },
+    {
+      "name": "Schema includes mobile clients",
       "passed": true
     },
     {
@@ -303,6 +367,10 @@
     },
     {
       "name": "No-JS screenshot keeps full-size link",
+      "passed": true
+    },
+    {
+      "name": "No-JS mobile proposition and native full-screen link remain",
       "passed": true
     },
     {

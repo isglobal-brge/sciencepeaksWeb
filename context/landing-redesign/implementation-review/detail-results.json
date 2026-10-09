@@ -1,0 +1,297 @@
+{
+  "checked": "2026-10-09T10:36:47.946Z",
+  "checks": [
+    {
+      "name": "Header containment 901",
+      "passed": true,
+      "detail": [
+        {
+          "label": "SciencePeaks",
+          "left": 55,
+          "right": 235.734375,
+          "inside": true
+        },
+        {
+          "label": "The platform",
+          "left": 263.734375,
+          "right": 344.75,
+          "inside": true
+        },
+        {
+          "label": "Who it helps",
+          "left": 364.75,
+          "right": 442,
+          "inside": true
+        },
+        {
+          "label": "The science",
+          "left": 462,
+          "right": 537.03125,
+          "inside": true
+        },
+        {
+          "label": "The app",
+          "left": 557.03125,
+          "right": 608.859375,
+          "inside": true
+        },
+        {
+          "label": "Request a demo ",
+          "left": 628.859375,
+          "right": 795,
+          "inside": true
+        },
+        {
+          "label": "Pause page animations",
+          "left": 808,
+          "right": 846,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "name": "Header containment 915",
+      "passed": true,
+      "detail": [
+        {
+          "label": "SciencePeaks",
+          "left": 55,
+          "right": 239.28125,
+          "inside": true
+        },
+        {
+          "label": "The platform",
+          "left": 267.28125,
+          "right": 350.359375,
+          "inside": true
+        },
+        {
+          "label": "Who it helps",
+          "left": 370.359375,
+          "right": 449.578125,
+          "inside": true
+        },
+        {
+          "label": "The science",
+          "left": 469.578125,
+          "right": 546.53125,
+          "inside": true
+        },
+        {
+          "label": "The app",
+          "left": 566.53125,
+          "right": 619.6875,
+          "inside": true
+        },
+        {
+          "label": "Request a demo ",
+          "left": 639.6875,
+          "right": 809,
+          "inside": true
+        },
+        {
+          "label": "Pause page animations",
+          "left": 822,
+          "right": 860,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "name": "Header containment 950",
+      "passed": true,
+      "detail": [
+        {
+          "label": "SciencePeaks",
+          "left": 55,
+          "right": 239.546875,
+          "inside": true
+        },
+        {
+          "label": "The platform",
+          "left": 301.515625,
+          "right": 384.75,
+          "inside": true
+        },
+        {
+          "label": "Who it helps",
+          "left": 404.75,
+          "right": 484.109375,
+          "inside": true
+        },
+        {
+          "label": "The science",
+          "left": 504.109375,
+          "right": 581.203125,
+          "inside": true
+        },
+        {
+          "label": "The app",
+          "left": 601.203125,
+          "right": 654.453125,
+          "inside": true
+        },
+        {
+          "label": "Request a demo ",
+          "left": 674.453125,
+          "right": 844,
+          "inside": true
+        },
+        {
+          "label": "Pause page animations",
+          "left": 857,
+          "right": 895,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "name": "Header containment 1000",
+      "passed": true,
+      "detail": [
+        {
+          "label": "SciencePeaks",
+          "left": 55,
+          "right": 239.546875,
+          "inside": true
+        },
+        {
+          "label": "The platform",
+          "left": 351.515625,
+          "right": 434.75,
+          "inside": true
+        },
+        {
+          "label": "Who it helps",
+          "left": 454.75,
+          "right": 534.109375,
+          "inside": true
+        },
+        {
+          "label": "The science",
+          "left": 554.109375,
+          "right": 631.203125,
+          "inside": true
+        },
+        {
+          "label": "The app",
+          "left": 651.203125,
+          "right": 704.453125,
+          "inside": true
+        },
+        {
+          "label": "Request a demo ",
+          "left": 724.453125,
+          "right": 894,
+          "inside": true
+        },
+        {
+          "label": "Pause page animations",
+          "left": 907,
+          "right": 945,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "name": "Header containment 1024",
+      "passed": true,
+      "detail": [
+        {
+          "label": "SciencePeaks",
+          "left": 55,
+          "right": 239.546875,
+          "inside": true
+        },
+        {
+          "label": "The platform",
+          "left": 375.515625,
+          "right": 458.75,
+          "inside": true
+        },
+        {
+          "label": "Who it helps",
+          "left": 478.75,
+          "right": 558.109375,
+          "inside": true
+        },
+        {
+          "label": "The science",
+          "left": 578.109375,
+          "right": 655.203125,
+          "inside": true
+        },
+        {
+          "label": "The app",
+          "left": 675.203125,
+          "right": 728.453125,
+          "inside": true
+        },
+        {
+          "label": "Request a demo ",
+          "left": 748.453125,
+          "right": 918,
+          "inside": true
+        },
+        {
+          "label": "Pause page animations",
+          "left": 931,
+          "right": 969,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "name": "Header containment 1440",
+      "passed": true,
+      "detail": [
+        {
+          "label": "SciencePeaks",
+          "left": 75,
+          "right": 273.796875,
+          "inside": true
+        },
+        {
+          "label": "The platform",
+          "left": 731.515625,
+          "right": 814.75,
+          "inside": true
+        },
+        {
+          "label": "Who it helps",
+          "left": 844.75,
+          "right": 924.109375,
+          "inside": true
+        },
+        {
+          "label": "The science",
+          "left": 954.109375,
+          "right": 1031.203125,
+          "inside": true
+        },
+        {
+          "label": "The app",
+          "left": 1061.203125,
+          "right": 1114.453125,
+          "inside": true
+        },
+        {
+          "label": "Request a demo ",
+          "left": 1144.453125,
+          "right": 1314,
+          "inside": true
+        },
+        {
+          "label": "Pause page animations",
+          "left": 1327,
+          "right": 1365,
+          "inside": true
+        }
+      ]
+    },
+    {
+      "name": "Forecast viewer has readable isolated styles",
+      "passed": true
+    }
+  ]
+}

@@ -49,8 +49,11 @@ export function LandingHeader() {
           <a href="#audiences" onClick={() => setOpen(false)}>
             Who it helps
           </a>
-          <a href="#science" onClick={() => setOpen(false)}>
+          <a href="#data-science" onClick={() => setOpen(false)}>
             The science
+          </a>
+          <a href="#mobile-app" onClick={() => setOpen(false)}>
+            The app
           </a>
           <a
             className="sp-button sp-nav-cta"

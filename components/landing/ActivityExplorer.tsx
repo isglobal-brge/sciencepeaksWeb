@@ -6,41 +6,53 @@ import {
   CalendarDotsIcon,
   ClockIcon,
   ChartBarIcon,
+  WaveformIcon,
 } from "@phosphor-icons/react";
 
 const views = [
   {
-    label: "Week & day",
+    label: "The week",
     icon: CalendarDotsIcon,
-    image: "/landing/product/movement-overview.webp",
-    preview: "/landing/product/movement-overview-full.webp",
+    image: "/landing/product/weekly-activity-complete.webp",
+    preview: "/landing/product/weekly-activity-complete-full.webp",
     width: 1600,
-    height: 1172,
-    alt: "SciencePeaks activity view with estimated weekly movement, daily totals and the selected day's wrist-acceleration profile.",
+    height: 442,
+    alt: "SciencePeaks weekly activity dashboard showing 251 estimated moderate-or-higher activity minutes, with daily totals from 28 September to 4 October.",
     caption:
-      "Bars show estimated moderate-or-higher activity minutes per day. In the app, selecting a day opens the wrist-movement trace beneath it. This example connects the weekly total to the hours when movement happened.",
+      "Start with the week: estimated moderate-or-higher activity minutes accumulate across days. This recorded example shows 251 minutes, with different amounts on different days.",
+  },
+  {
+    label: "A day in detail",
+    icon: WaveformIcon,
+    image: "/landing/product/daily-movement-detail.webp",
+    preview: undefined,
+    width: 1110,
+    height: 510,
+    alt: "SciencePeaks wrist-acceleration trace for 30 September with whole-day and six-hour views, showing when movement happened.",
+    caption:
+      "Then explore a day. The line shows observed wrist movement as ENMO (acceleration in milligravity), with peaks placed in time. Whole-day and six-hour views let you inspect the activity behind the summary.",
   },
   {
     label: "Hourly rhythm",
     icon: ClockIcon,
-    image: "/landing/product/movement-rhythm.webp",
-    preview: "/landing/product/movement-rhythm-full.webp",
+    image: "/landing/product/weekly-movement-rhythm.webp",
+    preview: "/landing/product/weekly-movement-rhythm-full.webp",
     width: 1600,
-    height: 675,
-    alt: "SciencePeaks hourly wrist-movement heatmap, showing how observed movement is distributed through the week.",
+    height: 548,
+    alt: "SciencePeaks seven-day hourly wrist-movement heatmap with 24 columns, revealing how movement is distributed through each day.",
     caption:
-      "Each row is a day; each column is an hour. Brighter cells mean higher average wrist acceleration (ENMO). Read across a row to see a day's pattern, or down a column to compare the same hour.",
+      "Each row is a day; each column is an hour. Brighter cells mean higher average wrist acceleration. Read across to see a day’s pattern, or down to compare the same hour across the week. Hatching marks hours without observations.",
   },
   {
     label: "Intensity & volume",
     icon: ChartBarIcon,
-    image: "/landing/product/movement-intensity.webp",
-    preview: "/landing/product/movement-intensity-full.webp",
-    width: 1600,
-    height: 583,
-    alt: "SciencePeaks time spent in estimated activity intensity bands and an hourly active-movement volume profile.",
+    image: "/landing/product/activity-intensity-time.webp",
+    preview: undefined,
+    width: 802,
+    height: 489,
+    alt: "SciencePeaks estimated activity-intensity distribution: time in very low, light, moderate and vigorous MET bands.",
     caption:
-      "On the left, minutes are grouped by estimated intensity. On the right, the hourly pattern combines intensity and time as active volume above the resting reference (MET-min per hour).",
+      "Estimated intensity bands group observed minutes from very low to vigorous movement. The distribution gives the weekly total more meaning.",
   },
 ] as const;
 
@@ -102,18 +114,38 @@ export function ActivityExplorer() {
         aria-labelledby={`${id}-tab-${selected}`}
         tabIndex={0}
       >
-        <ProductScreenshot
-          key={view.image}
-          className="sp-explorer-frame"
-          src={view.image}
-          previewSrc={view.preview}
-          title={view.label}
-          caption={view.caption}
-          alt={view.alt}
-          width={view.width}
-          height={view.height}
-          sizes="(max-width: 650px) calc(100vw - 60px), calc(100vw - 136px)"
-        />
+        <div
+          className={selected === 3 ? "sp-explorer-pair" : "sp-explorer-single"}
+        >
+          <ProductScreenshot
+            key={view.image}
+            className="sp-explorer-frame"
+            src={view.image}
+            previewSrc={view.preview}
+            title={view.label}
+            caption={view.caption}
+            alt={view.alt}
+            width={view.width}
+            height={view.height}
+            sizes={
+              selected === 3
+                ? "(max-width: 650px) calc(100vw - 60px), 45vw"
+                : "(max-width: 650px) calc(100vw - 60px), calc(100vw - 136px)"
+            }
+          />
+          {selected === 3 && (
+            <ProductScreenshot
+              className="sp-explorer-frame"
+              src="/landing/product/hourly-active-volume.webp"
+              width={824}
+              height={482}
+              title="When active volume accumulates"
+              alt="SciencePeaks hourly active-movement volume profile with a median and minimum-to-maximum band across contributing days, in MET-min per hour."
+              caption="The hourly pattern combines estimated intensity and duration as active volume above the resting reference (MET-min per hour). The line shows the median; the band spans the contributing days."
+              sizes="(max-width: 650px) calc(100vw - 60px), 45vw"
+            />
+          )}
+        </div>
       </div>
     </div>
   );

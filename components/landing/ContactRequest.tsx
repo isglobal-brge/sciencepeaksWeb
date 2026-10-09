@@ -84,6 +84,7 @@ export function ContactRequest() {
           <option>Oncology care</option>
           <option>Professional sport</option>
           <option>Research or partnership</option>
+          <option>Investment</option>
         </select>
       </div>
       <div className="sp-field">

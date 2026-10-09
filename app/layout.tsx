@@ -21,7 +21,7 @@ const poppins = localFont({
   display: "swap",
 });
 const description =
-  "Wearable activity, overnight physiology and personal context for fatigue and recovery follow-up in oncology care and professional sport.";
+  "Data science, machine learning and AI connecting wearable activity, overnight physiology and personal context for oncology care and professional sport.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sciencepeaks.ai"),
@@ -91,7 +91,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <style>{`
             .sp-menu-button,.sp-motion-button,.sp-nav-cta,.sp-story-tabs,
             .sp-explorer-tabs,.sp-wearable-button,.sp-volume-control input,
-            .sp-shot-view,.sp-shot-image-hint,
+            .sp-shot-view,.sp-shot-image-hint,.sp-mobile-interaction,
             .sp-volume-range-ends{display:none!important}
             .sp-header{position:relative!important;top:12px!important}
             .sp-hero{padding-top:65px!important}

@@ -6,6 +6,10 @@ The implementation uses Next.js 15.5.27 static export, React 18 and locally host
 
 The internal reference bundle stays outside the deployment output. Eleven refined product views, responsive WebP derivatives and six official institution logos have provenance recorded under [`context/landing-redesign/`](context/landing-redesign/). The screenshots combine current anonymous app captures with real native and professional screens using sample data. An accessible image viewer loads larger images on demand, with fit and actual-size modes. The logo strip describes ISGlobal’s institutional ecosystem; it does not represent a customer list. Existing legal pages, account deletion and the Formspree contact endpoint are preserved.
 
+The investor-facing refinement adds a navy data-science pipeline and a real experimental HRV outlook, plus a selectable mobile showcase with four native iOS/Android views. Web, iOS and Android are visible in the proposition and application schema. Product panels now include the participant project dashboard, treatment-annotated HRV history, period comparisons and week/day/hour activity exploration. Public store-download links are not inferred from native client availability.
+
+The [methods evidence](context/landing-redesign/INVESTOR_METHODS_EVIDENCE.md), [founder screenshot provenance](context/landing-redesign/FOUNDER_SCREENSHOT_MANIFEST.json) and [mobile screenshot provenance](context/landing-redesign/MOBILE_ASSET_MANIFEST.json) record the current model contracts, image sources and demonstration-data boundaries.
+
 ## Local development and validation
 
 Install dependencies and start the development server at `http://127.0.0.1:4173`:

@@ -10,7 +10,7 @@
     "assistant.webp": "Anonymous cropped, dated assistant demonstration; access is explained in walkthrough.",
     "movement-overview.webp": "Current live app; founder technical activity record, anonymous product-panel crop; Bars show estimated moderate-or-higher minutes. The line below shows wrist movement through the selected day.",
     "movement-week.webp": "Current live app; founder technical activity record, anonymous weekly-panel crop; Estimated activity minutes by day.",
-    "movement-day.webp": "Current live app; founder technical activity record, anonymous day-detail crop; The ENMO trace shows wrist movement within the day, in milligrams.",
+    "movement-day.webp": "Current live app; founder technical activity record, anonymous day-detail crop; The ENMO trace shows wrist movement within the day, in milligravity.",
     "hrv-timeline.webp": "Current live app; founder technical physiological record, anonymous RMSSD timeline crop; Each point is a nightly RMSSD summary. The shaded band shows the personal reference range.",
     "movement-rhythm.webp": "Current live app; founder technical acceleration record, anonymous hourly-heatmap crop; Rows are days; columns are hours. Brighter cells mean greater average wrist movement.",
     "movement-intensity.webp": "Current live app; founder technical activity record, anonymous intensity/pattern panels; Time in estimated intensity bands and the hourly pattern of active movement.",
@@ -18,7 +18,21 @@
     "oncology-check-in-native.webp": "Real native product UI, deterministic oncology demonstration records; Demonstration with synthetic data. A short symptom check-in sits alongside the next treatment and the week’s check-ins.",
     "oncology-treatment-calendar.webp": "Real web product UI in explicit oncology DEMO, synthetic treatments and Alex Morgan inspection identity; Demonstration with synthetic data. The treatment calendar preserves scheduled dates and the selected day’s treatment status.",
     "professional-group-overview.webp": "Real web professional cohort product UI using deterministic development inspection fixtures; nine synthetic participants; Demonstration with synthetic data. A professional review table connects each participant’s RMSSD trend, usable nights and model status.",
-    "assistant-answer-evidence.webp": "Dated restricted assistant product demonstration; anonymous visible output, underlying record origin not established; Product demonstration. A natural-language answer is accompanied by calculation, date-window, coverage and source details."
+    "assistant-answer-evidence.webp": "Dated restricted assistant product demonstration; anonymous visible output, underlying record origin not established; Product demonstration. A natural-language answer is accompanied by calculation, date-window, coverage and source details.",
+    "project-participant-dashboard.webp": "Founder-supplied own-account project dashboard; identity header cropped, anonymous participant panels retained. Not clinical outcome evidence.",
+    "hrv-treatment-history.webp": "Founder-supplied own-account demonstration of six-month RMSSD history and treatment annotations; identity header cropped. Context does not establish causality.",
+    "hrv-period-comparison.webp": "Founder-supplied anonymous product view comparing daily RMSSD values and medians across two periods.",
+    "night-rmssd-current.webp": "Founder-supplied anonymous nocturnal RMSSD profile; two-minute windows summarized as 12-minute ranges, not fatigue ground truth.",
+    "hrv-forecast.webp": "Founder-supplied experimental personal-range estimate: 28% chance next usable HRV below52ms, not a fatigue probability or clinical risk.",
+    "weekly-activity-complete.webp": "Founder-supplied anonymous recorded activity week;251 estimated moderate-or-higher minutes. Sensor acceleration observed, intensity estimated.",
+    "daily-movement-detail.webp": "Founder-supplied anonymous daily ENMO wrist-acceleration view in milligravity.",
+    "hourly-active-volume.webp": "Founder-supplied anonymous hourly active MET-min volume above resting reference.",
+    "activity-intensity-time.webp": "Founder-supplied anonymous estimated activity-intensity bands with observed minutes.",
+    "weekly-movement-rhythm.webp": "Founder-supplied anonymous seven-day hourly ENMO wrist-acceleration heatmap.",
+    "mobile-home.webp": "Real iOS home screen using deterministic synthetic Alex/RMSSD54.2 inspection data; original OS chrome retained.",
+    "mobile-trends.webp": "Real Android temporal-trend UI with deterministic inspection metric fixture; no participant identity.",
+    "mobile-check-in.webp": "Real iOS oncology check-in UI with synthetic fixtures; original obstruction-prone header/OS chrome cropped, feature panels unchanged.",
+    "mobile-plan.webp": "Real iOS oncology treatment-plan UI with synthetic fixtures; original obstruction-prone header/OS chrome cropped, complete calendar and legend unchanged."
   },
   "institutions": "Official marks describe ISGlobal origin, institutional ecosystem and clinical research context; they are not a SciencePeaks customer list.",
   "licenses": {
@@ -104,6 +118,21 @@
       "sha256": "75a892eb6c14fab110bfc3db061a3de0311cbee69316439878c6b27b5543faaf"
     },
     {
+      "path": "landing/product/activity-intensity-time-320.webp",
+      "bytes": 3604,
+      "sha256": "cd4424634dcb075341ba1dfdc1ec6d5ffa09f355811cbf6995492475e20e89a6"
+    },
+    {
+      "path": "landing/product/activity-intensity-time-640.webp",
+      "bytes": 9108,
+      "sha256": "e2998d2fbd65422a899dde18777e30729a24b0b385bd0a0244a186b26978a835"
+    },
+    {
+      "path": "landing/product/activity-intensity-time.webp",
+      "bytes": 13374,
+      "sha256": "fca8e58b1861919b6936d0cbb4b2391072121929e350b366bbca68bc7d956a89"
+    },
+    {
       "path": "landing/product/activity-rhythm-320.webp",
       "bytes": 3482,
       "sha256": "560a1eab2d06ddc548639b68ed0168094525be2579f00f87abe36bca2dc65a00"
@@ -184,6 +213,81 @@
       "sha256": "d72760f5456d0a874d3f4606895c64d5a0afadc55e4a02ce63e6b35d6a41b6b4"
     },
     {
+      "path": "landing/product/daily-movement-detail-320.webp",
+      "bytes": 4470,
+      "sha256": "a86b2a4a570b1895f4e4615283333dd74321b164885d74b962921d0a4f9473ae"
+    },
+    {
+      "path": "landing/product/daily-movement-detail-640.webp",
+      "bytes": 12586,
+      "sha256": "b308657adc01611f743050c779b10723eff551fe0c00023ac778b8e521619f53"
+    },
+    {
+      "path": "landing/product/daily-movement-detail-960.webp",
+      "bytes": 21160,
+      "sha256": "64c8aa1ec647a14801eeca14a51ecbe15560ebe3b7fefb44f3a33ee93a12815d"
+    },
+    {
+      "path": "landing/product/daily-movement-detail.webp",
+      "bytes": 27666,
+      "sha256": "df0869c27a753b94d9d8423d805f384c7bf0b2db166393a13c4ccc95023b4afe"
+    },
+    {
+      "path": "landing/product/hourly-active-volume-320.webp",
+      "bytes": 6152,
+      "sha256": "73292709a338e102bcc173068fab929e22c34f9b38f1d59ab398bf72f92f1e5a"
+    },
+    {
+      "path": "landing/product/hourly-active-volume-640.webp",
+      "bytes": 16346,
+      "sha256": "167ae0e6b138f785dff7c314708c3fcb2a7875c479ce2da66b3164f2785ea239"
+    },
+    {
+      "path": "landing/product/hourly-active-volume.webp",
+      "bytes": 24330,
+      "sha256": "c350d2bc74627daa0b11a043cc27c1d973fb751182094b442714bffde7518992"
+    },
+    {
+      "path": "landing/product/hrv-forecast-320.webp",
+      "bytes": 6918,
+      "sha256": "745a89e73863c58a01cee5797e76644615e1138d207477096ad6add73bc0615b"
+    },
+    {
+      "path": "landing/product/hrv-forecast-640.webp",
+      "bytes": 18536,
+      "sha256": "53cc51e156b0f5fe59fd3b1ccab8b4f311512d1e7334570a8a5a25331150669e"
+    },
+    {
+      "path": "landing/product/hrv-forecast.webp",
+      "bytes": 28550,
+      "sha256": "5530ba66f11f9d109c6a17f242728648fb43c14e4ad737d00064da1d36e09fac"
+    },
+    {
+      "path": "landing/product/hrv-period-comparison-320.webp",
+      "bytes": 2970,
+      "sha256": "000724dd107b3e603e06e7584b299fe1b1e97b826b3eb776d1491508bef6744a"
+    },
+    {
+      "path": "landing/product/hrv-period-comparison-640.webp",
+      "bytes": 7468,
+      "sha256": "ca11292cf4df1a3b8cd737b01ae83d1c728b2296a212982231f0ba88c26964c0"
+    },
+    {
+      "path": "landing/product/hrv-period-comparison-960.webp",
+      "bytes": 12934,
+      "sha256": "0c9f79a16e48895bb1733ad8e7591e12f498b5cf3426af4a20e4c043383ce8a0"
+    },
+    {
+      "path": "landing/product/hrv-period-comparison-full.webp",
+      "bytes": 27560,
+      "sha256": "83e8d66c2adfe513c14cccc0eb7cb4ce87165ad8c055b1bda35f5c5dccac0eac"
+    },
+    {
+      "path": "landing/product/hrv-period-comparison.webp",
+      "bytes": 27700,
+      "sha256": "ab955037ffb508e29f05a799fdf43d55fec5a8af3460a1e67cef4318cc863407"
+    },
+    {
       "path": "landing/product/hrv-timeline-320.webp",
       "bytes": 2762,
       "sha256": "d9553db41c8dac3938d750e3673502c93b74ed3e69a8e271d9243ba9ebb811e1"
@@ -207,6 +311,86 @@
       "path": "landing/product/hrv-timeline.webp",
       "bytes": 30560,
       "sha256": "feff42d5c5fd3742f04500eda93d4396055a6d46850e3db3e26d987531df7190"
+    },
+    {
+      "path": "landing/product/hrv-treatment-history-320.webp",
+      "bytes": 5300,
+      "sha256": "9c08bed8e5bbdbc775fb5ce4c14f0b1823b2c9dd82ff98066592d67f3410ef4a"
+    },
+    {
+      "path": "landing/product/hrv-treatment-history-640.webp",
+      "bytes": 14528,
+      "sha256": "5e698fcbefa552fd9e9890698c4e3f54f6691f40054f2cf66df5a0eaba42ab46"
+    },
+    {
+      "path": "landing/product/hrv-treatment-history-960.webp",
+      "bytes": 27064,
+      "sha256": "72e8a61ffa2c7d3051926a4e0a8ea538df692212831900c914d5a727472a9ed0"
+    },
+    {
+      "path": "landing/product/hrv-treatment-history.webp",
+      "bytes": 58300,
+      "sha256": "20e8c41a0920da6b5f43038402024c11a60f661197d282b6af7a10e1c39b72cc"
+    },
+    {
+      "path": "landing/product/mobile-check-in-320.webp",
+      "bytes": 22648,
+      "sha256": "3373578e528c7960215bc59ad9e4eddbed0645da2c7f7673f60829494fd1b747"
+    },
+    {
+      "path": "landing/product/mobile-check-in-640.webp",
+      "bytes": 53756,
+      "sha256": "a0cb2efeaf4f83e1c90598ea5a6f0ebb32beaafe3e94c549d7e2443cd3eeb597"
+    },
+    {
+      "path": "landing/product/mobile-check-in.webp",
+      "bytes": 67160,
+      "sha256": "e3d345c98dea48f635d06dc83e4c1e1c33c0d69f66ff99dc42b78b94a87f7278"
+    },
+    {
+      "path": "landing/product/mobile-home-320.webp",
+      "bytes": 28342,
+      "sha256": "3764f6d14ffd99da0e8b1cf4bb918b1d180a4a89ecf645ba3fc919135d1f7b70"
+    },
+    {
+      "path": "landing/product/mobile-home.webp",
+      "bytes": 37440,
+      "sha256": "d9d13bd51407206db0c7b7ad0643ea05fb0a635d3f8114a3efa67421023e0728"
+    },
+    {
+      "path": "landing/product/mobile-plan-320.webp",
+      "bytes": 20790,
+      "sha256": "2157b649be412d8f2ec629a8cc9f71ee385459e889eed0d569f6c938867cb1d8"
+    },
+    {
+      "path": "landing/product/mobile-plan-640.webp",
+      "bytes": 49146,
+      "sha256": "aec11c1b8a7daebcfbf9e780b600179b6ef1da3810404259ff67c5b64829e979"
+    },
+    {
+      "path": "landing/product/mobile-plan.webp",
+      "bytes": 61872,
+      "sha256": "47d882b1e86df8e9f3ba0cb9c80d571c1ad80631d74fc793950ef2b0cf7401a2"
+    },
+    {
+      "path": "landing/product/mobile-trends-320.webp",
+      "bytes": 17752,
+      "sha256": "73594d9c26f777ec20b75538eddbaa6129766dc7beabe4876ac224fa8989fdf5"
+    },
+    {
+      "path": "landing/product/mobile-trends-640.webp",
+      "bytes": 41096,
+      "sha256": "67ef6658622843f4ce4d7f6e44c3146a2355900c9815fdb3d11da38484e503e9"
+    },
+    {
+      "path": "landing/product/mobile-trends-960.webp",
+      "bytes": 67790,
+      "sha256": "dde8610120615cdef25c10853f1d8dfaa5a30c9c771f4038d8d8e48669ad6e51"
+    },
+    {
+      "path": "landing/product/mobile-trends.webp",
+      "bytes": 74470,
+      "sha256": "8d679c5024b864b60a20342fdb8891a9b88a35be0c2480a61a06b90ed9d869dd"
     },
     {
       "path": "landing/product/movement-day-320.webp",
@@ -354,6 +538,26 @@
       "sha256": "0c7095e85b929b677a73cceb2451e11818657ca97e908cb1b84a130bcdfe666f"
     },
     {
+      "path": "landing/product/night-rmssd-current-320.webp",
+      "bytes": 6264,
+      "sha256": "58dec6548d06e82a71975973fc7396f6164810c3384477089fccbd8f254dfe8e"
+    },
+    {
+      "path": "landing/product/night-rmssd-current-640.webp",
+      "bytes": 16400,
+      "sha256": "92e3d71275aad5327a831f5745c67c65f1aca73982b6da1f39ad955778f5b9be"
+    },
+    {
+      "path": "landing/product/night-rmssd-current-960.webp",
+      "bytes": 29138,
+      "sha256": "8b4d85019c8ac7f9a9322135866237eb949add6ef3c84a34256f80a552e69783"
+    },
+    {
+      "path": "landing/product/night-rmssd-current.webp",
+      "bytes": 40126,
+      "sha256": "1d53cf1942a80a142af7dcddb1449be1b1c1f7214bc0070e168444f21fab75f9"
+    },
+    {
       "path": "landing/product/oncology-check-in-320.webp",
       "bytes": 8832,
       "sha256": "13e2286bc085f9a1a11fecec6a11a9edd1eb5aec0719c113e10d9638d7b48e09"
@@ -444,6 +648,31 @@
       "sha256": "0abf76c82d992173f9745706b8818af0d004e6cdabb95b410ee006fd258e1f76"
     },
     {
+      "path": "landing/product/project-participant-dashboard-320.webp",
+      "bytes": 5882,
+      "sha256": "1aa395b544d6001c4f544e792e86f33d014b7eac79792b115a66aabf9d828611"
+    },
+    {
+      "path": "landing/product/project-participant-dashboard-640.webp",
+      "bytes": 17638,
+      "sha256": "9fde1054f82a0fadf54523a31260c38a64d3b3943f631315b2e2200c45c5bd52"
+    },
+    {
+      "path": "landing/product/project-participant-dashboard-960.webp",
+      "bytes": 32020,
+      "sha256": "ada9b783bf54326d01b229f37f91dd836378e37e56afede503529963292b73cf"
+    },
+    {
+      "path": "landing/product/project-participant-dashboard-full.webp",
+      "bytes": 72110,
+      "sha256": "b58576606bc299dbb03c2597c34e3e6f30772c69861372381fdcd087efefbb12"
+    },
+    {
+      "path": "landing/product/project-participant-dashboard.webp",
+      "bytes": 70510,
+      "sha256": "284e055c5cd6c5ce66a5e828af804aacaa2d89f4343a312b19043d5234515bd7"
+    },
+    {
       "path": "landing/product/rmssd-night-320.webp",
       "bytes": 6306,
       "sha256": "a18b184e85189a623ecda44676c6de782c3ff1081aeb479bcc23fb23bcbe8aee"
@@ -462,6 +691,56 @@
       "path": "landing/product/rmssd-night.webp",
       "bytes": 40366,
       "sha256": "b75afe44078fe6d427832a299a49f6a191141ddddb902f05a8c28229f526e4bf"
+    },
+    {
+      "path": "landing/product/weekly-activity-complete-320.webp",
+      "bytes": 3740,
+      "sha256": "8190ab3ec03126bc7e092768656a17cc0d426f1778b9c4681a089755872af8ae"
+    },
+    {
+      "path": "landing/product/weekly-activity-complete-640.webp",
+      "bytes": 10380,
+      "sha256": "981d37ceaa0e87aa678ae8f966eed0f87e78eaacffd07a3536396cb33ae9b4ba"
+    },
+    {
+      "path": "landing/product/weekly-activity-complete-960.webp",
+      "bytes": 18374,
+      "sha256": "6150325cf0faa6dfd82ecb6bde592b113b12ad0ad81d36a6671f7732912e42df"
+    },
+    {
+      "path": "landing/product/weekly-activity-complete-full.webp",
+      "bytes": 43494,
+      "sha256": "11e016aef452a1ecd24c86784a62f43e2687f21bd9d4be063b30e25452b86207"
+    },
+    {
+      "path": "landing/product/weekly-activity-complete.webp",
+      "bytes": 40436,
+      "sha256": "269f69f2617325ff3de0abcae6cd96e23a5ab1b8a2b43cc0bd611c82a0339888"
+    },
+    {
+      "path": "landing/product/weekly-movement-rhythm-320.webp",
+      "bytes": 5578,
+      "sha256": "23126510c93cbc09323fbc2e8cc5854ae3c068ea90f5366d281e95dab02666f5"
+    },
+    {
+      "path": "landing/product/weekly-movement-rhythm-640.webp",
+      "bytes": 18552,
+      "sha256": "8a7b5ff83937736be678901a3633a3ea31e8b279effffb30f6e37b6e3e653381"
+    },
+    {
+      "path": "landing/product/weekly-movement-rhythm-960.webp",
+      "bytes": 35682,
+      "sha256": "4cf652fe657c6b353e5c2e679a76ea436f8178e07283a5644f5f8add4128a11f"
+    },
+    {
+      "path": "landing/product/weekly-movement-rhythm-full.webp",
+      "bytes": 97212,
+      "sha256": "6a5675782454edbc17e6dca300fa8b15fa33295783b5a40e438f4ad95ac7177f"
+    },
+    {
+      "path": "landing/product/weekly-movement-rhythm.webp",
+      "bytes": 89630,
+      "sha256": "1f7c90abe550018b484ccce51bb6eb46fbfe54dcad601557c181e00cc7ae686d"
     },
     {
       "path": "landing/scene.js",
@@ -484,7 +763,8 @@
       "sha256": "0daf6dec8311987304e93285baf007b225986dcf641caabad0db111c8e085bd9"
     }
   ],
-  "responsive_images": "Seventeen reviewed WebP derivatives at 320, 640 and 960 pixels, selected via native srcset/sizes. Six source originals remain unchanged.",
+  "responsive_images": "Reviewed product screens use native srcset/sizes with320/640/960 WebP variants only below source width. Mobile Home stays at its402pixel native source. Larger web variants are fetched only on viewer activation.",
   "fonts": "The served Poppins Latin subsets retain Latin, Spanish/Catalan characters, punctuation, symbols and layout features; unchanged full-font source copies and SIL OFL remain available.",
-  "screenshot_refinement": "SCREENSHOT_REFINEMENT_MANIFEST.json records crops, sources, capture dates and dimensions for the eleven replacement views. Large live-app variants are fetched only on viewer activation."
+  "screenshot_refinement": "SCREENSHOT_REFINEMENT_MANIFEST.json records crops, sources, capture dates and dimensions for the eleven replacement views. Large live-app variants are fetched only on viewer activation.",
+  "investor_refinement": "FOUNDER_SCREENSHOT_MANIFEST.json and MOBILE_ASSET_MANIFEST.json record the ten anonymous founder product panels and four native app views, source provenance, crops, dimensions and hashes. INVESTOR_METHODS_EVIDENCE.md separates the HRV classifier, DLNM statistics, natural-language assistant and contextual records."
 }

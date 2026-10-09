@@ -20,6 +20,8 @@ import { LandingHeader } from "@/components/landing/LandingHeader";
 import { MotionEffects } from "@/components/landing/MotionEffects";
 import { LogoMarquee } from "@/components/landing/LogoMarquee";
 import { FollowupStory } from "@/components/landing/FollowupStory";
+import { ScienceEngine } from "@/components/landing/ScienceEngine";
+import { MobileShowcase } from "@/components/landing/MobileShowcase";
 import { ActivityExplorer } from "@/components/landing/ActivityExplorer";
 import { ActivityVolume } from "@/components/landing/ActivityVolume";
 import { WearableScene } from "@/components/landing/WearableScene";
@@ -29,7 +31,7 @@ import { responsiveProductImage } from "@/components/landing/productImages";
 import "./landing.css";
 
 const description =
-  "SciencePeaks connects wearable activity, overnight HRV and symptoms to support fatigue and recovery follow-up in oncology care and professional sport.";
+  "SciencePeaks uses data science, machine learning and AI to connect wearable activity, overnight HRV and symptoms for oncology care and professional sport. Web, iOS and Android.";
 export const metadata: Metadata = {
   title: "SciencePeaks | A fuller picture of activity, fatigue and recovery",
   description,
@@ -58,7 +60,7 @@ export const metadata: Metadata = {
 const questions = [
   [
     "What is SciencePeaks?",
-    "SciencePeaks is a wearable-based platform that connects physical activity estimates, overnight physiological trends, symptoms and personal context. It supports fatigue and recovery follow-up for oncology care and professional athletes, with a shared workspace for their professionals.",
+    "SciencePeaks uses data science, machine learning and AI to connect wearable activity estimates, overnight physiological trends, symptoms and personal context. Patients and athletes use the app; clinicians and coaches follow individuals or groups in shared projects. Web, iOS and Android clients support this workflow.",
   ],
   [
     "What makes the platform different?",
@@ -77,14 +79,61 @@ const questions = [
     "Yes. The project system supports a supervisor following a group, such as patients in a care programme or athletes in a team. Professionals can review histories, activity plans and reports.",
   ],
   [
-    "How do AI and training models help?",
-    "The assistant helps explain available metrics and trends in natural language with supporting evidence. In sport, distributed lag non-linear models (DLNM) explore how Training Stress Score (TSS) relates to later RMSSD (root mean square of successive differences), an HRV measure of beat-to-beat variation. Scenarios depend on data and model assumptions. We can show you the available tools during a walkthrough.",
+    "How do data science, machine learning and AI work together?",
+    "Data science organizes wearable records and compares them with personal history. An experimental machine-learning model estimates whether the next usable HRV reading may fall in the person’s own lower range. Separately, distributed lag non-linear models (DLNM) explore Training Stress Score (TSS) and later RMSSD, an HRV measure of beat-to-beat variation. The AI assistant explains available records in natural language with supporting evidence. Symptoms and treatment dates provide professional context; they are not inputs to the current HRV classifier.",
+  ],
+  [
+    "Can I use SciencePeaks on my phone and computer?",
+    "Yes. SciencePeaks has Web, iOS and Android clients. The mobile app brings daily metrics, trends, symptom check-ins and treatment context into your day; the web workspace gives professionals room to review participants and their histories. Contact us to discuss access for your programme or team.",
   ],
   [
     "Can I prescribe activity in MET·h?",
     "Current professional activity plans use minutes. MET·h describes intensity multiplied by time and is useful for explaining volume. Prescribing in MET·h and integration with electronic health records are future directions.",
   ],
 ];
+
+const mobileScreens = [
+  {
+    id: "home",
+    title: "Your daily picture",
+    caption:
+      "Open your day with overnight HRV, related metrics and a trend compared with your personal history. This is the actual iOS home screen.",
+    src: "/landing/product/mobile-home.webp",
+    width: 402,
+    height: 874,
+    alt: "SciencePeaks iOS home screen with date navigation, a Garmin connection card, overnight RMSSD, a personal comparison and related metrics.",
+  },
+  {
+    id: "trends",
+    title: "Trends over time",
+    caption:
+      "Explore a metric across a date range, rather than stopping at today’s reading. This Android screen shows a month of RMSSD values.",
+    src: "/landing/product/mobile-trends.webp",
+    width: 1080,
+    height: 2400,
+    alt: "SciencePeaks Android temporal-trends screen with a date-range selector and a month-long RMSSD chart in milliseconds.",
+  },
+  {
+    id: "check-in",
+    title: "A quick daily check-in",
+    caption:
+      "Give the data your perspective with a check-in designed to take around 30 seconds. Answer a symptom question, confirm treatment context and review your week.",
+    src: "/landing/product/mobile-check-in.webp",
+    width: 804,
+    height: 1560,
+    alt: "SciencePeaks iOS oncology view with a short fatigue question, selectable answers, the next treatment and a week of check-ins.",
+  },
+  {
+    id: "plan",
+    title: "Treatment context",
+    caption:
+      "Keep treatment dates in one place and inspect the planned schedule. That context sits alongside activity, symptoms and physiology in professional review.",
+    src: "/landing/product/mobile-plan.webp",
+    width: 804,
+    height: 1560,
+    alt: "SciencePeaks iOS treatment-plan view with a monthly calendar, dated treatment markers and a control to add a plan.",
+  },
+] as const;
 
 export default function Home() {
   const structured = {
@@ -114,6 +163,7 @@ export default function Home() {
         name: "SciencePeaks",
         url: "https://www.sciencepeaks.ai/",
         applicationCategory: "HealthApplication",
+        operatingSystem: "Web, iOS, Android",
         description,
         publisher: { "@id": "https://www.sciencepeaks.ai/#organization" },
       },
@@ -143,12 +193,15 @@ export default function Home() {
                 <em>a fuller picture.</em>
               </h1>
               <p className="sp-hero-lead">
-                <strong>
-                  Wearable activity, overnight heart patterns and how you feel.
-                </strong>{" "}
-                SciencePeaks connects the picture across days, with AI
-                explanations and a shared workspace for patients, athletes and
-                their professionals.
+                <strong>Data science. Machine learning. AI.</strong>{" "}
+                SciencePeaks turns wearable activity, overnight heart patterns
+                and symptoms into a connected view of fatigue and recovery.
+                Built for patients, athletes and the professionals who follow
+                them.
+              </p>
+              <p className="sp-hero-platforms">
+                Web <span aria-hidden>·</span> iOS <span aria-hidden>·</span>{" "}
+                Android
               </p>
               <div className="sp-actions">
                 <a className="sp-button" href="#contact">
@@ -167,24 +220,24 @@ export default function Home() {
                 <div className="sp-collage-card sp-collage-activity">
                   <div className="sp-collage-chrome">
                     <Watch size={18} aria-hidden />
-                    <span>Everyday movement</span>
+                    <span>Your connected workspace</span>
                     <span className="sp-chrome-brand">SciencePeaks</span>
                   </div>
                   <img
-                    src="/landing/product/movement-week.webp"
+                    src="/landing/product/project-participant-dashboard.webp"
                     {...responsiveProductImage(
-                      "/landing/product/movement-week.webp",
+                      "/landing/product/project-participant-dashboard.webp",
                       "(max-width: 650px) calc(91vw - 33px), (max-width: 900px) 560px, 42vw",
                     )}
                     width="1600"
-                    height="751"
-                    alt="SciencePeaks weekly activity and day-detail screen with estimated movement and acceleration."
+                    height="759"
+                    alt="SciencePeaks project dashboard connecting personal HRV trends, daily check-ins, treatment context and recorded measurements."
                     fetchPriority="high"
                   />
                   <div className="sp-collage-footer">
-                    <span>Intensity</span>
-                    <span>Timing</span>
-                    <span>Daily life</span>
+                    <span>Personal trends</span>
+                    <span>Symptoms</span>
+                    <span>Context</span>
                   </div>
                 </div>
                 <div className="sp-collage-card sp-collage-physiology">
@@ -193,13 +246,13 @@ export default function Home() {
                     <span>Overnight physiology</span>
                   </div>
                   <img
-                    src="/landing/product/rmssd-night.webp"
+                    src="/landing/product/night-rmssd-current.webp"
                     {...responsiveProductImage(
-                      "/landing/product/rmssd-night.webp",
+                      "/landing/product/night-rmssd-current.webp",
                       "(max-width: 650px) calc(69vw - 25px), (max-width: 900px) 434px, 33vw",
                     )}
-                    width="1206"
-                    height="590"
+                    width="1180"
+                    height="553"
                     alt="SciencePeaks overnight RMSSD profile, showing heart rate variability across the night in milliseconds."
                     fetchPriority="low"
                   />
@@ -226,7 +279,7 @@ export default function Home() {
                 </div>
               </div>
               <figcaption className="sp-hero-caption">
-                Real product views · wearable activity, overnight HRV and a
+                Real product views · a connected project, overnight HRV and a
                 sample symptom check-in.
               </figcaption>
             </figure>
@@ -260,13 +313,13 @@ export default function Home() {
               <article className="sp-feature sp-feature-movement sp-reveal">
                 <div className="sp-feature-visual sp-activity-visual">
                   <ProductScreenshot
-                    src="/landing/product/movement-week.webp"
-                    previewSrc="/landing/product/movement-overview-full.webp"
+                    src="/landing/product/weekly-activity-complete.webp"
+                    previewSrc="/landing/product/weekly-activity-complete-full.webp"
                     width={1600}
-                    height={751}
-                    title="Your week, then your day"
-                    alt="SciencePeaks weekly movement bars, with a full-size view of daily wrist movement."
-                    caption="Each bar shows estimated moderate-or-higher activity minutes. Open the full view to see wrist movement through the selected day."
+                    height={442}
+                    title="A week of everyday movement"
+                    alt="SciencePeaks activity dashboard showing 251 estimated moderate-or-higher minutes and daily movement totals through a recorded week."
+                    caption="Estimated moderate-or-higher activity, day by day. This recorded week shows 251 minutes spread across different days, rather than a daily quota."
                     sizes="(max-width: 650px) calc(100vw - 90px), 50vw"
                     compact
                   />
@@ -296,11 +349,11 @@ export default function Home() {
                     <span>Your overnight record</span>
                   </div>
                   <ProductScreenshot
-                    src="/landing/product/rmssd-night.webp"
-                    width={1206}
-                    height={590}
+                    src="/landing/product/night-rmssd-current.webp"
+                    width={1180}
+                    height={553}
                     title="Heart variability across a night"
-                    alt="An actual SciencePeaks RMSSD overnight profile with 199 two-minute windows, range bars and the nightly mean."
+                    alt="An actual SciencePeaks RMSSD overnight profile with 168 two-minute windows, range bars and the nightly mean."
                     caption="RMSSD describes beat-to-beat variation in milliseconds. Here, bars summarize 12-minute ranges from two-minute windows; the dotted line is the nightly mean."
                     sizes="(max-width: 650px) calc(100vw - 90px), 40vw"
                     compact
@@ -308,12 +361,15 @@ export default function Home() {
                 </div>
                 <div className="sp-feature-copy">
                   <Heartbeat size={27} aria-hidden />
-                  <h3>Recovery, in context.</h3>
+                  <h3>Behind the nightly average.</h3>
                   <p>
-                    <strong>Heart rate variability (HRV)</strong> describes
-                    changes in the time between heartbeats. Explore nightly
-                    summaries and overnight patterns alongside your own history,
-                    symptoms, treatment or training.
+                    <strong>
+                      Explore how heart rate variability (HRV) changes through
+                      the night.
+                    </strong>{" "}
+                    See the pattern behind the summary, compare it with your own
+                    history, and review it alongside symptoms, treatment or
+                    training.
                   </p>
                   <a className="sp-text-link" href="#follow-up">
                     See the connected workflow{" "}
@@ -340,6 +396,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <ScienceEngine />
 
         <section
           className="sp-section sp-audiences"
@@ -460,13 +518,13 @@ export default function Home() {
                       <strong>Your trend, against your history</strong>
                     </div>
                     <ProductScreenshot
-                      src="/landing/product/hrv-timeline.webp"
-                      previewSrc="/landing/product/hrv-timeline-full.webp"
+                      src="/landing/product/hrv-period-comparison.webp"
+                      previewSrc="/landing/product/hrv-period-comparison-full.webp"
                       width={1600}
-                      height={427}
-                      title="Nightly HRV over time"
-                      alt="SciencePeaks RMSSD history in milliseconds with a personal reference band and selected daily value."
-                      caption="Each point is a nightly RMSSD summary. The shaded reference band helps compare the trend with this person's own history, alongside training and symptoms."
+                      height={614}
+                      title="Compare your HRV across periods"
+                      alt="SciencePeaks compares two periods of RMSSD: their medians, individual daily readings and the distribution of values in milliseconds."
+                      caption="Compare periods without reducing them to one number: medians show the central value; each dot shows an individual day. Here the second period’s median is 2.3 ms lower."
                       sizes="(max-width: 650px) calc(100vw - 90px), 40vw"
                       compact
                     />
@@ -511,6 +569,42 @@ export default function Home() {
                   Explore team follow-up <ArrowUpRight size={18} aria-hidden />
                 </a>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="sp-section sp-mobile-app"
+          id="mobile-app"
+          aria-labelledby="mobile-title"
+        >
+          <div className="sp-wrap">
+            <div className="sp-section-heading sp-mobile-heading sp-reveal">
+              <p className="sp-eyebrow">One platform. Every screen.</p>
+              <h2 id="mobile-title">
+                Your day, in your pocket.
+                <br />
+                <span>Your whole picture, connected.</span>
+              </h2>
+              <p>
+                <strong>
+                  Check your metrics. Say how you feel. See what changed.
+                </strong>{" "}
+                The mobile app keeps daily participation simple; the web
+                workspace connects that record to professional follow-up.
+              </p>
+            </div>
+            <div className="sp-reveal">
+              <MobileShowcase screens={mobileScreens} />
+            </div>
+            <div className="sp-mobile-foot">
+              <p>
+                Actual iOS and Android product screens with demonstration data.
+              </p>
+              <a className="sp-text-link" href="#contact">
+                Explore access for your programme{" "}
+                <ArrowUpRight size={17} aria-hidden />
+              </a>
             </div>
           </div>
         </section>
@@ -633,25 +727,26 @@ export default function Home() {
           <div className="sp-wrap">
             <div className="sp-section-heading sp-reveal">
               <h2 id="intelligence-title">
-                Ask about the trend.
+                An AI answer you can inspect.
                 <br />
                 <span>Explore the response.</span>
               </h2>
               <p>
-                AI explanations and statistical models support different
-                questions. One makes the record easier to understand; the other
-                helps explore how training load relates to later physiology.
+                From an understandable answer to a modelled training scenario,
+                analytical tools help you ask better questions about your own
+                data.
               </p>
             </div>
             <div className="sp-intelligence-grid">
               <article className="sp-assistant sp-reveal">
                 <div className="sp-intelligence-copy">
                   <ChatCircleText size={29} aria-hidden />
-                  <h3>Data, in natural language.</h3>
+                  <h3>Your records. A clear explanation.</h3>
                   <p>
                     Ask, <strong>“What changed in my recovery data?”</strong>{" "}
-                    The assistant explains trends in plain language and shows
-                    the values and dates behind its answer.
+                    The AI assistant turns metrics and changes into plain
+                    language, with the values, dates and supporting evidence
+                    behind its answer.
                   </p>
                 </div>
                 <ProductScreenshot
@@ -870,9 +965,9 @@ export default function Home() {
                 <span>into the conversation.</span>
               </h2>
               <p>
-                See SciencePeaks in the context of your care programme,
-                professional team or research. Start with a focused walkthrough
-                of the product and your follow-up needs.
+                Explore the product, the science and the opportunity to bring
+                better follow-up to care programmes and professional teams. Talk
+                to us about a demo, a research collaboration or investment.
               </p>
               <div className="sp-contact-audiences">
                 <span>

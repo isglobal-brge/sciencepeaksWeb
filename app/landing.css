@@ -824,7 +824,7 @@
 }
 .sp-story-image .sp-shot-image-link {
   width: 100%;
-  aspect-ratio: 1.52;
+  aspect-ratio: 1.9;
   border-radius: 9px;
   background: #172333;
   display: grid;
@@ -866,8 +866,8 @@
   padding: 4px 4px 1px;
 }
 .sp-story-chapter {
-  min-height: 62vh;
-  padding-block: 70px;
+  min-height: 54vh;
+  padding-block: 55px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2622,5 +2622,75 @@ html[data-motion-paused="true"] {
   }
   .sp-ecosystem img {
     opacity: 1;
+  }
+}
+
+/* Product evidence and native app showcase refinements. */
+.sp-hero-platforms {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 17px 0 0;
+  color: #086674;
+  font-size: 12px;
+  font-weight: 700;
+}
+.sp-hero-platforms span {
+  color: #658493;
+}
+.sp-mobile-app {
+  background: radial-gradient(ellipse at 50% 45%, #d9edf4 0, #f5f9fc 65%);
+  overflow: hidden;
+}
+.sp-mobile-heading {
+  text-align: center;
+  margin-inline: auto;
+}
+.sp-mobile-heading > p {
+  margin-inline: auto;
+}
+.sp-mobile-foot {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13px 28px;
+  align-items: center;
+  border-top: 1px solid var(--sp-line);
+  padding-top: 25px;
+  margin-top: 8px;
+}
+.sp-mobile-foot p {
+  color: var(--sp-muted);
+  font-size: 11px;
+}
+.sp-mobile-foot a {
+  font-size: 12px;
+}
+.sp-explorer-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .sp-explorer-toolbar {
+    flex-direction: column;
+    align-items: start;
+  }
+  .sp-explorer-tabs {
+    flex-wrap: wrap;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .sp-explorer-tabs button {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+  .sp-explorer-pair {
+    grid-template-columns: 1fr;
+  }
+  .sp-mobile-foot {
+    text-align: center;
   }
 }

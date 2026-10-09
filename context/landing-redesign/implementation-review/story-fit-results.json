@@ -1,0 +1,41 @@
+{
+  "checked": "2026-10-09T10:45:37.178Z",
+  "checks": [
+    {
+      "name": "Story full-image fit and stable selection 1440/0",
+      "passed": true
+    },
+    {
+      "name": "Story full-image fit and stable selection 1440/1",
+      "passed": true
+    },
+    {
+      "name": "Story full-image fit and stable selection 1440/2",
+      "passed": true
+    },
+    {
+      "name": "Story full-image fit and stable selection 390/0",
+      "passed": true
+    },
+    {
+      "name": "Story full-image fit and stable selection 390/1",
+      "passed": true
+    },
+    {
+      "name": "Story full-image fit and stable selection 390/2",
+      "passed": true
+    },
+    {
+      "name": "Story full-image fit and stable selection 320/0",
+      "passed": true
+    },
+    {
+      "name": "Story full-image fit and stable selection 320/1",
+      "passed": true
+    },
+    {
+      "name": "Story full-image fit and stable selection 320/2",
+      "passed": true
+    }
+  ]
+}

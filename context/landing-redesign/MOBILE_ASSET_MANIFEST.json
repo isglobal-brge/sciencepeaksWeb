@@ -1,0 +1,324 @@
+{
+  "created_at": "2026-10-09T12:19:30+02:00",
+  "publication_status": "Temporary candidates only. Root approved Home and Trends; corrected oncology crops await root review before public copy.",
+  "transform": "Complete Home/Trends screenshots; check-in/plan crops remove overlapping header and OS chrome while retaining complete tabs and feature contents. WebP quality94 method6; Lanczos downsample only. No UI edits, fabricated records or upscaling.",
+  "source_order_search": {
+    "searched_in_order": [
+      "/Users/dcayuela/Desktop/Didac/didac-cayuela-portfolio/public/presentations",
+      "/Users/dcayuela/orca/projects/sciencepeaksWeb/context/landing-redesign",
+      "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts",
+      "/Users/dcayuela/orca/workspaces/sciencepeaks-frontend/*/artifacts"
+    ],
+    "useful_portfolio_hits": [
+      "/Users/dcayuela/Desktop/Didac/didac-cayuela-portfolio/public/presentations/sciencepeaks-garmin-sdk-trial/assets/garmin-sync-process-Dx5AemNh.png",
+      "/Users/dcayuela/Desktop/Didac/didac-cayuela-portfolio/public/presentations/sciencepeaks-garmin-sdk-trial/assets/sync-complete-process-boECNiHD.png",
+      "/Users/dcayuela/Desktop/Didac/didac-cayuela-portfolio/public/presentations/sciencepeaks-oncology-clinic/screenshots/garmin-sync-live-activity.png"
+    ],
+    "portfolio_selection_rationale": "Portfolio portrait sources chiefly demonstrate Garmin transfer or Movesense recording. The full oncology native screenshots exist in repository deck references and map to higher-quality original UI-inspection captures. Main artifacts have the best coherent Home and rendered Trends set.",
+    "repository_context_hits": [
+      "/Users/dcayuela/orca/projects/sciencepeaksWeb/context/landing-redesign/ucam-hitech-bootcamp/deck/assets/oncology-check-in.png",
+      "/Users/dcayuela/orca/projects/sciencepeaksWeb/context/landing-redesign/ucam-hitech-bootcamp/deck/assets/oncology-calendar.png"
+    ]
+  },
+  "platform_distribution": {
+    "native_source_platforms": [
+      "iOS",
+      "Android"
+    ],
+    "web_source_exists": true,
+    "ios_bundle_identifier": "com.isglobal.sciencepeaks.performance",
+    "android_package": "com.isglobal.sciencepeaks.performance",
+    "configuration_source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/app.json",
+    "submission_configuration_source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/eas.json",
+    "submission_configuration_observation": "Android production submission is configured for internal testing; android-external uses alpha. ASC app id6760294349 is configured. Configuration is not public availability proof.",
+    "official_public_download_links_verified": [],
+    "verification_limits": "Official-store searches for SciencePeaks + ISGlobal returned no matching result; direct package/id pages were inaccessible through web tool. This does not establish that no listing exists. Do not substitute unrelated Science Peak Sports / SisRUN.",
+    "recommended_page_claim": "Show Web, iOS and Android platform labels with the existing demo/access CTA. Public download badges require a verified SciencePeaks store URL."
+  },
+  "assets": [
+    {
+      "id": "mobile-home",
+      "platform": "iOS",
+      "source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts/ui-inspection/presentation-update/ios/iphone-16-pro-home-cards.png",
+      "caption": "Illustrative iOS Home view with synthetic data: overnight HRV metrics and an individual reference.",
+      "screen_contents": [
+        "Daily readiness message for synthetic Alex",
+        "Selected-day calendar and Garmin connection state",
+        "RMSSD 54.2 ms and +2.4 ms versus baseline",
+        "Same-day DFA alpha 1 0.83, SDNN 67.0 ms and LF/HF 1.45",
+        "Native Home, Projects, Record, Trends, Assistant and Profile navigation"
+      ],
+      "evidence_class": "Real native iOS product UI using deterministic development inspection fixtures",
+      "limitations": [
+        "Source is402px wide. Keep its native402px default and320px downsample only; no upscaled derivative is included.",
+        "The example says no watch is connected; it does not demonstrate a live watch connection.",
+        "Visible daily guidance is sample product output, not clinical efficacy or a generally valid recommendation."
+      ],
+      "synthetic": true,
+      "source_dimensions": [
+        402,
+        874
+      ],
+      "source_sha256": "54d084f45d0ae0d5006dca2104bb5589025dfbd451c5d5d6ef79feb1d024af90",
+      "crop": [
+        0,
+        0,
+        402,
+        874
+      ],
+      "source_mtime": "2026-08-25T11:33:56+02:00",
+      "date_evidence": "Archived file modification time, not an independently verified capture date.",
+      "provenance_sources": [
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/docs/native-ui-inspection.md",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/utils/uiInspectionFixtures.ts"
+      ],
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-home.webp",
+          "dimensions": [
+            402,
+            874
+          ],
+          "bytes": 37440,
+          "sha256": "d9d13bd51407206db0c7b7ad0643ea05fb0a635d3f8114a3efa67421023e0728",
+          "upsampled": false
+        },
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-home-320.webp",
+          "dimensions": [
+            320,
+            696
+          ],
+          "bytes": 28342,
+          "sha256": "3764f6d14ffd99da0e8b1cf4bb918b1d180a4a89ecf645ba3fc919135d1f7b70",
+          "upsampled": false
+        }
+      ]
+    },
+    {
+      "id": "mobile-trends",
+      "platform": "Android",
+      "source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts/ui-inspection/android/medium-phone-temporal-trends-host-gpu.png",
+      "caption": "Illustrative Android Trends view with synthetic data: RMSSD observations over a selected period.",
+      "screen_contents": [
+        "Temporal Trends with RMSSD metric selector",
+        "Selected date window Jul 3 – Aug 3, 2026",
+        "31 readings from Jul 3 – Aug 2 with a rendered purple curve and numerical scale",
+        "Native Trends navigation and mobile app chrome"
+      ],
+      "evidence_class": "Real native Android Trends route using deterministic UI-inspection metric fixtures; host-GPU capture displays the actual chart",
+      "limitations": [
+        "The chart’s cyclical values are synthetic fixture observations, not a patient or athlete result.",
+        "This is a longitudinal RMSSD trend, not an overnight curve, fatigue score or validated prediction.",
+        "The numerical scale is shown; this older capture does not print ms beside that axis. Surrounding caption may identify RMSSD in milliseconds from the metric definition.",
+        "Synthetic provenance is established from the inspection workflow and deterministic metric fixture source; this archive does not retain a per-capture source SHA or signed capture report."
+      ],
+      "synthetic_rationale": [
+        "Screenshot is archived in the deterministic ui-inspection workflow, whose documented adapter serves synthetic metrics and trends without a live API.",
+        "Current utils/uiInspectionFixtures.ts defines RMSSD unit ms, a deterministic repeating weekly metricValue generator, and metricSeries for /v1/metric_values/search. These establish the synthetic inspection mechanism; the archived screenshot has no historical capture SHA, so the current formula is not asserted to reproduce each August screenshot value exactly.",
+        "No participant name, handle, account identifier or personal notes appear in the screen."
+      ],
+      "synthetic": true,
+      "source_dimensions": [
+        1080,
+        2400
+      ],
+      "source_sha256": "8923a188d91a62a29af1603e386fd76a3e2fdf45f3336ca7a0d63eb5be426993",
+      "crop": [
+        0,
+        0,
+        1080,
+        2400
+      ],
+      "source_mtime": "2026-08-03T15:41:17+02:00",
+      "date_evidence": "Archived file modification time, not an independently verified capture date.",
+      "provenance_sources": [
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/docs/native-ui-inspection.md",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/utils/uiInspectionFixtures.ts"
+      ],
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-trends.webp",
+          "dimensions": [
+            1080,
+            2400
+          ],
+          "bytes": 74470,
+          "sha256": "8d679c5024b864b60a20342fdb8891a9b88a35be0c2480a61a06b90ed9d869dd",
+          "upsampled": false
+        },
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-trends-320.webp",
+          "dimensions": [
+            320,
+            711
+          ],
+          "bytes": 17752,
+          "sha256": "73594d9c26f777ec20b75538eddbaa6129766dc7beabe4876ac224fa8989fdf5",
+          "upsampled": false
+        },
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-trends-640.webp",
+          "dimensions": [
+            640,
+            1422
+          ],
+          "bytes": 41096,
+          "sha256": "67ef6658622843f4ce4d7f6e44c3146a2355900c9815fdb3d11da38484e503e9",
+          "upsampled": false
+        },
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-trends-960.webp",
+          "dimensions": [
+            960,
+            2133
+          ],
+          "bytes": 67790,
+          "sha256": "dde8610120615cdef25c10853f1d8dfaa5a30c9c771f4038d8d8e48669ad6e51",
+          "upsampled": false
+        }
+      ]
+    },
+    {
+      "id": "mobile-check-in",
+      "platform": "iOS",
+      "source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts/ui-inspection/presentation-update/ios/iphone-16-pro-oncology-check-in.png",
+      "caption": "Illustrative iOS oncology check-in with synthetic data: symptoms, the next treatment and the week’s responses.",
+      "screen_contents": [
+        "Today, Plan and Settings tabs",
+        "Fatigue question1of4, with None through Very severe responses",
+        "Designed short check-in target About30 seconds",
+        "Example next treatment Weekly paclitaxel · Cycle1, with Still planned / Date changed controls",
+        "Your week check-in record"
+      ],
+      "evidence_class": "Real native iOS oncology DEMO UI using deterministic synthetic treatment/check-in records",
+      "limitations": [
+        "Honest rectangular crop removes the entire overlapping heading/OS status area and bottom OS home indicator. Complete Today/Plan/Settings tabs and feature contents remain; no pixels or labels repaired.",
+        "About30seconds is the designed target, not a measured completion guarantee.",
+        "Example treatment is synthetic, not treatment guidance."
+      ],
+      "synthetic": true,
+      "source_dimensions": [
+        804,
+        1748
+      ],
+      "source_sha256": "a89b601e7a399da2db13f260cb9bddeddea3a39540728fdac41612ff5cedaf4b",
+      "crop": [
+        0,
+        158,
+        804,
+        1718
+      ],
+      "source_mtime": "2026-08-25T11:36:00+02:00",
+      "date_evidence": "Archived file modification time, not an independently verified capture date.",
+      "provenance_sources": [
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/docs/native-ui-inspection.md",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/utils/uiInspectionFixtures.ts",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/features/oncology/demoData.ts"
+      ],
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-check-in.webp",
+          "dimensions": [
+            804,
+            1560
+          ],
+          "bytes": 67160,
+          "sha256": "e3d345c98dea48f635d06dc83e4c1e1c33c0d69f66ff99dc42b78b94a87f7278",
+          "upsampled": false
+        },
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-check-in-320.webp",
+          "dimensions": [
+            320,
+            621
+          ],
+          "bytes": 22648,
+          "sha256": "3373578e528c7960215bc59ad9e4eddbed0645da2c7f7673f60829494fd1b747",
+          "upsampled": false
+        },
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-check-in-640.webp",
+          "dimensions": [
+            640,
+            1242
+          ],
+          "bytes": 53756,
+          "sha256": "a0cb2efeaf4f83e1c90598ea5a6f0ebb32beaafe3e94c549d7e2443cd3eeb597",
+          "upsampled": false
+        }
+      ],
+      "transform": "Rectangular crop [0,158,804,1718] in original source pixels; WebP quality94 method6; Lanczos downsample only for320/640px variants."
+    },
+    {
+      "id": "mobile-plan",
+      "platform": "iOS",
+      "source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts/ui-inspection/presentation-update/ios/iphone-16-pro-oncology-plan.png",
+      "caption": "Illustrative iOS treatment plan with synthetic data: a calendar records scheduled treatment dates.",
+      "screen_contents": [
+        "Today, Plan and Settings tabs",
+        "Treatment plan header and Add plan action",
+        "August2026 treatment calendar, selected date and six scheduled dates",
+        "Colour legend for example Weekly paclitaxel and Pembrolizumab treatments"
+      ],
+      "evidence_class": "Real native iOS oncology DEMO UI using deterministic synthetic treatment records",
+      "limitations": [
+        "Honest rectangular crop removes the entire overlapping heading/OS status area and bottom OS home indicator. Complete Today/Plan/Settings tabs and feature contents remain; no pixels or labels repaired.",
+        "The viewport shows the calendar; lower treatment-history content is outside this captured screen.",
+        "Treatment examples are synthetic and do not establish clinical recommendations."
+      ],
+      "synthetic": true,
+      "source_dimensions": [
+        804,
+        1748
+      ],
+      "source_sha256": "6bc554b5d41a7dc24f3f0aac8a761b5eae51bbf201116055447d4378a29b46f7",
+      "crop": [
+        0,
+        158,
+        804,
+        1718
+      ],
+      "source_mtime": "2026-08-25T11:36:20+02:00",
+      "date_evidence": "Archived file modification time, not an independently verified capture date.",
+      "provenance_sources": [
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/docs/native-ui-inspection.md",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/utils/uiInspectionFixtures.ts",
+        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/features/oncology/demoData.ts"
+      ],
+      "outputs": [
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-plan.webp",
+          "dimensions": [
+            804,
+            1560
+          ],
+          "bytes": 61872,
+          "sha256": "47d882b1e86df8e9f3ba0cb9c80d571c1ad80631d74fc793950ef2b0cf7401a2",
+          "upsampled": false
+        },
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-plan-320.webp",
+          "dimensions": [
+            320,
+            621
+          ],
+          "bytes": 20790,
+          "sha256": "2157b649be412d8f2ec629a8cc9f71ee385459e889eed0d569f6c938867cb1d8",
+          "upsampled": false
+        },
+        {
+          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-plan-640.webp",
+          "dimensions": [
+            640,
+            1242
+          ],
+          "bytes": 49146,
+          "sha256": "aec11c1b8a7daebcfbf9e780b600179b6ef1da3810404259ff67c5b64829e979",
+          "upsampled": false
+        }
+      ],
+      "transform": "Rectangular crop [0,158,804,1718] in original source pixels; WebP quality94 method6; Lanczos downsample only for320/640px variants."
+    }
+  ]
+}

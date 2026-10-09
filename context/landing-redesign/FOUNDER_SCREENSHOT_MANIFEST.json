@@ -1,0 +1,464 @@
+{
+  "prepared": "2026-10-09",
+  "source": "Founder-supplied screenshots in the current conversation, authorized for the landing",
+  "processing": "Rectangular panel crops, downsample only, responsive WebP; product text and values unchanged. Identity-bearing raw screenshots are excluded from public assets.",
+  "assets": [
+    {
+      "id": "hrv-period-comparison",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540109596-99163833-520e-4720-85dd-a71906d41556.png",
+      "source_sha256": "9e5972d94bdca7e2857e119c308ad07951046303227acfe497729c7ed751c3d6",
+      "source_dimensions": [
+        1688,
+        723
+      ],
+      "crop": [
+        26,
+        99,
+        1648,
+        721
+      ],
+      "evidence_class": "Founder-provided anonymous comparison of two recorded HRV periods",
+      "caption": "Two time periods show medians and individual nightly RMSSD observations.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "hrv-period-comparison-320.webp",
+          "width": 320,
+          "height": 123,
+          "bytes": 2970,
+          "sha256": "000724dd107b3e603e06e7584b299fe1b1e97b826b3eb776d1491508bef6744a"
+        },
+        {
+          "file": "hrv-period-comparison-640.webp",
+          "width": 640,
+          "height": 246,
+          "bytes": 7468,
+          "sha256": "ca11292cf4df1a3b8cd737b01ae83d1c728b2296a212982231f0ba88c26964c0"
+        },
+        {
+          "file": "hrv-period-comparison-960.webp",
+          "width": 960,
+          "height": 368,
+          "bytes": 12934,
+          "sha256": "0c9f79a16e48895bb1733ad8e7591e12f498b5cf3426af4a20e4c043383ce8a0"
+        },
+        {
+          "file": "hrv-period-comparison-full.webp",
+          "width": 1622,
+          "height": 622,
+          "bytes": 27560,
+          "sha256": "83e8d66c2adfe513c14cccc0eb7cb4ce87165ad8c055b1bda35f5c5dccac0eac"
+        },
+        {
+          "file": "hrv-period-comparison.webp",
+          "width": 1600,
+          "height": 614,
+          "bytes": 27700,
+          "sha256": "ab955037ffb508e29f05a799fdf43d55fec5a8af3460a1e67cef4318cc863407"
+        }
+      ]
+    },
+    {
+      "id": "night-rmssd-current",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540161141-8357ace0-740d-4306-a832-6d85968a19a9.png",
+      "source_sha256": "757d8fb4388c8d8ef20e953e2cd96c0c7840b8719a5796b4fcd430a18c0a327b",
+      "source_dimensions": [
+        1920,
+        989
+      ],
+      "crop": [
+        699,
+        20,
+        1879,
+        573
+      ],
+      "evidence_class": "Founder-provided own-account technical record, overnight panel only; account identity and summary scores excluded",
+      "caption": "An overnight RMSSD profile with two-minute windows,12-minute ranges and the nightly mean.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "night-rmssd-current-320.webp",
+          "width": 320,
+          "height": 150,
+          "bytes": 6264,
+          "sha256": "58dec6548d06e82a71975973fc7396f6164810c3384477089fccbd8f254dfe8e"
+        },
+        {
+          "file": "night-rmssd-current-640.webp",
+          "width": 640,
+          "height": 300,
+          "bytes": 16400,
+          "sha256": "92e3d71275aad5327a831f5745c67c65f1aca73982b6da1f39ad955778f5b9be"
+        },
+        {
+          "file": "night-rmssd-current-960.webp",
+          "width": 960,
+          "height": 450,
+          "bytes": 29138,
+          "sha256": "8b4d85019c8ac7f9a9322135866237eb949add6ef3c84a34256f80a552e69783"
+        },
+        {
+          "file": "night-rmssd-current.webp",
+          "width": 1180,
+          "height": 553,
+          "bytes": 40126,
+          "sha256": "1d53cf1942a80a142af7dcddb1449be1b1c1f7214bc0070e168444f21fab75f9"
+        }
+      ]
+    },
+    {
+      "id": "hrv-forecast",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540172985-95418824-f5ae-4698-89bd-c298a5fbe81d.png",
+      "source_sha256": "88f51c7e2b94d91d2402f41e2a442ca68254aae8817b1c7be5d316702de5573b",
+      "source_dimensions": [
+        824,
+        355
+      ],
+      "crop": null,
+      "evidence_class": "Founder-provided anonymous experimental next-HRV forecast",
+      "caption": "The experimental example estimates28%chance of the next usable HRV reading falling below52ms; not a fatigue probability.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "hrv-forecast-320.webp",
+          "width": 320,
+          "height": 138,
+          "bytes": 6918,
+          "sha256": "745a89e73863c58a01cee5797e76644615e1138d207477096ad6add73bc0615b"
+        },
+        {
+          "file": "hrv-forecast-640.webp",
+          "width": 640,
+          "height": 276,
+          "bytes": 18536,
+          "sha256": "53cc51e156b0f5fe59fd3b1ccab8b4f311512d1e7334570a8a5a25331150669e"
+        },
+        {
+          "file": "hrv-forecast.webp",
+          "width": 824,
+          "height": 355,
+          "bytes": 28550,
+          "sha256": "5530ba66f11f9d109c6a17f242728648fb43c14e4ad737d00064da1d36e09fac"
+        }
+      ]
+    },
+    {
+      "id": "weekly-activity-complete",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540185898-4391c2c0-f7a4-4997-b15f-2770cdc0e265.png",
+      "source_sha256": "a4c2e178e2d97e86fa2e1df4f656e85f313b2a732e294393495dd13f99f3a0d9",
+      "source_dimensions": [
+        1634,
+        451
+      ],
+      "crop": null,
+      "evidence_class": "Founder-provided anonymous recorded activity week",
+      "caption": "Estimated moderate-or-higher minutes across the complete28September–4October week.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "weekly-activity-complete-320.webp",
+          "width": 320,
+          "height": 88,
+          "bytes": 3740,
+          "sha256": "8190ab3ec03126bc7e092768656a17cc0d426f1778b9c4681a089755872af8ae"
+        },
+        {
+          "file": "weekly-activity-complete-640.webp",
+          "width": 640,
+          "height": 177,
+          "bytes": 10380,
+          "sha256": "981d37ceaa0e87aa678ae8f966eed0f87e78eaacffd07a3536396cb33ae9b4ba"
+        },
+        {
+          "file": "weekly-activity-complete-960.webp",
+          "width": 960,
+          "height": 265,
+          "bytes": 18374,
+          "sha256": "6150325cf0faa6dfd82ecb6bde592b113b12ad0ad81d36a6671f7732912e42df"
+        },
+        {
+          "file": "weekly-activity-complete-full.webp",
+          "width": 1634,
+          "height": 451,
+          "bytes": 43494,
+          "sha256": "11e016aef452a1ecd24c86784a62f43e2687f21bd9d4be063b30e25452b86207"
+        },
+        {
+          "file": "weekly-activity-complete.webp",
+          "width": 1600,
+          "height": 442,
+          "bytes": 40436,
+          "sha256": "269f69f2617325ff3de0abcae6cd96e23a5ab1b8a2b43cc0bd611c82a0339888"
+        }
+      ]
+    },
+    {
+      "id": "daily-movement-detail",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540195380-9ef3a584-5cff-4738-b0d5-d102e46f5a5a.png",
+      "source_sha256": "bb67705398b44e9787bb9f7d5bf2608f732a0a7fa790cbba1297552598508927",
+      "source_dimensions": [
+        1110,
+        510
+      ],
+      "crop": null,
+      "evidence_class": "Founder-provided anonymous selected-day activity panel",
+      "caption": "A30September wrist-acceleration trace with whole-day and six-hour controls.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "daily-movement-detail-320.webp",
+          "width": 320,
+          "height": 147,
+          "bytes": 4470,
+          "sha256": "a86b2a4a570b1895f4e4615283333dd74321b164885d74b962921d0a4f9473ae"
+        },
+        {
+          "file": "daily-movement-detail-640.webp",
+          "width": 640,
+          "height": 294,
+          "bytes": 12586,
+          "sha256": "b308657adc01611f743050c779b10723eff551fe0c00023ac778b8e521619f53"
+        },
+        {
+          "file": "daily-movement-detail-960.webp",
+          "width": 960,
+          "height": 441,
+          "bytes": 21160,
+          "sha256": "64c8aa1ec647a14801eeca14a51ecbe15560ebe3b7fefb44f3a33ee93a12815d"
+        },
+        {
+          "file": "daily-movement-detail.webp",
+          "width": 1110,
+          "height": 510,
+          "bytes": 27666,
+          "sha256": "df0869c27a753b94d9d8423d805f384c7bf0b2db166393a13c4ccc95023b4afe"
+        }
+      ]
+    },
+    {
+      "id": "hourly-active-volume",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540208316-f27affbf-9d72-4f98-a8bd-b6e1d6fb63be.png",
+      "source_sha256": "07e30636b0ab9799066919c11b7c0fdb61bafda981779efcedfd1376096a22c3",
+      "source_dimensions": [
+        824,
+        482
+      ],
+      "crop": null,
+      "evidence_class": "Founder-provided anonymous hourly active-volume panel",
+      "caption": "Hourly net active volume in MET-min/h; median and min-max over contributing days.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "hourly-active-volume-320.webp",
+          "width": 320,
+          "height": 187,
+          "bytes": 6152,
+          "sha256": "73292709a338e102bcc173068fab929e22c34f9b38f1d59ab398bf72f92f1e5a"
+        },
+        {
+          "file": "hourly-active-volume-640.webp",
+          "width": 640,
+          "height": 374,
+          "bytes": 16346,
+          "sha256": "167ae0e6b138f785dff7c314708c3fcb2a7875c479ce2da66b3164f2785ea239"
+        },
+        {
+          "file": "hourly-active-volume.webp",
+          "width": 824,
+          "height": 482,
+          "bytes": 24330,
+          "sha256": "c350d2bc74627daa0b11a043cc27c1d973fb751182094b442714bffde7518992"
+        }
+      ]
+    },
+    {
+      "id": "activity-intensity-time",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540214345-a5d48917-b9fe-4a2a-95f3-1df2be34c4f9.png",
+      "source_sha256": "f213541421d695375e485746769e636794d2806fde43d8a821917172b0f3b16a",
+      "source_dimensions": [
+        802,
+        489
+      ],
+      "crop": null,
+      "evidence_class": "Founder-provided anonymous estimated-intensity distribution",
+      "caption": "Observed minutes grouped into four estimated-intensity bands.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "activity-intensity-time-320.webp",
+          "width": 320,
+          "height": 195,
+          "bytes": 3604,
+          "sha256": "cd4424634dcb075341ba1dfdc1ec6d5ffa09f355811cbf6995492475e20e89a6"
+        },
+        {
+          "file": "activity-intensity-time-640.webp",
+          "width": 640,
+          "height": 390,
+          "bytes": 9108,
+          "sha256": "e2998d2fbd65422a899dde18777e30729a24b0b385bd0a0244a186b26978a835"
+        },
+        {
+          "file": "activity-intensity-time.webp",
+          "width": 802,
+          "height": 489,
+          "bytes": 13374,
+          "sha256": "fca8e58b1861919b6936d0cbb4b2391072121929e350b366bbca68bc7d956a89"
+        }
+      ]
+    },
+    {
+      "id": "weekly-movement-rhythm",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540221845-07553ef7-75d8-4fc5-bfa6-93684404fa28.png",
+      "source_sha256": "cd3bf354fd4ba63f19d2323cec2af6d664a62ad14cb5af78af5cce5b3577d497",
+      "source_dimensions": [
+        1619,
+        555
+      ],
+      "crop": null,
+      "evidence_class": "Founder-provided anonymous hourly wrist-acceleration heatmap",
+      "caption": "Seven days of hourly movement; colour represents average ENMO, not fatigue.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "weekly-movement-rhythm-320.webp",
+          "width": 320,
+          "height": 110,
+          "bytes": 5578,
+          "sha256": "23126510c93cbc09323fbc2e8cc5854ae3c068ea90f5366d281e95dab02666f5"
+        },
+        {
+          "file": "weekly-movement-rhythm-640.webp",
+          "width": 640,
+          "height": 219,
+          "bytes": 18552,
+          "sha256": "8a7b5ff83937736be678901a3633a3ea31e8b279effffb30f6e37b6e3e653381"
+        },
+        {
+          "file": "weekly-movement-rhythm-960.webp",
+          "width": 960,
+          "height": 329,
+          "bytes": 35682,
+          "sha256": "4cf652fe657c6b353e5c2e679a76ea436f8178e07283a5644f5f8add4128a11f"
+        },
+        {
+          "file": "weekly-movement-rhythm-full.webp",
+          "width": 1619,
+          "height": 555,
+          "bytes": 97212,
+          "sha256": "6a5675782454edbc17e6dca300fa8b15fa33295783b5a40e438f4ad95ac7177f"
+        },
+        {
+          "file": "weekly-movement-rhythm.webp",
+          "width": 1600,
+          "height": 548,
+          "bytes": 89630,
+          "sha256": "1f7c90abe550018b484ccce51bb6eb46fbfe54dcad601557c181e00cc7ae686d"
+        }
+      ]
+    },
+    {
+      "id": "project-participant-dashboard",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540489301-d927a909-07d6-422e-8c06-4de7816c46c6.png",
+      "source_sha256": "5ba19bb96e2e579662660cf019dbee20c8935bec792156f7dd37ecc6ace44325",
+      "source_dimensions": [
+        1663,
+        901
+      ],
+      "crop": [
+        25,
+        99,
+        1634,
+        862
+      ],
+      "evidence_class": "Founder-provided own-account project example, account/project identity excluded",
+      "caption": "A complete participant project view connects a symptom check-in, recentHRV, treatment context and recorded metrics.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "project-participant-dashboard-320.webp",
+          "width": 320,
+          "height": 152,
+          "bytes": 5882,
+          "sha256": "1aa395b544d6001c4f544e792e86f33d014b7eac79792b115a66aabf9d828611"
+        },
+        {
+          "file": "project-participant-dashboard-640.webp",
+          "width": 640,
+          "height": 304,
+          "bytes": 17638,
+          "sha256": "9fde1054f82a0fadf54523a31260c38a64d3b3943f631315b2e2200c45c5bd52"
+        },
+        {
+          "file": "project-participant-dashboard-960.webp",
+          "width": 960,
+          "height": 455,
+          "bytes": 32020,
+          "sha256": "ada9b783bf54326d01b229f37f91dd836378e37e56afede503529963292b73cf"
+        },
+        {
+          "file": "project-participant-dashboard-full.webp",
+          "width": 1609,
+          "height": 763,
+          "bytes": 72110,
+          "sha256": "b58576606bc299dbb03c2597c34e3e6f30772c69861372381fdcd087efefbb12"
+        },
+        {
+          "file": "project-participant-dashboard.webp",
+          "width": 1600,
+          "height": 759,
+          "bytes": 70510,
+          "sha256": "284e055c5cd6c5ce66a5e828af804aacaa2d89f4343a312b19043d5234515bd7"
+        }
+      ]
+    },
+    {
+      "id": "hrv-treatment-history",
+      "source_path": "/var/folders/7y/yp5p839x7qb78sgcn44jsqrhzvtrps/T/orca-paste-1791540567704-ec883a53-37ed-465d-8b1b-1edb2ed70e1c.png",
+      "source_sha256": "fe78646614bcfc898db02447e579fc5088aef1810562d97f1f7865e310b94bca",
+      "source_dimensions": [
+        1658,
+        866
+      ],
+      "crop": [
+        35,
+        243,
+        1628,
+        866
+      ],
+      "evidence_class": "Founder-provided own-account demonstration with treatment annotations; avatar and account header excluded",
+      "caption": "Longitudinal RMSSD and dated treatment annotations can be reviewed together. Example annotations do not establish causation or an oncology outcome.",
+      "approved": true,
+      "outputs": [
+        {
+          "file": "hrv-treatment-history-320.webp",
+          "width": 320,
+          "height": 125,
+          "bytes": 5300,
+          "sha256": "9c08bed8e5bbdbc775fb5ce4c14f0b1823b2c9dd82ff98066592d67f3410ef4a"
+        },
+        {
+          "file": "hrv-treatment-history-640.webp",
+          "width": 640,
+          "height": 250,
+          "bytes": 14528,
+          "sha256": "5e698fcbefa552fd9e9890698c4e3f54f6691f40054f2cf66df5a0eaba42ab46"
+        },
+        {
+          "file": "hrv-treatment-history-960.webp",
+          "width": 960,
+          "height": 375,
+          "bytes": 27064,
+          "sha256": "72e8a61ffa2c7d3051926a4e0a8ea538df692212831900c914d5a727472a9ed0"
+        },
+        {
+          "file": "hrv-treatment-history.webp",
+          "width": 1593,
+          "height": 623,
+          "bytes": 58300,
+          "sha256": "20e8c41a0920da6b5f43038402024c11a60f661197d282b6af7a10e1c39b72cc"
+        }
+      ]
+    }
+  ]
+}

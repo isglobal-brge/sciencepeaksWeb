@@ -1,0 +1,313 @@
+.sp-dlnm {
+  background: #eaf4f6;
+}
+.sp-dlnm-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.sp-dlnm-heading h2 {
+  margin-top: 13px;
+}
+.sp-dlnm-intro {
+  padding-top: 10px;
+  color: var(--sp-muted);
+  font-size: 15px;
+}
+.sp-dlnm-terms {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 24px;
+  margin: 22px 0 0;
+  font-size: 12px;
+}
+.sp-dlnm-terms dt {
+  color: #086674;
+  font-weight: 700;
+}
+.sp-dlnm-terms dd {
+  margin: 4px 0 0;
+}
+.sp-dlnm-explorer {
+  overflow: hidden;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  background: #ffffffba;
+  box-shadow:
+    0 12px 40px #284d5d0a,
+    inset 0 1px 0 #fff;
+}
+.sp-dlnm-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 12px;
+  border-bottom: 1px solid #d4e3e8;
+  background: #f5fafb9e;
+  scrollbar-width: thin;
+  scrollbar-color: #91b6c1 transparent;
+}
+.sp-dlnm-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+  min-height: 50px;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  color: #426271;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background 160ms,
+    color 160ms;
+}
+.sp-dlnm-tabs button span {
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.sp-dlnm-tabs button:hover {
+  background: #e0eff1;
+  color: #143445;
+}
+.sp-dlnm-tabs button[aria-selected="true"] {
+  border-color: #086674;
+  background: #086674;
+  color: #fff;
+}
+.sp-dlnm-tabs button:focus-visible {
+  outline-offset: 1px;
+}
+.sp-dlnm-panel-content {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.8fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "copy screen" "guide screen";
+  align-items: start;
+  gap: 24px 34px;
+  padding: 34px;
+  animation: sp-dlnm-enter 180ms ease-out;
+}
+.sp-dlnm-copy {
+  grid-area: copy;
+}
+.sp-dlnm-panel-content > .sp-shot {
+  grid-area: screen;
+}
+.sp-dlnm-copy h3 {
+  max-width: 320px;
+  font-size: 25px;
+  line-height: 1.35;
+  letter-spacing: -0.8px;
+}
+.sp-dlnm-copy > p {
+  margin-top: 16px;
+  color: var(--sp-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.sp-dlnm-guide {
+  grid-area: guide;
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid #d4e3e8;
+  font-size: 12px;
+}
+.sp-dlnm-guide dt {
+  color: #086674;
+  font-weight: 700;
+}
+.sp-dlnm-guide dd {
+  margin: 3px 0 0;
+  color: var(--sp-muted);
+  line-height: 1.75;
+}
+.sp-dlnm-panel .sp-shot-image-link {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1.6;
+  border: 1px solid #243a4f;
+  background: #1c2837;
+}
+.sp-dlnm-panel .sp-shot-image-link img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.sp-dlnm-demo-note {
+  padding: 18px 34px;
+  border-top: 1px solid #d4e3e8;
+  color: var(--sp-muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+.sp-dlnm-foot {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 24px;
+}
+.sp-dlnm-foot > a {
+  flex-shrink: 0;
+  min-height: 44px;
+}
+.sp-dlnm-method {
+  max-width: 700px;
+  font-size: 12px;
+}
+.sp-dlnm-method summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 44px;
+  color: #086674;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.sp-dlnm-method summary::-webkit-details-marker {
+  display: none;
+}
+.sp-dlnm-method[open] summary svg {
+  transform: rotate(45deg);
+}
+.sp-dlnm-method > div {
+  padding: 14px 0 0;
+  color: var(--sp-muted);
+  line-height: 1.9;
+}
+.sp-dlnm-method a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 8px;
+  color: #086674;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@keyframes sp-dlnm-enter {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 1200px) {
+  .sp-dlnm-panel-content {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+    gap: 26px;
+    padding: 28px;
+  }
+  .sp-dlnm-tabs button {
+    padding-inline: 10px;
+    gap: 7px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 1000px) {
+  .sp-dlnm-heading {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .sp-dlnm-intro {
+    max-width: 660px;
+    padding-top: 0;
+  }
+  .sp-dlnm-tabs button {
+    flex: 0 0 auto;
+    min-width: 150px;
+    font-size: 12px;
+  }
+  .sp-dlnm-panel-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "copy" "screen" "guide";
+  }
+  .sp-dlnm-copy h3 {
+    max-width: none;
+  }
+  .sp-dlnm-guide {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .sp-dlnm-panel .sp-shot-image-link {
+    aspect-ratio: auto;
+  }
+  .sp-dlnm-panel .sp-shot-image-link img {
+    height: auto;
+  }
+  .sp-dlnm-demo-note {
+    padding-inline: 28px;
+  }
+}
+@media (max-width: 650px) {
+  .sp-dlnm-heading {
+    margin-bottom: 28px;
+  }
+  .sp-dlnm-heading h2 {
+    font-size: 32px;
+  }
+  .sp-dlnm-heading .sp-eyebrow {
+    max-width: 260px;
+    font-size: 9px;
+  }
+  .sp-dlnm-intro {
+    font-size: 13px;
+  }
+  .sp-dlnm-terms {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 16px;
+    font-size: 11px;
+  }
+  .sp-dlnm-explorer {
+    border-radius: 18px;
+  }
+  .sp-dlnm-tabs {
+    padding: 9px;
+  }
+  .sp-dlnm-tabs button {
+    min-width: 144px;
+  }
+  .sp-dlnm-panel-content {
+    gap: 22px;
+    padding: 20px 16px;
+  }
+  .sp-dlnm-copy h3 {
+    font-size: 23px;
+  }
+  .sp-dlnm-guide {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-top: 16px;
+    font-size: 11px;
+  }
+  .sp-dlnm-demo-note {
+    padding: 16px;
+    font-size: 10px;
+  }
+  .sp-dlnm-foot {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sp-dlnm-panel-content {
+    animation: none;
+  }
+  .sp-dlnm-tabs button {
+    transition: none;
+  }
+}

@@ -149,7 +149,7 @@ export function MobileShowcase({ screens }: MobileShowcaseProps) {
           screens.length > 1 ? `${id}-tab-${selected}` : undefined
         }
         aria-label={screens.length > 1 ? undefined : screen.title}
-        aria-describedby={`${id}-caption`}
+        aria-describedby={`${id}-caption-${selected}`}
         onPointerDown={startSwipe}
         onPointerUp={finishSwipe}
         onPointerCancel={() => {
@@ -260,9 +260,17 @@ export function MobileShowcase({ screens }: MobileShowcaseProps) {
         </div>
       )}
 
-      <div className="sp-mobile-caption" aria-live="polite" aria-atomic="true">
-        <h3>{screen.title}</h3>
-        <p id={`${id}-caption`}>{screen.caption}</p>
+      <div aria-live="polite" aria-atomic="true">
+        {screens.map((item, index) => (
+          <div
+            key={item.id}
+            className="sp-mobile-caption"
+            hidden={selected !== index}
+          >
+            <h3>{item.title}</h3>
+            <p id={`${id}-caption-${index}`}>{item.caption}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

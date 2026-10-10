@@ -60,7 +60,6 @@ export function ActivityExplorer() {
   const id = useId();
   const [selected, setSelected] = useState(0);
   const buttons = useRef<(HTMLButtonElement | null)[]>([]);
-  const view = views[selected];
 
   function navigate(event: KeyboardEvent<HTMLButtonElement>, index: number) {
     let next: number;
@@ -96,7 +95,7 @@ export function ActivityExplorer() {
                 role="tab"
                 id={`${id}-tab-${index}`}
                 aria-selected={selected === index}
-                aria-controls={`${id}-panel`}
+                aria-controls={`${id}-panel-${index}`}
                 tabIndex={selected === index ? 0 : -1}
                 onClick={() => setSelected(index)}
                 onKeyDown={(event) => navigate(event, index)}
@@ -108,45 +107,50 @@ export function ActivityExplorer() {
           })}
         </div>
       </div>
-      <div
-        role="tabpanel"
-        id={`${id}-panel`}
-        aria-labelledby={`${id}-tab-${selected}`}
-        tabIndex={0}
-      >
+      {views.map((view, index) => (
         <div
-          className={selected === 3 ? "sp-explorer-pair" : "sp-explorer-single"}
+          key={view.label}
+          className="sp-explorer-panel"
+          role="tabpanel"
+          id={`${id}-panel-${index}`}
+          aria-labelledby={`${id}-tab-${index}`}
+          hidden={selected !== index}
+          tabIndex={0}
         >
-          <ProductScreenshot
-            key={view.image}
-            className="sp-explorer-frame"
-            src={view.image}
-            previewSrc={view.preview}
-            title={view.label}
-            caption={view.caption}
-            alt={view.alt}
-            width={view.width}
-            height={view.height}
-            sizes={
-              selected === 3
-                ? "(max-width: 650px) calc(100vw - 60px), 45vw"
-                : "(max-width: 650px) calc(100vw - 60px), calc(100vw - 136px)"
-            }
-          />
-          {selected === 3 && (
+          <div
+            className={index === 3 ? "sp-explorer-pair" : "sp-explorer-single"}
+          >
             <ProductScreenshot
+              key={view.image}
               className="sp-explorer-frame"
-              src="/landing/product/hourly-active-volume.webp"
-              width={824}
-              height={482}
-              title="When active volume accumulates"
-              alt="SciencePeaks hourly active-movement volume profile with a median and minimum-to-maximum band across contributing days, in MET-min per hour."
-              caption="The hourly pattern combines estimated intensity and duration as active volume above the resting reference (MET-min per hour). The line shows the median; the band spans the contributing days."
-              sizes="(max-width: 650px) calc(100vw - 60px), 45vw"
+              src={view.image}
+              previewSrc={view.preview}
+              title={view.label}
+              caption={view.caption}
+              alt={view.alt}
+              width={view.width}
+              height={view.height}
+              sizes={
+                index === 3
+                  ? "(max-width: 650px) calc(100vw - 60px), 45vw"
+                  : "(max-width: 650px) calc(100vw - 60px), calc(100vw - 136px)"
+              }
             />
-          )}
+            {index === 3 && (
+              <ProductScreenshot
+                className="sp-explorer-frame"
+                src="/landing/product/hourly-active-volume.webp"
+                width={824}
+                height={482}
+                title="When active volume accumulates"
+                alt="SciencePeaks hourly active-movement volume profile with a median and minimum-to-maximum band across contributing days, in MET-min per hour."
+                caption="The hourly pattern combines estimated intensity and duration as active volume above the resting reference (MET-min per hour). The line shows the median; the band spans the contributing days."
+                sizes="(max-width: 650px) calc(100vw - 60px), 45vw"
+              />
+            )}
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }

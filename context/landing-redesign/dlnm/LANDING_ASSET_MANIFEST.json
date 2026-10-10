@@ -1,0 +1,213 @@
+{
+  "source_bundle": "/Users/dcayuela/Downloads/SciencePeaks-DLNM-Presentation-2026-10-10",
+  "curated_at": "2026-10-10",
+  "data": "Existing deterministic synthetic inspection fixtures in actual SciencePeaks Expo Web UI. No patient data, production API, or database. Demonstration only, not clinical validation.",
+  "selection": "Five full-frame views tell the load-and-delay, uncertainty, planning, conditional-outlook and saved-input story. Supplied padded 16:9 slides are not used.",
+  "captures": [
+    {
+      "source": "05-exposure-lag-heatmap.png",
+      "sha256": "4d5efa09b305e3d83932a21490a0a3a02c512c18224dbf2684cd7dedb46c4ddd",
+      "original_dimensions": [
+        2592,
+        1326
+      ],
+      "processing": "Full frame, no crop or edits. RGB conversion and proportional WebP derivatives, quality 94.",
+      "derivatives": [
+        {
+          "path": "public/landing/product/dlnm-load-delay-320.webp",
+          "width": 320,
+          "height": 164,
+          "bytes": 7762
+        },
+        {
+          "path": "public/landing/product/dlnm-load-delay-640.webp",
+          "width": 640,
+          "height": 327,
+          "bytes": 15834
+        },
+        {
+          "path": "public/landing/product/dlnm-load-delay-960.webp",
+          "width": 960,
+          "height": 491,
+          "bytes": 24624
+        },
+        {
+          "path": "public/landing/product/dlnm-load-delay.webp",
+          "width": 1600,
+          "height": 819,
+          "bytes": 45376
+        },
+        {
+          "path": "public/landing/product/dlnm-load-delay-full.webp",
+          "width": 2592,
+          "height": 1326,
+          "bytes": 71234
+        }
+      ]
+    },
+    {
+      "source": "02-response-curves.png",
+      "sha256": "7557b9e1c2102b7a8bcc86f6aec00ac38e6e9ac34a70f4fb2d07a20b8db87298",
+      "original_dimensions": [
+        2592,
+        1342
+      ],
+      "processing": "Full frame, no crop or edits. RGB conversion and proportional WebP derivatives, quality 94.",
+      "derivatives": [
+        {
+          "path": "public/landing/product/dlnm-response-curves-320.webp",
+          "width": 320,
+          "height": 166,
+          "bytes": 7430
+        },
+        {
+          "path": "public/landing/product/dlnm-response-curves-640.webp",
+          "width": 640,
+          "height": 331,
+          "bytes": 21472
+        },
+        {
+          "path": "public/landing/product/dlnm-response-curves-960.webp",
+          "width": 960,
+          "height": 497,
+          "bytes": 38052
+        },
+        {
+          "path": "public/landing/product/dlnm-response-curves.webp",
+          "width": 1600,
+          "height": 828,
+          "bytes": 76952
+        },
+        {
+          "path": "public/landing/product/dlnm-response-curves-full.webp",
+          "width": 2592,
+          "height": 1342,
+          "bytes": 132740
+        }
+      ]
+    },
+    {
+      "source": "11-scenario-planning.png",
+      "sha256": "2934a147ace9229fdb91729908ffc335a1671a8158c28bc36bd2042c1f4034d0",
+      "original_dimensions": [
+        2592,
+        1404
+      ],
+      "processing": "Full frame, no crop or edits. RGB conversion and proportional WebP derivatives, quality 94.",
+      "derivatives": [
+        {
+          "path": "public/landing/product/dlnm-plan-week-320.webp",
+          "width": 320,
+          "height": 173,
+          "bytes": 8638
+        },
+        {
+          "path": "public/landing/product/dlnm-plan-week-640.webp",
+          "width": 640,
+          "height": 347,
+          "bytes": 20904
+        },
+        {
+          "path": "public/landing/product/dlnm-plan-week-960.webp",
+          "width": 960,
+          "height": 520,
+          "bytes": 34842
+        },
+        {
+          "path": "public/landing/product/dlnm-plan-week.webp",
+          "width": 1600,
+          "height": 867,
+          "bytes": 66424
+        },
+        {
+          "path": "public/landing/product/dlnm-plan-week-full.webp",
+          "width": 2592,
+          "height": 1404,
+          "bytes": 109726
+        }
+      ]
+    },
+    {
+      "source": "13-scenario-trajectories.png",
+      "sha256": "5bf442e8b4e8f221ac587a38e431508e91338c7b7bd6b2504bc72889b1e67092",
+      "original_dimensions": [
+        2592,
+        1620
+      ],
+      "processing": "Full frame, no crop or edits. RGB conversion and proportional WebP derivatives, quality 94.",
+      "derivatives": [
+        {
+          "path": "public/landing/product/dlnm-scenario-outlooks-320.webp",
+          "width": 320,
+          "height": 200,
+          "bytes": 8360
+        },
+        {
+          "path": "public/landing/product/dlnm-scenario-outlooks-640.webp",
+          "width": 640,
+          "height": 400,
+          "bytes": 21268
+        },
+        {
+          "path": "public/landing/product/dlnm-scenario-outlooks-960.webp",
+          "width": 960,
+          "height": 600,
+          "bytes": 37634
+        },
+        {
+          "path": "public/landing/product/dlnm-scenario-outlooks.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 72352
+        },
+        {
+          "path": "public/landing/product/dlnm-scenario-outlooks-full.webp",
+          "width": 2592,
+          "height": 1620,
+          "bytes": 116696
+        }
+      ]
+    },
+    {
+      "source": "09-fit-data-calendar.png",
+      "sha256": "b04901f7634425ef12de95dbc3e5df9734a80535d953e442baa2dde11006c742",
+      "original_dimensions": [
+        2592,
+        1536
+      ],
+      "processing": "Full frame, no crop or edits. RGB conversion and proportional WebP derivatives, quality 94.",
+      "derivatives": [
+        {
+          "path": "public/landing/product/dlnm-data-calendar-320.webp",
+          "width": 320,
+          "height": 190,
+          "bytes": 9588
+        },
+        {
+          "path": "public/landing/product/dlnm-data-calendar-640.webp",
+          "width": 640,
+          "height": 379,
+          "bytes": 24202
+        },
+        {
+          "path": "public/landing/product/dlnm-data-calendar-960.webp",
+          "width": 960,
+          "height": 569,
+          "bytes": 42020
+        },
+        {
+          "path": "public/landing/product/dlnm-data-calendar.webp",
+          "width": 1600,
+          "height": 948,
+          "bytes": 82806
+        },
+        {
+          "path": "public/landing/product/dlnm-data-calendar-full.webp",
+          "width": 2592,
+          "height": 1536,
+          "bytes": 138716
+        }
+      ]
+    }
+  ]
+}

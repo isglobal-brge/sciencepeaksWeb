@@ -1,0 +1,154 @@
+{
+  "capturedAt": "2026-10-09T22:13:52.933Z",
+  "data": "Existing deterministic synthetic UI inspection fixtures; no production health data.",
+  "surface": "Actual SciencePeaks Expo Web UI",
+  "captures": [
+    {
+      "file": "01-fit-readiness.png",
+      "title": "Fit readiness",
+      "description": "Aligned observations, load variation, and the action to fit the latest data.",
+      "width": 2676,
+      "height": 890
+    },
+    {
+      "file": "02-response-curves.png",
+      "title": "DLNM response curves",
+      "description": "Cumulative association and lag response with reference load and confidence band.",
+      "width": 2592,
+      "height": 1342
+    },
+    {
+      "file": "03-cumulative-association.png",
+      "title": "Cumulative association",
+      "description": "Training load against estimated change in log RMSSD, with uncertainty.",
+      "width": 1312,
+      "height": 1088
+    },
+    {
+      "file": "04-lag-response.png",
+      "title": "Lag response",
+      "description": "Association across the days after the selected training load.",
+      "width": 1312,
+      "height": 1088
+    },
+    {
+      "file": "05-exposure-lag-heatmap.png",
+      "title": "Exposure × lag heatmap",
+      "description": "Training load and days after training, including the exact selected cell. The scroll area is expanded only for this screenshot to show every load row.",
+      "width": 2592,
+      "height": 1326
+    },
+    {
+      "file": "06-fit-comparison.png",
+      "title": "Compare saved fits",
+      "description": "Current and previous compatible fits overlaid on the cumulative curve.",
+      "width": 2676,
+      "height": 1610
+    },
+    {
+      "file": "07-model-details.png",
+      "title": "Model details",
+      "description": "Immutable model identity, engine, window, observations and validation state.",
+      "width": 1304,
+      "height": 1072
+    },
+    {
+      "file": "08-fit-data-coverage.png",
+      "title": "Saved fit-data coverage",
+      "description": "Saved period, aligned fit days, HRV coverage, training days and observed rest.",
+      "width": 2592,
+      "height": 656
+    },
+    {
+      "file": "09-fit-data-calendar.png",
+      "title": "Calendar and daily evidence",
+      "description": "Full-month availability calendar and coordinated nightly HRV / daily TSS inspection.",
+      "width": 2592,
+      "height": 1536
+    },
+    {
+      "file": "10-exact-model-inputs.png",
+      "title": "Exact saved model inputs",
+      "description": "Date-aligned values with explicit rest days and missing HRV or TSS.",
+      "width": 2592,
+      "height": 1088
+    },
+    {
+      "file": "11-scenario-planning.png",
+      "title": "Compare training plans",
+      "description": "Seven-day Control, Build and High load plans with frozen prior load history.",
+      "width": 2592,
+      "height": 1404
+    },
+    {
+      "file": "12-plan-editor.png",
+      "title": "Training-plan editor",
+      "description": "Editable daily TSS and template preview with Save and Cancel.",
+      "width": 1784,
+      "height": 1484
+    },
+    {
+      "file": "13-scenario-trajectories.png",
+      "title": "Scenario trajectories",
+      "description": "Observed HRV, three scenario forecasts, coefficient uncertainty and aligned daily TSS.",
+      "width": 2592,
+      "height": 1620
+    },
+    {
+      "file": "14-scenario-metric-comparison.png",
+      "title": "Scenario metric comparison",
+      "description": "Cumulative below-reference amount across the three plans.",
+      "width": 2592,
+      "height": 746
+    },
+    {
+      "file": "15-full-scenario-metrics.png",
+      "title": "Full scenario metrics",
+      "description": "The complete thirteen-metric result table for the three plans.",
+      "width": 2592,
+      "height": 1436
+    },
+    {
+      "file": "16-weekly-hrv-overview.png",
+      "title": "Weekly HRV review",
+      "description": "Experimental deviation index, observed-night coverage, index trend and personal reference.",
+      "width": 2592,
+      "height": 1186
+    },
+    {
+      "file": "17-nightly-hrv-evidence.png",
+      "title": "Nightly HRV evidence",
+      "description": "A populated week of measured RMSSD with an explicit gap and personal reference.",
+      "width": 2592,
+      "height": 1118
+    },
+    {
+      "file": "18-weekly-curve-comparison.png",
+      "title": "Compare weeks",
+      "description": "Aligned nightly curves for the selected week and two earlier weeks.",
+      "width": 2592,
+      "height": 1210
+    },
+    {
+      "file": "19-weekly-index-method.png",
+      "title": "Weekly index method",
+      "description": "Visible explanation of the experimental HRV deviation index.",
+      "width": 2592,
+      "height": 330
+    },
+    {
+      "file": "20-participant-comparison.png",
+      "title": "Participant comparison",
+      "description": "Date-aligned HRV and training-load tracks for two synthetic participants.",
+      "width": 2676,
+      "height": 1792
+    }
+  ],
+  "errors": [],
+  "verification": {
+    "png_count": 20,
+    "all_pngs_decode": true,
+    "browser_runtime_errors": [],
+    "visual_review": "All feature captures reviewed individually or via the contact sheet."
+  }
+}

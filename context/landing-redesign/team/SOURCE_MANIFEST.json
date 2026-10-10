@@ -1,0 +1,102 @@
+{
+  "retrieved_at": "2026-10-09T20:37:53.200802+00:00",
+  "request": "Add the five named team members; use UCAM founder photos, an online Manel photo, and deployed SciencePeaks photos for Clara and Víctor.",
+  "rights": "Founder portraits were supplied for the presentation and explicitly requested for this landing by the founder. Clara and Víctor portraits already appear on the deployed SciencePeaks site. Manel portrait is published by COMT; no open licence was established. Source is credited in his profile. Public availability does not establish image ownership or institutional endorsement.",
+  "assets": [
+    {
+      "name": "Juan Ramón González",
+      "source": "UCAM presentation, founder-provided portrait",
+      "asset_url": null,
+      "original_path": "context/landing-redesign/ucam-hitech-bootcamp/deck/assets/jr-portrait.jpg",
+      "original_dimensions": [
+        220,
+        220
+      ],
+      "original_sha256": "3e28c5b03a778ab9b71426e77190bd53459134cfd7e0175c652473a262994e5f",
+      "public_path": "public/landing/team/juan-ramon.webp",
+      "dimensions": [
+        220,
+        220
+      ],
+      "bytes": 7916,
+      "sha256": "f89db211607ba3fed233981f9bf8082416b6ba700678dd43467725a946b3a787",
+      "processing": "EXIF orientation and proportional WebP resize only; faces and photographic content preserved. Display crop controlled in CSS."
+    },
+    {
+      "name": "Dídac Cayuela Dolcet",
+      "source": "UCAM presentation, founder-provided portrait",
+      "asset_url": null,
+      "original_path": "context/landing-redesign/ucam-hitech-bootcamp/deck/assets/didac-portrait.png",
+      "original_dimensions": [
+        1142,
+        1377
+      ],
+      "original_sha256": "6d4a3e4014b503fa31a0c882489a5a19e7f5526a4efa4890c6ce360458d22254",
+      "public_path": "public/landing/team/didac.webp",
+      "dimensions": [
+        480,
+        579
+      ],
+      "bytes": 22532,
+      "sha256": "eb2858116d651db44387e2462eb8d5847b1a110a289e8e10518b2638c48279d5",
+      "processing": "EXIF orientation and proportional WebP resize only; faces and photographic content preserved. Display crop controlled in CSS."
+    },
+    {
+      "name": "Dr. Manel González Peris",
+      "source": "https://comt.cat/es/el-dr-manel-gonzalez-escogido-nuevo-presidente-de-la-seccion-de-medicina-del-deporte-del-comt/",
+      "asset_url": "https://comt.cat/wp-content/uploads/2023/01/Manel-Gonzalez_MedicinaEsportiva03-2048x1152.webp",
+      "original_path": "tmp/team-section-research-2026-10-09/manel-03.webp",
+      "original_dimensions": [
+        2048,
+        1152
+      ],
+      "original_sha256": "be9d3ee8978de9cb4e9818dfbdea7c5e67dcd7f8a1e2c126cd20bea1d9f84d2d",
+      "public_path": "public/landing/team/manel.webp",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "bytes": 22308,
+      "sha256": "c8cc9cf6928de7bd9f6e41d0baaf14de0072770559d81faa4c875f8030d2b326",
+      "processing": "EXIF orientation and proportional WebP resize only; faces and photographic content preserved. Display crop controlled in CSS."
+    },
+    {
+      "name": "Clara Morella Teixidor",
+      "source": "https://www.sciencepeaks.ai/#team",
+      "asset_url": "https://www.sciencepeaks.ai/pfp-clara.jpg",
+      "original_path": "tmp/team-section-research-2026-10-09/clara.jpg",
+      "original_dimensions": [
+        220,
+        220
+      ],
+      "original_sha256": "d03c717e8efdf9717b668e4b8203aa2f1a79d1ce6e4095fa7c8f9c81b62cb4f9",
+      "public_path": "public/landing/team/clara.webp",
+      "dimensions": [
+        220,
+        220
+      ],
+      "bytes": 8728,
+      "sha256": "8dff41f599a20741d87e50622fe9a4f5e305e899797f908a6f5b7b1a51242dfd",
+      "processing": "EXIF orientation and proportional WebP resize only; faces and photographic content preserved. Display crop controlled in CSS."
+    },
+    {
+      "name": "Víctor Nàcher Castellet",
+      "source": "https://www.sciencepeaks.ai/#team",
+      "asset_url": "https://www.sciencepeaks.ai/pfp-victor.jpeg",
+      "original_path": "tmp/team-section-research-2026-10-09/victor.jpeg",
+      "original_dimensions": [
+        400,
+        400
+      ],
+      "original_sha256": "c2b3e289d00fb46dfeda7f43845c58f7f3501e6a1af3600422acf6c5e83f0a91",
+      "public_path": "public/landing/team/victor.webp",
+      "dimensions": [
+        400,
+        400
+      ],
+      "bytes": 23598,
+      "sha256": "25b5ce8b5986264602d424067cb7803727e2f84326100fc6e6e153ffd940287b",
+      "processing": "EXIF orientation and proportional WebP resize only; faces and photographic content preserved. Display crop controlled in CSS."
+    }
+  ]
+}

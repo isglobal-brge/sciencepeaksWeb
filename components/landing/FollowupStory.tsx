@@ -108,9 +108,9 @@ export function FollowupStory() {
               aria-pressed={active === index}
               onClick={() => {
                 setActive(index);
-                const reduce =
-                  matchMedia("(prefers-reduced-motion: reduce)").matches ||
-                  document.documentElement.dataset.motionPaused === "true";
+                const reduce = matchMedia(
+                  "(prefers-reduced-motion: reduce)",
+                ).matches;
                 if (matchMedia("(min-width: 651px)").matches)
                   refs.current[index]?.scrollIntoView({
                     behavior: reduce ? "auto" : "smooth",

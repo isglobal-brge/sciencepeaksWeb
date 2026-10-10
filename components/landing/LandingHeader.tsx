@@ -2,24 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowUpRight, List, X, Pause, Play } from "@phosphor-icons/react";
+import { ArrowUpRight, List, X } from "@phosphor-icons/react";
 
 export function LandingHeader() {
   const [open, setOpen] = useState(false);
-  const [paused, setPaused] = useState(false);
-  useEffect(() => {
-    const preference = matchMedia("(prefers-reduced-motion: reduce)");
-    const sync = () => setPaused(preference.matches);
-    sync();
-    preference.addEventListener("change", sync);
-    return () => {
-      preference.removeEventListener("change", sync);
-      document.documentElement.removeAttribute("data-motion-paused");
-    };
-  }, []);
-  useEffect(() => {
-    document.documentElement.dataset.motionPaused = String(paused);
-  }, [paused]);
   useEffect(() => {
     if (!open) return;
     document.querySelector<HTMLAnchorElement>("#sp-navigation a")?.focus();
@@ -55,6 +41,9 @@ export function LandingHeader() {
           <a href="#mobile-app" onClick={() => setOpen(false)}>
             The app
           </a>
+          <a href="#team" onClick={() => setOpen(false)}>
+            Our team
+          </a>
           <a
             className="sp-button sp-nav-cta"
             href="#contact"
@@ -64,22 +53,6 @@ export function LandingHeader() {
           </a>
         </div>
         <div className="sp-nav-tools">
-          <button
-            className="sp-motion-button"
-            type="button"
-            onClick={() => setPaused((p) => !p)}
-            aria-pressed={paused}
-            aria-label={
-              paused ? "Resume page animations" : "Pause page animations"
-            }
-            title={paused ? "Resume animations" : "Pause animations"}
-          >
-            {paused ? (
-              <Play aria-hidden size={16} />
-            ) : (
-              <Pause aria-hidden size={16} />
-            )}
-          </button>
           <button
             type="button"
             className="sp-menu-button"

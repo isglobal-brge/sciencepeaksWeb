@@ -29,6 +29,8 @@ type ProductScreenshotProps = {
   /** Optional larger image for the viewer; the thumbnail still uses src. */
   previewSrc?: string;
   compact?: boolean;
+  /** Eagerly fetch the primary hero image; other screenshots remain lazy. */
+  priority?: boolean;
 };
 
 export function ProductScreenshot({
@@ -42,6 +44,7 @@ export function ProductScreenshot({
   className = "",
   previewSrc,
   compact = false,
+  priority = false,
 }: ProductScreenshotProps) {
   const id = useId();
   const dialog = useRef<HTMLDialogElement>(null);
@@ -126,7 +129,8 @@ export function ProductScreenshot({
           width={width}
           height={height}
           alt={alt}
-          loading="lazy"
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : undefined}
           decoding="async"
         />
         <span className="sp-shot-image-hint" aria-hidden="true">

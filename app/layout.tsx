@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import localFont from "next/font/local";
 import { CookieBanner } from "@/components/cookie-banner";
 import "./globals.css";
+import "./landing.css";
 
 const poppins = localFont({
   src: [
@@ -89,10 +90,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
         <noscript>
           <style>{`
-            .sp-menu-button,.sp-motion-button,.sp-nav-cta,.sp-story-tabs,
-            .sp-explorer-tabs,.sp-wearable-button,.sp-volume-control input,
+            .sp-menu-button,.sp-nav-cta,.sp-story-tabs,
+            .sp-explorer-tabs,.sp-volume-control input,
             .sp-shot-view,.sp-shot-image-hint,.sp-mobile-interaction,
-            .sp-volume-range-ends{display:none!important}
+            .sp-volume-range-ends,.sp-cookie-settings,.sp-garmin-tabs,
+            .sp-project-tabs,.sp-project-roster button{display:none!important}
             .sp-header{position:relative!important;top:12px!important}
             .sp-hero{padding-top:65px!important}
             .sp-nav{height:auto!important;flex-wrap:wrap}
@@ -104,6 +106,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             .sp-logo-set{flex-wrap:wrap;justify-content:center}
             .sp-logo-set[aria-hidden=true]{display:none}
             .sp-hero-light{animation:none!important}
+            .sp-explorer-panel[hidden],.sp-mobile-caption[hidden]{display:block!important}
+            .sp-explorer-panel + .sp-explorer-panel{margin-top:28px}
+            .sp-garmin-panel[hidden]{display:block!important}
+            .sp-garmin-panel + .sp-garmin-panel{margin-top:28px}
+            .sp-project-panel[hidden]{display:grid!important}
+            .sp-project-panel + .sp-project-panel{margin-top:32px}
+            .sp-project-roster > div::after{content:'Participant A · B · C · D';grid-column:1/-1;font-size:14px;color:#426271}
+            .sp-cookie-banner-actions{display:none!important}
+            .sp-cookie-banner{position:static!important;margin:20px!important}
           `}</style>
         </noscript>
       </head>

@@ -1,28 +1,37 @@
-const institutions = [
-  { name: "ISGlobal", file: "isglobal.svg", url: "https://www.isglobal.org" },
+const logos = [
+  {
+    name: "ISGlobal",
+    src: "/landing/institutions/isglobal.svg",
+    url: "https://www.isglobal.org",
+  },
+  {
+    name: "Garmin wearable integration",
+    src: "/landing/garmin/garmin-logo.webp",
+    url: "https://www.garmin.com",
+  },
   {
     name: "Hospital Clínic Barcelona",
-    file: "hospital-clinic.svg",
+    src: "/landing/institutions/hospital-clinic.svg",
     url: "https://www.clinicbarcelona.org",
   },
   {
     name: "la Caixa Foundation",
-    file: "la-caixa-foundation.svg",
+    src: "/landing/institutions/la-caixa-foundation.svg",
     url: "https://fundacionlacaixa.org",
   },
   {
     name: "Severo Ochoa recognition",
-    file: "severo-ochoa.svg",
+    src: "/landing/institutions/severo-ochoa.svg",
     url: "https://www.isglobal.org/en/severo-ochoa",
   },
   {
     name: "CERCA Centres de Recerca de Catalunya",
-    file: "cerca.svg",
+    src: "/landing/institutions/cerca.svg",
     url: "https://cerca.cat",
   },
   {
     name: "Barcelona City Council",
-    file: "barcelona-city-council.svg",
+    src: "/landing/institutions/barcelona-city-council.svg",
     url: "https://www.barcelona.cat",
   },
 ];
@@ -47,8 +56,8 @@ export function LogoMarquee() {
               key={copy}
               aria-hidden={copy === 1 ? true : undefined}
             >
-              {institutions.map((logo) => (
-                <li key={logo.file}>
+              {logos.map((logo) => (
+                <li key={logo.src}>
                   <a
                     href={logo.url}
                     target="_blank"
@@ -56,7 +65,7 @@ export function LogoMarquee() {
                     tabIndex={copy === 1 ? -1 : undefined}
                   >
                     <img
-                      src={`/landing/institutions/${logo.file}`}
+                      src={logo.src}
                       alt={logo.name}
                       width="170"
                       height="58"
@@ -70,8 +79,8 @@ export function LogoMarquee() {
         </div>
       </div>
       <p className="sp-ecosystem-caption sp-wrap">
-        Institutions, network and recognitions of ISGlobal, where SciencePeaks
-        originated.
+        Garmin wearable integration · ISGlobal institutional network and
+        recognitions.
       </p>
     </section>
   );

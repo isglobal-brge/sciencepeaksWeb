@@ -1,56 +1,67 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import { ArrowUpRight } from "@phosphor-icons/react/ssr";
+import { CookieSettingsButton } from "@/components/landing/CookieSettingsButton";
+
+export const legalPages = [
+  { href: "/legal-notice/", label: "Legal Notice" },
+  { href: "/privacy-policy/", label: "Privacy Policy" },
+  { href: "/cookies-policy/", label: "Cookies Policy" },
+  { href: "/account-deletion/", label: "Account Deletion" },
+];
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
-
   return (
-    <footer className="bg-gray-900 text-white py-6">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            {/* Logo + Copyright */}
-            <div className="flex items-center gap-4">
-              <a
-                href="https://www.isglobal.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-transform hover:scale-110"
-              >
-                <Image
-                  src="/isglobal_logo.png"
-                  alt="ISGlobal"
-                  width={120}
-                  height={60}
-                  className="h-10 w-auto"
-                />
-              </a>
-              <div className="text-gray-400 text-sm">
-                <p>&copy; {currentYear} SciencePeaks. All rights reserved.</p>
-              </div>
-            </div>
-
-            {/* Legal Links */}
-            <div className="flex flex-wrap justify-center md:justify-end gap-4 text-xs text-gray-400">
-              <Link href="/legal-notice" className="hover:text-white transition-colors">
-                Legal Notice
-              </Link>
-              <span>|</span>
-              <Link href="/privacy-policy" className="hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-              <span>|</span>
-              <Link href="/cookies-policy" className="hover:text-white transition-colors">
-                Cookies Policy
-              </Link>
-              <span>|</span>
-              <Link href="/account-deletion" className="hover:text-white transition-colors">
-                Account Deletion
-              </Link>
-            </div>
+    <footer className="sp-footer">
+      <div className="sp-wrap">
+        <div className="sp-footer-top">
+          <Link className="sp-brand" href="/">
+            <img
+              src="/logo.svg"
+              width="36"
+              height="34"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+            SciencePeaks
+          </Link>
+          <p>A fuller picture of activity, fatigue and recovery.</p>
+          <Link href="/#contact" className="sp-text-link">
+            Let’s talk <ArrowUpRight size={18} aria-hidden />
+          </Link>
+        </div>
+        <div className="sp-footer-bottom">
+          <div className="sp-footer-owner">
+            <a
+              className="sp-footer-isglobal"
+              href="https://www.isglobal.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="ISGlobal (opens in a new tab)"
+            >
+              <img
+                src="/isglobal_logo.png"
+                width="180"
+                height="180"
+                alt="ISGlobal"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <p>
+              © {new Date().getFullYear()} SciencePeaks. All rights reserved.
+            </p>
           </div>
+          <nav aria-label="Legal information">
+            {legalPages.map(({ href, label }) => (
+              <Link key={href} href={href}>
+                {label}
+              </Link>
+            ))}
+            <CookieSettingsButton />
+          </nav>
         </div>
       </div>
     </footer>
-  )
+  );
 }

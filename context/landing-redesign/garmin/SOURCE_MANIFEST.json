@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-10",
+  "watch": {
+    "model": "Garmin Venu 3S",
+    "sourcePage": "https://www.garmin.co.jp/products/wearables/venu-3s-black/",
+    "sourceAsset": "https://www.garmin.co.jp/m/jp/g/products/venu3s_BlackSesameSlate_left_watchface_venu3A.jpg",
+    "originalPath": "context/landing-redesign/garmin/venu-3s-japan-original.jpg",
+    "width": 600,
+    "height": 600,
+    "bytes": 39781,
+    "sha256": "80b4e4b8da19be57f5151de2a9298d3691125d351c45264e720d4e47b77aea70",
+    "transform": "Complete original frame; proportional downsample and WebP encoding only. Watch face and branding are unchanged.",
+    "relationshipEvidence": "Founder-confirmed approved Garmin Health SDK access and Venu 3S recording experience in the local UCAM/METs evidence."
+  },
+  "logo": {
+    "sourcePath": "public/garmin-logo.png",
+    "transform": "Proportional downsample and transparent WebP encoding. Original retained."
+  },
+  "rights": "Garmin retains brand and image rights. These are product/brand assets, not evidence of product certification, clinical validation or universal device compatibility.",
+  "assets": [
+    {
+      "path": "public/landing/garmin/venu-3s-320.webp",
+      "width": 320,
+      "height": 320,
+      "bytes": 8940,
+      "sha256": "1a1fe7aae42225ba45a08bae3f174fd2b1615f01dca803fb23a5a5e6a8d037a8"
+    },
+    {
+      "path": "public/landing/garmin/venu-3s-600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 21792,
+      "sha256": "a79e39247f9d57421cb4a00fa6aa71b32ec7be1eeb438bfe3bd40874fb79624a"
+    },
+    {
+      "path": "public/landing/garmin/garmin-logo.webp",
+      "width": 240,
+      "height": 65,
+      "bytes": 3628,
+      "sha256": "6eb3a9292deff3a39a3b15661f8c3a1931c312cf50a1d3e03368e95b65d0033d"
+    }
+  ]
+}

@@ -7,5 +7,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    {
+      url: "https://www.sciencepeaks.ai/account-deletion/",
+      changeFrequency: "yearly",
+      priority: 0.2,
+    },
   ];
 }

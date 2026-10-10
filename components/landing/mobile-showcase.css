@@ -375,9 +375,3 @@
     transition: none;
   }
 }
-html[data-motion-paused="true"]
-  .sp-mobile-showcase
-  .sp-mobile-selector
-  > button {
-  transition: none;
-}

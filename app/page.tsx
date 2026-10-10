@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   ArrowUpRight,
   ArrowRight,
@@ -10,7 +9,6 @@ import {
   PersonSimpleRun,
   UsersThree,
   ChatCircleText,
-  Flask,
   Check,
   Plus,
   MoonStars,
@@ -19,16 +17,18 @@ import {
 import { LandingHeader } from "@/components/landing/LandingHeader";
 import { MotionEffects } from "@/components/landing/MotionEffects";
 import { LogoMarquee } from "@/components/landing/LogoMarquee";
-import { FollowupStory } from "@/components/landing/FollowupStory";
+import { GarminIntegration } from "@/components/landing/GarminIntegration";
+import { TrendsShowcase } from "@/components/landing/TrendsShowcase";
+import { ProjectsShowcase } from "@/components/landing/ProjectsShowcase";
 import { ScienceEngine } from "@/components/landing/ScienceEngine";
 import { MobileShowcase } from "@/components/landing/MobileShowcase";
 import { ActivityExplorer } from "@/components/landing/ActivityExplorer";
 import { ActivityVolume } from "@/components/landing/ActivityVolume";
-import { WearableScene } from "@/components/landing/WearableScene";
+import { DLNMShowcase } from "@/components/landing/DLNMShowcase";
+import { OurTeam } from "@/components/landing/OurTeam";
 import { ContactRequest } from "@/components/landing/ContactRequest";
 import { ProductScreenshot } from "@/components/landing/ProductScreenshot";
-import { responsiveProductImage } from "@/components/landing/productImages";
-import "./landing.css";
+import { Footer } from "@/components/footer";
 
 const description =
   "SciencePeaks uses data science, machine learning and AI to connect wearable activity, overnight HRV and symptoms for oncology care and professional sport. Web, iOS and Android.";
@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "https://www.sciencepeaks.ai/" },
   openGraph: {
+    type: "website",
+    siteName: "SciencePeaks",
+    locale: "en_GB",
     title: "SciencePeaks | A fuller picture of fatigue and recovery",
     description,
     url: "https://www.sciencepeaks.ai/",
@@ -68,7 +71,7 @@ const questions = [
   ],
   [
     "Which wearables does it use?",
-    "The current recording workflow uses compatible Garmin devices. Movement data inform estimated physical activity; available overnight heartbeat intervals inform HRV analysis. We can confirm the right device and recording setup in your product walkthrough.",
+    "SciencePeaks has Garmin-approved access to the Garmin Health SDK following review of its iOS and Android apps. The current recording workflow uses compatible Garmin devices. Movement data inform estimated physical activity; available overnight heartbeat intervals inform HRV analysis. We can confirm the right device and recording setup in your product walkthrough.",
   ],
   [
     "How are activity and fatigue measured?",
@@ -76,7 +79,7 @@ const questions = [
   ],
   [
     "Can a clinician or coach follow a group?",
-    "Yes. The project system supports a supervisor following a group, such as patients in a care programme or athletes in a team. Professionals can review histories, activity plans and reports.",
+    "Yes. A project is a shared workspace where a clinician or coach follows patients in a care programme or athletes in a team. Supervisors can review cohort progress, individual Trends, reported fatigue and health context, compare participants, manage activity plans and run available models on eligible histories.",
   ],
   [
     "How do data science, machine learning and AI work together?",
@@ -107,11 +110,11 @@ const mobileScreens = [
     id: "trends",
     title: "Trends over time",
     caption:
-      "Explore a metric across a date range, rather than stopping at today’s reading. This Android screen shows a month of RMSSD values.",
+      "Explore RMSSD and DFA alpha 1 across a selected date range, with both trends aligned in one view.",
     src: "/landing/product/mobile-trends.webp",
-    width: 1080,
-    height: 2400,
-    alt: "SciencePeaks Android temporal-trends screen with a date-range selector and a month-long RMSSD chart in milliseconds.",
+    width: 1320,
+    height: 2868,
+    alt: "SciencePeaks iOS trends screen showing RMSSD in milliseconds and DFA alpha 1 across 12 September to 9 October, with date-range and comparison controls.",
   },
   {
     id: "check-in",
@@ -211,78 +214,46 @@ export default function Home() {
                   Explore the platform <ArrowRight size={18} aria-hidden />
                 </a>
               </div>
+              <a className="sp-garmin-proof" href="#garmin-integration">
+                <img
+                  src="/landing/garmin/garmin-logo.webp"
+                  width="240"
+                  height="65"
+                  alt="Garmin"
+                  decoding="async"
+                />
+                <span>
+                  Garmin Health SDK
+                  <strong>Approved access</strong>
+                </span>
+              </a>
             </div>
-            <figure
-              className="sp-hero-art"
-              aria-label="Real SciencePeaks activity, physiology and symptom views, arranged as a product collage."
-            >
-              <div className="sp-collage-depth">
-                <div className="sp-collage-card sp-collage-activity">
-                  <div className="sp-collage-chrome">
-                    <Watch size={18} aria-hidden />
-                    <span>Your connected workspace</span>
-                    <span className="sp-chrome-brand">SciencePeaks</span>
-                  </div>
-                  <img
-                    src="/landing/product/project-participant-dashboard.webp"
-                    {...responsiveProductImage(
-                      "/landing/product/project-participant-dashboard.webp",
-                      "(max-width: 650px) calc(91vw - 33px), (max-width: 900px) 560px, 42vw",
-                    )}
-                    width="1600"
-                    height="759"
-                    alt="SciencePeaks project dashboard connecting personal HRV trends, daily check-ins, treatment context and recorded measurements."
-                    fetchPriority="high"
-                  />
-                  <div className="sp-collage-footer">
-                    <span>Personal trends</span>
-                    <span>Symptoms</span>
-                    <span>Context</span>
-                  </div>
-                </div>
-                <div className="sp-collage-card sp-collage-physiology">
-                  <div className="sp-collage-chrome">
-                    <Heartbeat size={18} aria-hidden />
-                    <span>Overnight physiology</span>
-                  </div>
-                  <img
-                    src="/landing/product/night-rmssd-current.webp"
-                    {...responsiveProductImage(
-                      "/landing/product/night-rmssd-current.webp",
-                      "(max-width: 650px) calc(69vw - 25px), (max-width: 900px) 434px, 33vw",
-                    )}
-                    width="1180"
-                    height="553"
-                    alt="SciencePeaks overnight RMSSD profile, showing heart rate variability across the night in milliseconds."
-                    fetchPriority="low"
-                  />
-                </div>
-                <div className="sp-collage-card sp-collage-checkin">
-                  <div className="sp-collage-chrome">
-                    <ClipboardText size={17} aria-hidden />
-                    <span>The person’s perspective</span>
-                  </div>
-                  <img
-                    src="/landing/product/oncology-check-in.webp"
-                    {...responsiveProductImage(
-                      "/landing/product/oncology-check-in.webp",
-                      "(max-width: 650px) calc(31vw - 11px), (max-width: 900px) 192px, 15vw",
-                    )}
-                    width="756"
-                    height="680"
-                    alt="SciencePeaks short fatigue check-in with selectable symptom responses."
-                  />
-                </div>
-                <div className="sp-collage-connector" aria-hidden>
-                  <UsersThree size={23} />
-                  <span>Connected for follow-up</span>
-                </div>
+            <div className="sp-hero-art">
+              <ProductScreenshot
+                className="sp-hero-dashboard"
+                src="/landing/product/home-dashboard.webp"
+                previewSrc="/landing/product/home-dashboard-full.webp"
+                width={1600}
+                height={911}
+                title="Your daily overview"
+                alt="SciencePeaks home dashboard with a September calendar, an overnight DFA alpha 1 profile, nightly HRV metrics and daily oncology and recovery summaries."
+                caption="Founder-supplied home dashboard: a dated calendar, an overnight DFA alpha 1 profile and daily HRV, oncology and recovery summaries."
+                sizes="(max-width: 650px) calc(100vw - 56px), (max-width: 900px) 600px, 46vw"
+                priority
+                compact
+              />
+              <div className="sp-hero-caption">
+                <a className="sp-hero-followup" href="#follow-up">
+                  <UsersThree size={20} aria-hidden />
+                  <span>See professional follow-up</span>
+                  <ArrowRight size={17} aria-hidden />
+                </a>
+                <p>
+                  Real home dashboard · calendar, overnight physiology and daily
+                  summaries.
+                </p>
               </div>
-              <figcaption className="sp-hero-caption">
-                Real product views · a connected project, overnight HRV and a
-                sample symptom check-in.
-              </figcaption>
-            </figure>
+            </div>
           </div>
         </section>
         <LogoMarquee />
@@ -378,22 +349,7 @@ export default function Home() {
                 </div>
               </article>
             </div>
-            <div className="sp-connected-row sp-reveal">
-              <div>
-                <Watch size={24} aria-hidden />
-                <strong>Wearable observations</strong>
-              </div>
-              <span aria-hidden className="sp-connection-line" />
-              <div>
-                <ClipboardText size={24} aria-hidden />
-                <strong>Personal experience</strong>
-              </div>
-              <span aria-hidden className="sp-connection-line" />
-              <div>
-                <UsersThree size={24} aria-hidden />
-                <strong>Professional follow-up</strong>
-              </div>
-            </div>
+            <GarminIntegration />
           </div>
         </section>
 
@@ -599,7 +555,8 @@ export default function Home() {
             </div>
             <div className="sp-mobile-foot">
               <p>
-                Actual iOS and Android product screens with demonstration data.
+                Actual mobile app screens. Home and oncology views use
+                demonstration data.
               </p>
               <a className="sp-text-link" href="#contact">
                 Explore access for your programme{" "}
@@ -609,6 +566,8 @@ export default function Home() {
           </div>
         </section>
 
+        <TrendsShowcase />
+
         <section
           className="sp-section sp-followup"
           id="follow-up"
@@ -616,20 +575,19 @@ export default function Home() {
         >
           <div className="sp-wrap">
             <div className="sp-section-heading sp-reveal">
-              <p className="sp-eyebrow">The days between the conversations</p>
               <h2 id="followup-title">
-                See the week.
+                One project.
                 <br />
-                <span>Understand the person.</span>
+                <span>Every person in view.</span>
               </h2>
               <p>
-                A clinician or coach organizes people in a{" "}
-                <strong>shared project</strong>. Review each person’s week,
-                connect changes with their context, and bring the record into
-                the next conversation.
+                A project is a <strong>shared workspace for a clinician or coach
+                to follow a group of patients or athletes</strong>. Review the
+                cohort, open individual histories, compare participants and
+                explore models, with fatigue and health context in view.
               </p>
             </div>
-            <FollowupStory />
+            <ProjectsShowcase />
           </div>
         </section>
 
@@ -716,7 +674,6 @@ export default function Home() {
                 What is available today? <ArrowRight size={17} aria-hidden />
               </a>
             </div>
-            <WearableScene />
           </div>
         </section>
 
@@ -729,15 +686,14 @@ export default function Home() {
               <h2 id="intelligence-title">
                 An AI answer you can inspect.
                 <br />
-                <span>Explore the response.</span>
+                <span>With evidence behind it.</span>
               </h2>
               <p>
-                From an understandable answer to a modelled training scenario,
-                analytical tools help you ask better questions about your own
-                data.
+                Ask about your records in plain language and follow the values,
+                dates and calculations that support the answer.
               </p>
             </div>
-            <div className="sp-intelligence-grid">
+            <div className="sp-intelligence-grid sp-intelligence-single">
               <article className="sp-assistant sp-reveal">
                 <div className="sp-intelligence-copy">
                   <ChatCircleText size={29} aria-hidden />
@@ -756,48 +712,14 @@ export default function Home() {
                   title="An answer with its evidence"
                   alt="SciencePeaks assistant showing a complete question and answer, changes in metrics and supporting calculations and dates."
                   caption="A product demonstration: the answer sits beside metric changes, the date window and supporting calculations. Explore available assistant tools during a walkthrough."
-                  sizes="(max-width: 650px) calc(100vw - 90px), 45vw"
+                  sizes="(max-width: 650px) calc(100vw - 90px), (max-width: 1000px) calc(100vw - 150px), 55vw"
                 />
-              </article>
-              <article className="sp-model sp-reveal">
-                <Flask size={29} aria-hidden />
-                <h3>
-                  Training scenarios,
-                  <br />
-                  with assumptions visible.
-                </h3>
-                <p>
-                  <strong>Training Stress Score (TSS)</strong> summarizes
-                  training load;
-                  <strong> RMSSD</strong> summarizes beat-to-beat variability.
-                  Distributed lag non-linear models (DLNM) explore their
-                  relationship across load levels and the following days.
-                </p>
-                <div className="sp-model-diagram">
-                  <span>
-                    Training load<strong>TSS</strong>
-                  </span>
-                  <div>
-                    <ArrowRight size={24} aria-hidden />
-                    <small>Across days</small>
-                  </div>
-                  <span>
-                    HRV response<strong>RMSSD</strong>
-                  </span>
-                </div>
-                <p className="sp-model-use">
-                  Compare modelled RMSSD patterns for alternative weekly
-                  training plans, using the athlete’s recorded history.
-                </p>
-                <p className="sp-small">
-                  Scenarios are conditional on data and model assumptions. The
-                  relationship is not a causal conclusion or a stand-alone
-                  fatigue diagnosis.
-                </p>
               </article>
             </div>
           </div>
         </section>
+
+        <DLNMShowcase />
 
         <section
           className="sp-section sp-science"
@@ -822,32 +744,6 @@ export default function Home() {
                   bringing scientific methods and software development into a
                   shared platform for health and sport.
                 </p>
-                <div className="sp-founders">
-                  <div>
-                    <img
-                      src="/landing/juan-ramon.jpg"
-                      width="64"
-                      height="76"
-                      loading="lazy"
-                      alt="Juan Ramón González"
-                    />
-                    <span>
-                      <strong>Juan Ramón González</strong>Scientific direction
-                    </span>
-                  </div>
-                  <div>
-                    <img
-                      src="/landing/didac.jpg"
-                      width="64"
-                      height="76"
-                      loading="lazy"
-                      alt="Dídac Cayuela"
-                    />
-                    <span>
-                      <strong>Dídac Cayuela</strong>Technology &amp; product
-                    </span>
-                  </div>
-                </div>
                 <div className="sp-scientific-context">
                   <h3>A wider research ecosystem</h3>
                   <p>
@@ -920,6 +816,8 @@ export default function Home() {
           </div>
         </section>
 
+        <OurTeam />
+
         <section
           className="sp-section sp-faq"
           id="faq"
@@ -984,29 +882,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="sp-footer">
-        <div className="sp-wrap">
-          <div className="sp-footer-top">
-            <Link className="sp-brand" href="/">
-              <img src="/logo.svg" width="36" height="34" alt="" />
-              SciencePeaks
-            </Link>
-            <p>A fuller picture of activity, fatigue and recovery.</p>
-            <a href="#contact" className="sp-text-link">
-              Let’s talk <ArrowUpRight size={18} aria-hidden />
-            </a>
-          </div>
-          <div className="sp-footer-bottom">
-            <p>© {new Date().getFullYear()} SciencePeaks</p>
-            <nav aria-label="Legal information">
-              <a href="/legal-notice">Legal notice</a>
-              <a href="/privacy-policy">Privacy</a>
-              <a href="/cookies-policy">Cookies</a>
-              <a href="/account-deletion">Account deletion</a>
-            </nav>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

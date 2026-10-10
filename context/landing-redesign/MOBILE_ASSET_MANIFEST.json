@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-09T12:19:30+02:00",
-  "publication_status": "Temporary candidates only. Root approved Home and Trends; corrected oncology crops await root review before public copy.",
+  "publication_status": "Locally integrated landing assets; production deployment remains separate. Current Trends screenshot supplied directly by the founder on 9 October 2026.",
   "transform": "Complete Home/Trends screenshots; check-in/plan crops remove overlapping header and OS chrome while retaining complete tabs and feature contents. WebP quality94 method6; Lanczos downsample only. No UI edits, fabricated records or upscaling.",
   "source_order_search": {
     "searched_in_order": [
@@ -97,84 +97,83 @@
     },
     {
       "id": "mobile-trends",
-      "platform": "Android",
-      "source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts/ui-inspection/android/medium-phone-temporal-trends-host-gpu.png",
-      "caption": "Illustrative Android Trends view with synthetic data: RMSSD observations over a selected period.",
+      "platform": "iOS",
+      "source": "context/landing-redesign/implementation-assets/mobile-trends-current-ios.png",
+      "provided_source": "/Users/dcayuela/Downloads/Captura 2026-10-09 a las 23.37.10.png",
+      "caption": "Founder-provided current iOS Trends view showing RMSSD and DFA alpha 1 over the selected date range.",
       "screen_contents": [
-        "Temporal Trends with RMSSD metric selector",
-        "Selected date window Jul 3 – Aug 3, 2026",
-        "31 readings from Jul 3 – Aug 2 with a rendered purple curve and numerical scale",
-        "Native Trends navigation and mobile app chrome"
+        "Spanish Trends interface, app version v0.1.35",
+        "Selected date window 12 September to 9 October",
+        "RMSSD in ms and DFA alpha 1 comparison charts",
+        "Chronology and daily-table controls, Evolution and Movement tabs",
+        "Treatment section and native bottom navigation"
       ],
-      "evidence_class": "Real native Android Trends route using deterministic UI-inspection metric fixtures; host-GPU capture displays the actual chart",
+      "evidence_class": "Current mobile product screenshot supplied directly by the founder for this landing replacement",
       "limitations": [
-        "The chart’s cyclical values are synthetic fixture observations, not a patient or athlete result.",
-        "This is a longitudinal RMSSD trend, not an overnight curve, fatigue score or validated prediction.",
-        "The numerical scale is shown; this older capture does not print ms beside that axis. Surrounding caption may identify RMSSD in milliseconds from the metric definition.",
-        "Synthetic provenance is established from the inspection workflow and deterministic metric fixture source; this archive does not retain a per-capture source SHA or signed capture report."
+        "Data provenance was not independently verified; the image is not classified as synthetic or as clinical outcome evidence.",
+        "The screenshot shows the product interface and two temporal trends, not a validated fatigue measurement or prediction."
       ],
-      "synthetic_rationale": [
-        "Screenshot is archived in the deterministic ui-inspection workflow, whose documented adapter serves synthetic metrics and trends without a live API.",
-        "Current utils/uiInspectionFixtures.ts defines RMSSD unit ms, a deterministic repeating weekly metricValue generator, and metricSeries for /v1/metric_values/search. These establish the synthetic inspection mechanism; the archived screenshot has no historical capture SHA, so the current formula is not asserted to reproduce each August screenshot value exactly.",
-        "No participant name, handle, account identifier or personal notes appear in the screen."
-      ],
-      "synthetic": true,
+      "synthetic": null,
       "source_dimensions": [
-        1080,
-        2400
+        1320,
+        2868
       ],
-      "source_sha256": "8923a188d91a62a29af1603e386fd76a3e2fdf45f3336ca7a0d63eb5be426993",
+      "source_sha256": "b77069f508a7d802500a4d848c0f91c4c7f449c2af5951ce3ca12360d203f2cd",
       "crop": [
         0,
         0,
-        1080,
-        2400
+        1320,
+        2868
       ],
-      "source_mtime": "2026-08-03T15:41:17+02:00",
-      "date_evidence": "Archived file modification time, not an independently verified capture date.",
+      "date_evidence": "Provided by the founder on 9 October 2026; original filename identifies the screenshot as 23:37:10.",
       "provenance_sources": [
-        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/docs/native-ui-inspection.md",
-        "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/utils/uiInspectionFixtures.ts"
+        "context/landing-redesign/implementation-assets/mobile-trends-current-ios.png"
       ],
+      "supersedes": {
+        "platform": "Android",
+        "source": "/Users/dcayuela/Desktop/sciencepeaks/sciencepeaks-frontend/artifacts/ui-inspection/android/medium-phone-temporal-trends-host-gpu.png",
+        "source_sha256": "8923a188d91a62a29af1603e386fd76a3e2fdf45f3336ca7a0d63eb5be426993",
+        "reason": "Founder requested replacing the outdated temporal-trends screenshot with the attached current screenshot."
+      },
       "outputs": [
         {
-          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-trends.webp",
+          "path": "public/landing/product/mobile-trends.webp",
           "dimensions": [
-            1080,
-            2400
+            1320,
+            2868
           ],
-          "bytes": 74470,
-          "sha256": "8d679c5024b864b60a20342fdb8891a9b88a35be0c2480a61a06b90ed9d869dd",
+          "bytes": 111048,
+          "sha256": "56fc989ae59034edf4f94fb8079614228c2d6770f52fb4e81533d6aacfa2dff1",
           "upsampled": false
         },
         {
-          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-trends-320.webp",
+          "path": "public/landing/product/mobile-trends-320.webp",
           "dimensions": [
             320,
-            711
+            695
           ],
-          "bytes": 17752,
-          "sha256": "73594d9c26f777ec20b75538eddbaa6129766dc7beabe4876ac224fa8989fdf5",
+          "bytes": 20292,
+          "sha256": "25357f1a43d7ba589c56303d8af81a3664e13007fa5e007d733757fb1c0d35c3",
           "upsampled": false
         },
         {
-          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-trends-640.webp",
+          "path": "public/landing/product/mobile-trends-640.webp",
           "dimensions": [
             640,
-            1422
+            1391
           ],
-          "bytes": 41096,
-          "sha256": "67ef6658622843f4ce4d7f6e44c3146a2355900c9815fdb3d11da38484e503e9",
+          "bytes": 48844,
+          "sha256": "0368a97e612a7220316e9b5bf93be72291c509759820a3b36b8c4bc122992ce4",
           "upsampled": false
         },
         {
-          "path": "/tmp/sciencepeaks-investor-refinement/mobile-prepared/mobile-trends-960.webp",
+          "path": "public/landing/product/mobile-trends-960.webp",
           "dimensions": [
             960,
-            2133
+            2086
           ],
-          "bytes": 67790,
-          "sha256": "dde8610120615cdef25c10853f1d8dfaa5a30c9c771f4038d8d8e48669ad6e51",
+          "bytes": 82122,
+          "sha256": "e3178f3e5fc7a741da0464fcd557edbde1755e63df7a846ae2a7cbc56eca5f3d",
           "upsampled": false
         }
       ]

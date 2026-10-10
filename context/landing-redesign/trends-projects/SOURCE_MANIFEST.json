@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-10",
+  "source": "Founder-supplied Trends screenshot in this conversation, supplied for the landing explanation.",
+  "originalPath": "context/landing-redesign/trends-projects/trends-founder-original.png",
+  "sourceDimensions": [
+    2508,
+    1500
+  ],
+  "sourceSha256": "9375a727d579ee7d4e3474853e8998e0c04ab7c2df5350f00bc95fde2ed9107b",
+  "processing": "Complete frame, proportional resizing and WebP encoding only. Product values, dates, labels and chart gaps are unchanged.",
+  "evidenceClass": "Anonymous founder-provided product view. It illustrates the interface, not validated clinical outcomes or a diagnosed fatigue state.",
+  "outputs": [
+    {
+      "path": "public/landing/product/trends-followup-320.webp",
+      "width": 320,
+      "height": 191,
+      "bytes": 6080,
+      "sha256": "3c0c38ea8ed7f588f601e78d5d69ea59611955d6a5d72da1dca46eff1123f8b0"
+    },
+    {
+      "path": "public/landing/product/trends-followup-640.webp",
+      "width": 640,
+      "height": 383,
+      "bytes": 17828,
+      "sha256": "bcfb604933f02a5a730b8df21f691e08960791a2b1deae9eb4ca455f7dad839e"
+    },
+    {
+      "path": "public/landing/product/trends-followup-960.webp",
+      "width": 960,
+      "height": 574,
+      "bytes": 33756,
+      "sha256": "5d3c8cc82aa8731733eb173aec0e27cb23ffe3bfbd8071cd828585205a3b3db6"
+    },
+    {
+      "path": "public/landing/product/trends-followup.webp",
+      "width": 1600,
+      "height": 957,
+      "bytes": 63760,
+      "sha256": "30b7e6209252f0de018548ddc8e240e7d1dcff8c8019d84075b8f30c4e03c6be"
+    },
+    {
+      "path": "public/landing/product/trends-followup-full.webp",
+      "width": 2508,
+      "height": 1500,
+      "bytes": 107102,
+      "sha256": "ee47e12cb8a30b66f1ec597c05148a1ea3e50b2b50d325b7e546d9ee177946dd"
+    }
+  ]
+}

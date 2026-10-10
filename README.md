@@ -1,5 +1,7 @@
 # SciencePeaks website
 
+The redesigned landing is live at [sciencepeaks.ai](https://sciencepeaks.ai/), with `www.sciencepeaks.ai` as its canonical hostname. The source and export are published on `main`; the production Nginx container and GitHub Pages export were both updated. [Deployment verification](context/landing-redesign/DEPLOYMENT_QA.md) records the 10 October release, live checks and rollback.
+
 The public landing page explains SciencePeaks’ wearable-based activity, physiology and fatigue/recovery follow-up for oncology care and professional sport. It includes product examples, professional workflows, an activity-volume explainer, FAQs and a demo enquiry form.
 
 The implementation uses Next.js 15.5.27 static export, React 18 and locally hosted Poppins. Landing styles use native CSS; IntersectionObserver controls scroll effects. An interactive activity-volume calculator explains how intensity and duration combine. Reduced-motion preferences are supported.
@@ -45,7 +47,7 @@ npm start
 
 The preview command serves the export locally with Node.js and gzip compression. Exported routes use directory indexes so direct legal-page links work on static hosting. Stop local servers when finished. The `deploy` script replaces `docs/`, commits that output and pushes the current branch; commit source changes separately and ensure the intended publication branch is used. Do not run it to preview. GitHub Pages publishes `main/docs`, while the public domain currently resolves to a separately managed Nginx host. Updating Pages alone does not replace that host's files. A production release must update the serving document root and verify the public domain. Enable gzip or Brotli for HTML, CSS, JavaScript and SVG; the local performance results use compressed delivery.
 
-[SEO/AEO and mobile QA](context/landing-redesign/SEO_AEO_QA.md) records the 10 October fixes and verification across 12 viewport sizes. The latest local audit, after adding Trends and Projects, scored 94 for mobile performance and 100 for mobile accessibility, best practices and SEO; desktop scored 100 throughout. Mobile lab LCP was 3.0s, so loading should be measured again on the deployment host against the 2.5s target. [The focused QA record](context/landing-redesign/trends-projects/QA.md) includes interaction checks, screenshots and raw reports. Browser emulation does not establish physical-device or real-user results.
+[SEO/AEO and mobile QA](context/landing-redesign/SEO_AEO_QA.md) records the 10 October fixes and verification across 12 viewport sizes. The latest public-host Lighthouse audit scored 92 for mobile performance and 100 for mobile accessibility, best practices and SEO; desktop scored 100 throughout. Mobile lab LCP was 3.3s, above the 2.5s target. [The focused feature QA record](context/landing-redesign/trends-projects/QA.md) covers the earlier local build; [deployment verification](context/landing-redesign/DEPLOYMENT_QA.md) contains the live-host results. Browser emulation does not establish physical-device or real-user results.
 
 ## Branches and context
 

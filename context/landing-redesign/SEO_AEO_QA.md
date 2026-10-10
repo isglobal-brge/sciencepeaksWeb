@@ -2,6 +2,8 @@
 
 Verified locally on 10 October 2026 against the production static export in `out/`, served with gzip at `http://127.0.0.1:4183/`. This record covers the replacement landing on `redesign/landing-2026-10-09`. It does not describe a deployment of the redesign or the older website currently online.
 
+The redesign was subsequently deployed on 10 October 2026. [Production deployment verification](DEPLOYMENT_QA.md) records the release commit, public-host checks and updated loading measurements. The local results below remain the pre-publication record.
+
 ## Changes completed
 
 All four activity views, five DLNM panels and four mobile captions now have their explanations in the exported HTML. JavaScript selects which panel to display; the text no longer requires clicking a tab before it exists. With JavaScript disabled, every explanation is displayed and interactive controls are removed. The existing eight FAQ answers remain in the HTML.

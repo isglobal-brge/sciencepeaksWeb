@@ -1,0 +1,57 @@
+1:"$Sreact.fragment"
+3:I[9766,[],""]
+4:I[8924,[],""]
+b:I[7150,[],""]
+:HL["/_next/static/media/1d70992fdc04ec23-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/df48bf851affaaaa-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/2051f1be9f7e8004.css","style"]
+:HL["/_next/static/css/1b381f63cc8a6ed8.css","style"]
+:HL["/_next/static/css/fe55ebe27e8c5c50.css","style"]
+2:T6cc,
+            .sp-menu-button,.sp-nav-cta,.sp-story-tabs,
+            .sp-explorer-tabs,.sp-volume-control input,
+            .sp-shot-view,.sp-shot-image-hint,.sp-mobile-interaction,
+            .sp-volume-range-ends,.sp-cookie-settings,.sp-garmin-tabs,
+            .sp-project-tabs,.sp-project-roster button{display:none!important}
+            .sp-header{position:relative!important;top:12px!important}
+            .sp-hero{padding-top:65px!important}
+            .sp-nav{height:auto!important;flex-wrap:wrap}
+            .sp-nav-links{display:flex!important;position:static!important;
+              flex-direction:row!important;flex-wrap:wrap;background:transparent!important;
+              border:0!important;padding:0!important}
+            .sp-logo-window{overflow:visible;mask-image:none}
+            .sp-logo-track{animation:none!important;width:auto!important}
+            .sp-logo-set{flex-wrap:wrap;justify-content:center}
+            .sp-logo-set[aria-hidden=true]{display:none}
+            .sp-hero-light{animation:none!important}
+            .sp-explorer-panel[hidden],.sp-mobile-caption[hidden]{display:block!important}
+            .sp-explorer-panel + .sp-explorer-panel{margin-top:28px}
+            .sp-garmin-panel[hidden]{display:block!important}
+            .sp-garmin-panel + .sp-garmin-panel{margin-top:28px}
+            .sp-project-panel[hidden]{display:grid!important}
+            .sp-project-panel + .sp-project-panel{margin-top:32px}
+            .sp-project-roster > div::after{content:'Participant A · B · C · D';grid-column:1/-1;font-size:14px;color:#426271}
+            .sp-cookie-banner-actions{display:none!important}
+            .sp-cookie-banner{position:static!important;margin:20px!important}
+          0:{"P":null,"b":"UcPiap_lpTzJFscFj_uke","p":"","c":["","account-deletion",""],"i":false,"f":[[["",{"children":["account-deletion",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2051f1be9f7e8004.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/1b381f63cc8a6ed8.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"@id\":\"https://www.sciencepeaks.ai/#organization\",\"name\":\"SciencePeaks\",\"url\":\"https://www.sciencepeaks.ai/\",\"logo\":\"https://www.sciencepeaks.ai/logo.svg\",\"description\":\"Data science, machine learning and AI connecting wearable activity, overnight physiology and personal context for oncology care and professional sport.\"}"}}],["$","noscript",null,{"children":["$","style",null,{"children":"$2"}]}]]}],["$","body",null,{"className":"__variable_49f565","children":[["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L5","$L6"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],"$L7"]}]]}]]}],{"children":["account-deletion","$L8",{"children":["__PAGE__","$L9",{},null,false]},null,false]},null,false],"$La",false]],"m":"$undefined","G":["$b",[]],"s":false,"S":true}
+c:I[7981,["619","static/chunks/619-ba102abea3e3d0e4.js","545","static/chunks/545-647ab17a616117f9.js","177","static/chunks/app/layout-91cd71777167db4f.js"],"CookieBanner"]
+d:I[1959,[],"ClientPageRoot"]
+e:I[2574,["619","static/chunks/619-ba102abea3e3d0e4.js","545","static/chunks/545-647ab17a616117f9.js","17","static/chunks/17-32cd0580f4d6fbab.js","203","static/chunks/app/account-deletion/page-28868e92192aa93c.js"],"default"]
+11:I[4431,[],"OutletBoundary"]
+13:I[5278,[],"AsyncMetadataOutlet"]
+15:I[4431,[],"ViewportBoundary"]
+17:I[4431,[],"MetadataBoundary"]
+18:"$Sreact.suspense"
+5:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+6:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+7:["$","$Lc",null,{}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[["$","$Ld",null,{"Component":"$e","searchParams":{},"params":{},"promises":["$@f","$@10"]}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fe55ebe27e8c5c50.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L11",null,{"children":["$L12",["$","$L13",null,{"promise":"$@14"}]]}]]}]
+a:["$","$1","h",{"children":[null,[["$","$L15",null,{"children":"$L16"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L17",null,{"children":["$","div",null,{"hidden":true,"children":["$","$18",null,{"fallback":null,"children":"$L19"}]}]}]]}]
+f:{}
+10:"$9:props:children:0:props:params"
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+12:null
+1a:I[622,[],"IconMark"]
+14:{"metadata":[["$","title","0",{"children":"Account Deletion | SciencePeaks"}],["$","meta","1",{"name":"description","content":"Request deletion of your SciencePeaks account, your stored data, or both, and learn how your request is handled."}],["$","meta","2",{"name":"author","content":"SciencePeaks"}],["$","link","3",{"rel":"manifest","href":"/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","4",{"name":"creator","content":"SciencePeaks"}],["$","meta","5",{"name":"publisher","content":"SciencePeaks"}],["$","meta","6",{"name":"robots","content":"index, follow"}],["$","meta","7",{"name":"googlebot","content":"index, follow, max-image-preview:large, max-snippet:-1"}],["$","link","8",{"rel":"canonical","href":"https://www.sciencepeaks.ai/account-deletion/"}],["$","meta","9",{"property":"og:title","content":"Account Deletion | SciencePeaks"}],["$","meta","10",{"property":"og:description","content":"Request deletion of your SciencePeaks account, your stored data, or both, and learn how your request is handled."}],["$","meta","11",{"property":"og:url","content":"https://www.sciencepeaks.ai/account-deletion/"}],["$","meta","12",{"property":"og:site_name","content":"SciencePeaks"}],["$","meta","13",{"property":"og:locale","content":"en_GB"}],["$","meta","14",{"property":"og:image","content":"https://www.sciencepeaks.ai/landing/social-preview.jpg"}],["$","meta","15",{"property":"og:type","content":"website"}],["$","meta","16",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","17",{"name":"twitter:title","content":"Account Deletion | SciencePeaks"}],["$","meta","18",{"name":"twitter:description","content":"Request deletion of your SciencePeaks account, your stored data, or both, and learn how your request is handled."}],["$","meta","19",{"name":"twitter:image","content":"https://www.sciencepeaks.ai/landing/social-preview.jpg"}],["$","link","20",{"rel":"icon","href":"/logo.svg","type":"image/svg+xml"}],["$","link","21",{"rel":"apple-touch-icon","href":"/logo.svg"}],["$","$L1a","22",{}]],"error":null,"digest":"$undefined"}
+19:"$14:metadata"
